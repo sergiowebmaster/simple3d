@@ -1,4 +1,9 @@
 @charset "UTF-8";
+/*!
+ * Simple3D v1.0.0 (http://www.sergiowebmaster.com.br/)
+ * Copyright 2019 Sérgio Webmaster
+ * Licensed under MIT
+ */
 
 @keyframes open-door1 {
 	from {transform:rotateY(0deg);}
