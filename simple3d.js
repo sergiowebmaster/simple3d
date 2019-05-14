@@ -67,6 +67,11 @@ var Simple3D =
 			this.obj.style.transformOrigin = x + "px " + y + "px " + z + "px";
 		};
 		
+		this.setClass = function(className)
+		{
+			this.obj.className = className;
+		};
+		
 		this.adjustOrigin = function()
 		{
 			this.setOrigin(-this.x, -this.y, -this.z);

@@ -45,14 +45,23 @@
 	overflow:hidden;
 }
 .Simple3D.bluesky {
-	background:linear-gradient(#05A, #09C);
+	background-image:linear-gradient(#05A, #09C);
 }
-.Simple3D.horizon {
-	background:linear-gradient(#05A, #09C, #FFF 53%, #273509 55%);
+.Simple3D.horizon-day {
+	background-image:linear-gradient(#05A, #09C, #FFF 53%, #273509 55%);
+}
+.Simple3D.horizon-night {
+	background-image:linear-gradient(#0a0a12, #131524 52%, #f06c1a 55%, #020202 55%);
 }
 .Simple3D * {
 	position:absolute;
 	transform-style:preserve-3d;
+	bottom:0px;
+}
+.Simple3D .top {
+	top:0px;
+}
+.Simple3D .bottom {
 	bottom:0px;
 }
 .Simple3D .left {
