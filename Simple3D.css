@@ -37,16 +37,28 @@
     75%  {transform:rotateX(40deg);}
 	100% {transform:rotateX(0deg);}
 }
+@keyframes lightning-efect {
+	0%	 {opacity:0;}
+	89%	 {opacity:0;}
+	90%	 {opacity:0.6;}
+	95%	 {opacity:0;}
+	98%  {opacity:0.6;}
+}
 
-.Simple3D {
-	display:block;
+html.fullscreen,
+html.fullscreen body,
+html.fullscreen .Simple3D {
 	width:100%;
 	height:100%;
 	margin:0px;
 	padding:0px;
+}
+
+.Simple3D {
+	display:block;
 	position:relative;
 	perspective:900px;
-	overflow:hidden;
+	overflow:hidden !important;
 }
 .Simple3D.bluesky {
 	background-image:linear-gradient(#05A, #09C);
@@ -56,6 +68,14 @@
 }
 .Simple3D.horizon-night {
 	background-image:linear-gradient(#0a0a12, #131524 52%, #f06c1a 55%, #020202 55%);
+}
+.Simple3D-library {
+	position:relative;
+	display:inline-block;
+	overflow:hidden;
+}
+.Simple3D-library * {
+	position:absolute;
 }
 .Simple3D * {
 	position:absolute;
@@ -110,6 +130,47 @@
 	bottom:0px !important;
 	transform-origin:0px 100%;
 }
+.Simple3D .light,
+.Simple3D .shadow,
+.Simple3D .filter {
+	width:100%;
+	height:100%;
+}
+.Simple3D .light {
+	background:#FFF;
+}
+.Simple3D.night .shadow {
+	background:#000;
+	opacity:0.9;
+}
+.Simple3D .filter {
+	z-index:10;
+}
+.Simple3D .filter.lantern-light {
+	background:radial-gradient(closest-side at 50% 50%, rgba(255,255,0,0.1), rgba(0,0,0,0.9) 90%);
+}
+.Simple3D .filter.lightning {
+	background-color:#FFF;
+	opacity:0.5;
+	animation-name:lightning-efect;
+    animation-duration:5s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+	
+}
+.Simple3D .light.top-light {
+	background:linear-gradient(to top, rgba(0,0,0,0), rgba(255,255,255,0.4)) !important;
+}
+.Simple3D .light.bottom-light {
+	background:linear-gradient(to bottom, rgba(0,0,0,0), rgba(255,255,255,0.4)) !important;
+}
+.Simple3D.night .shadow.top-shadow {
+	opacity:0.6;
+}
+.Simple3D.night .shadow.side-shadow {
+	background:linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.9) 90%);
+	opacity:1;
+}
 .Simple3D .rotateY {
 	animation-name:rotateY;
     animation-duration:4s;
@@ -142,20 +203,22 @@
 	background:#8a391e;
 }
 .Simple3D .door.left {
-	left:0px;
 	transform-origin:0% 0%;
 }
 .Simple3D .door.right {
-	right:0px;
 	transform-origin:100% 0%;
 }
 .Simple3D .door.left.open-out,
-.Simple3D .door.right.open-in {
+.Simple3D .door.right.open-in,
+.Simple3D .door.left.open-out-hover:hover,
+.Simple3D .door.right.open-in-hover:hover {
 	animation-name:open-door1;
     animation-duration:3s;
 }
 .Simple3D .door.left.open-in,
-.Simple3D .door.right.open-out {
+.Simple3D .door.right.open-out,
+.Simple3D .door.left.open-in-hover:hover,
+.Simple3D .door.right.open-out-hover:hover {
 	animation-name:open-door2;
     animation-duration:3s;
 }
@@ -2533,8 +2596,8 @@
 	background-position:-1100% 2300%;
 }
 .Simple3D .house {
-	width:800px;
-	height:500px;
+	width:400px;
+	height:250px;
 }
 .Simple3D .house > .wall {
 	height:100%;
@@ -2550,7 +2613,6 @@
 .Simple3D .house > .floor {
 	background-color:#777;
 }
-.Simple3D .house > .frontwall,
 .Simple3D .house > .backwall {
 	clip-path:polygon(50% 0, 0 25%, 0 100%, 100% 100%, 100% 25%);
 }
@@ -2620,10 +2682,12 @@
 	height:40%
 }
 .Simple3D .person .arm.left {
-	left:0px;
+	left:auto;
+	right:0px;
 }
 .Simple3D .person .arm.right {
-	right:0px;
+	left:0px;
+	right:auto;
 }
 .Simple3D .person .leg {
 	top:60%;
@@ -2631,10 +2695,12 @@
 	height:40%;
 }
 .Simple3D .person .leg.left {
-	left:20%;
+	left:auto;
+	right:20%;
 }
 .Simple3D .person .leg.right {
-	right:20%;
+	left:20%;
+	right:auto;
 }
 .Simple3D .person .arm,
 .Simple3D .person .leg {
@@ -2825,30 +2891,31 @@
 	top:0px;
 	left:25%;
 }
-.Simple3D .wartank .turret .frontface,
-.Simple3D .wartank .turret .backface,
-.Simple3D .wartank .turret .leftface,
-.Simple3D .wartank .turret .rightface {
-	background-image:linear-gradient(rgba(255,255,255,0.3), rgba(0,0,0,0));
-}
 .Simple3D .wartank .turret .gun-barrel {
 	width:20%;
 	height:700%;
 	left:40%;
-	background-image:linear-gradient(to left, rgba(0,0,0,0.4), rgba(0,0,0,0), rgba(255,255,255,0.3), rgba(0,0,0,0), rgba(0,0,0,0.4));
 	background-color:transparent;
 	transform-origin:50% 92%;
 	transform:rotateX(-90deg) rotateY(90deg);
 }
 .Simple3D .wartank .turret .gun-barrel .slice {
-	background-size:2400% 100%;
+	background-size:2400% auto;
 }
 .Simple3D .wartank .glacis-plate {
 	width:60%;
 	height:50%;
 	top:30%;
 	left:20%;
-	background:none;
+	background:none !important;
+}
+.Simple3D .wartank .turret > div {
+	background-size:auto 200%;
+}
+.Simple3D .wartank .glacis-plate .leftface,
+.Simple3D .wartank .glacis-plate .rightface,
+.Simple3D .wartank .wheel .plate {
+	background-size:auto 100%;
 }
 .Simple3D .wartank .glacis-plate .frontface > * {
 	width:100%;
@@ -2857,15 +2924,14 @@
 .Simple3D .wartank .glacis-plate .upper-front-plate,
 .Simple3D .wartank .glacis-plate .lower-front-plate {
 	width:100%;
+	background-size:50% auto;
 }
 .Simple3D .wartank .glacis-plate .upper-front-plate {
 	top:0px;
-	background-image:linear-gradient(rgba(0,0,0,0), rgba(255,255,255,0.4));
 	transform-origin:50% 0px;
 }
 .Simple3D .wartank .glacis-plate .lower-front-plate {
 	bottom:0px;
-	background-image:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8));
 	transform-origin:50% 100%;
 }
 .Simple3D .wartank .glacis-plate .frontface .upper-front-plate {
@@ -2887,7 +2953,7 @@
 .Simple3D .wartank .wheel {
 	width:20%;
 	height:60%;
-	background:none;
+	background:none !important;
 }
 .Simple3D .wartank .wheel .plate {
 	width:1280%;
@@ -2896,8 +2962,10 @@
 	left:50%;
 	transform:translateX(-50%) rotateY(90deg);
 	clip-path:polygon(0% 0%, 0% 45%, 1% 56%, 14% 100%, 86% 100%, 99% 56%, 100% 45%, 100% 0%);
+}
+.Simple3D .wartank .wheel .plate,
+.Simple3D .wartank .wheel .plate > div {
 	border-radius:7% / 34%;
-	background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0));
 }
 .Simple3D .wartank .wheel .track {
 	width:100%;
@@ -2971,7 +3039,7 @@
 }
 .Simple3D .wartank .wheel .frontface,
 .Simple3D .wartank .glacis-plate .frontface {
-	background:none;
+	background:none !important;
 	transform:rotateX(90deg) translateY(250%) rotateX(-90deg);
 }
 .Simple3D .wartank .glacis-plate .leftface,
@@ -2987,6 +3055,10 @@
 }
 .Simple3D .wartank .wheel .backface,
 .Simple3D .wartank .glacis-plate .backface {
-	background:none;
+	background:none !important;
 	transform:rotateY(180deg) rotateX(90deg) translateY(250%) rotateX(-90deg);
+}
+.Simple3D .water {
+	background-color:#09C;
+	opacity:0.5;
 }

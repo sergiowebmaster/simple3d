@@ -18,7 +18,44 @@ var Simple3D =
 	},
 	Screen: function(elementId)
 	{
+		this.bkg = {x:0, y:0, v:50};
 		this.tag = Simple3D.byID(elementId);
+		
+		var ref = this;
+		
+		this.updateBkgSize = function(zoom)
+		{
+			this.tag.style.backgroundSize = "auto " + zoom + "%";
+		};
+		
+		this.updateBkgPos = function()
+		{
+			this.tag.style.backgroundPosition = this.bkg.x + "px " + this.bkg.y + "px";
+		};
+		
+		this.moveBkgToUp = function()
+		{
+			this.bkg.y += this.bkg.v;
+			this.updateBkgPos();
+		};
+		
+		this.moveBkgToDown = function()
+		{
+			this.bkg.y -= this.bkg.v;
+			this.updateBkgPos();
+		};
+		
+		this.moveBkgToLeft = function()
+		{
+			this.bkg.x -= this.bkg.v;
+			this.updateBkgPos();
+		};
+		
+		this.moveBkgToRight = function()
+		{
+			this.bkg.x += this.bkg.v;
+			this.updateBkgPos();
+		};
 		
 		this.setPerspective = function(px)
 		{
@@ -34,8 +71,10 @@ var Simple3D =
 		{
 			this.tag.onmousemove = function(event)
 			{
-				this.style.perspectiveOrigin = (this.offsetWidth - event.clientX) + "px " + (this.offsetHeight - event.clientY) + "px";
-				this.style.backgroundPosition = ((this.offsetWidth / 2) - event.clientX) + "px " + ((this.offsetHeight/2) - event.clientY) + "px";
+				ref.setPerspectiveOrigin((this.offsetWidth - event.clientX) + "px", (this.offsetHeight - event.clientY) + "px");
+				ref.bkg.x = (this.offsetWidth / 2) - event.clientX;
+				ref.bkg.y = (this.offsetHeight/2) - event.clientY;
+				ref.updateBkgPos();
 			};
 		};
 	},
@@ -74,10 +113,20 @@ var Simple3D =
 			this.obj.className = className;
 		};
 		
+		this.addClass = function(className)
+		{
+			this.obj.className = this.obj.className + " " + className;
+		};
+		
 		this.adjustOrigin = function()
 		{
 			this.setOrigin(-this.x, -this.y, -this.z);
 		};
+		
+		this.centralize = function()
+		{
+			this.obj.style.left = "-" + (this.obj.offsetWidth / 2) + "px";
+		}
 		
 		this.transform = function()
 		{
@@ -203,439 +252,293 @@ var Simple3D =
 			this.onMove();
 		};
 		
-		this.moveUp = function()
-		{
-			switch(Simple3D.formatAngle(this.rz))
-			{
-				case 15:
-					this.x += this.getV3();
-					this.y -= this.velocity;
-					this.move();
-					break;
-					
-				case 30:
-					this.x += this.getV2();
-					this.y -= this.velocity;
-					this.move();
-					break;
-					
-				case 45:
-					this.x += this.velocity;
-					this.y -= this.velocity;
-					this.move();
-					break;
-					
-				case 60:
-					this.x += this.velocity;
-					this.y -= this.getV2();
-					this.move();
-					break;
-					
-				case 75:
-					this.x += this.velocity;
-					this.y -= this.getV3();
-					this.move();
-					break;
-					
-				case 90:
-					this.x += this.velocity;
-					this.move();
-					break;
-					
-				case 105:
-					this.x += this.velocity;
-					this.y += this.getV3();
-					this.move();
-					break;
-					
-				case 120:
-					this.x += this.velocity;
-					this.y += this.getV2();
-					this.move();
-					break;
-					
-				case 135:
-					this.x += this.velocity;
-					this.y += this.velocity;
-					this.move();
-					break;
-					
-				case 150:
-					this.x += this.getV2();
-					this.y += this.velocity;
-					this.move();
-					break;
-					
-				case 165:
-					this.x += this.getV3();
-					this.y += this.velocity;
-					this.move();
-					break;
-					
-				case 180:
-					this.y += this.velocity;
-					this.move();
-					break;
-					
-				case 195:
-					this.x -= this.getV3();
-					this.y += this.velocity;
-					this.move();
-					break;
-					
-				case 210:
-					this.x -= this.getV2();
-					this.y += this.velocity;
-					this.move();
-					break;
-					
-				case 225:
-					this.x -= this.velocity;
-					this.y += this.velocity;
-					this.move();
-					break;
-					
-				case 240:
-					this.x -= this.velocity;
-					this.y += this.getV2();
-					this.move();
-					break;
-					
-				case 255:
-					this.x -= this.velocity;
-					this.y += this.getV3();
-					this.move();
-					break;
-					
-				case 270:
-					this.x -= this.velocity;
-					this.move();
-					break;
-					
-				case 285:
-					this.x -= this.velocity;
-					this.y -= this.getV3();
-					this.move();
-					break;
-					
-				case 300:
-					this.x -= this.velocity;
-					this.y -= this.getV2();
-					this.move();
-					break;
-					
-				case 315:
-					this.x -= this.velocity;
-					this.y -= this.velocity;
-					this.move();
-					break;
-					
-				case 330:
-					this.x -= this.velocity;
-					this.y -= this.velocity;
-					this.move();
-					break;
-					
-				case 345:
-					this.x -= this.getV3();
-					this.y -= this.velocity;
-					this.move();
-					break;
-					
-				case 0:
-					this.y -= this.velocity;
-					this.move();
-					break;
-			}
-		};
-		
 		this.moveDown = function()
 		{
 			switch(Simple3D.formatAngle(this.rz))
 			{
 				case 15:
-					this.x -= this.getV3();
-					this.y += this.velocity;
+					this.x += this.getV3();
+					this.y -= this.velocity;
 					this.move();
 					break;
 					
 				case 30:
+					this.x += this.getV2();
+					this.y -= this.velocity;
+					this.move();
+					break;
+					
+				case 45:
+					this.x += this.velocity;
+					this.y -= this.velocity;
+					this.move();
+					break;
+					
+				case 60:
+					this.x += this.velocity;
+					this.y -= this.getV2();
+					this.move();
+					break;
+					
+				case 75:
+					this.x += this.velocity;
+					this.y -= this.getV3();
+					this.move();
+					break;
+					
+				case 90:
+					this.x += this.velocity;
+					this.move();
+					break;
+					
+				case 105:
+					this.x += this.velocity;
+					this.y += this.getV3();
+					this.move();
+					break;
+					
+				case 120:
+					this.x += this.velocity;
+					this.y += this.getV2();
+					this.move();
+					break;
+					
+				case 135:
+					this.x += this.velocity;
+					this.y += this.velocity;
+					this.move();
+					break;
+					
+				case 150:
+					this.x += this.getV2();
+					this.y += this.velocity;
+					this.move();
+					break;
+					
+				case 165:
+					this.x += this.getV3();
+					this.y += this.velocity;
+					this.move();
+					break;
+					
+				case 180:
+					this.y += this.velocity;
+					this.move();
+					break;
+					
+				case 195:
+					this.x -= this.getV3();
+					this.y += this.velocity;
+					this.move();
+					break;
+					
+				case 210:
 					this.x -= this.getV2();
 					this.y += this.velocity;
 					this.move();
 					break;
 					
-				case 45:
+				case 225:
 					this.x -= this.velocity;
 					this.y += this.velocity;
 					this.move();
 					break;
 					
-				case 60:
+				case 240:
 					this.x -= this.velocity;
 					this.y += this.getV2();
 					this.move();
 					break;
 					
-				case 75:
+				case 255:
 					this.x -= this.velocity;
 					this.y += this.getV3();
 					this.move();
 					break;
 					
-				case 90:
+				case 270:
 					this.x -= this.velocity;
 					this.move();
 					break;
 					
-				case 105:
+				case 285:
 					this.x -= this.velocity;
 					this.y -= this.getV3();
 					this.move();
 					break;
 					
-				case 120:
+				case 300:
 					this.x -= this.velocity;
 					this.y -= this.getV2();
 					this.move();
 					break;
 					
-				case 135:
+				case 315:
 					this.x -= this.velocity;
 					this.y -= this.velocity;
 					this.move();
 					break;
 					
-				case 150:
-					this.x -= this.getV2();
+				case 330:
+					this.x -= this.velocity;
 					this.y -= this.velocity;
 					this.move();
 					break;
 					
-				case 165:
+				case 345:
 					this.x -= this.getV3();
 					this.y -= this.velocity;
 					this.move();
 					break;
 					
-				case 180:
-					this.y -= this.velocity;
-					this.move();
-					break;
-					
-				case 195:
-					this.x += this.getV3();
-					this.y -= this.velocity;
-					this.move();
-					break;
-					
-				case 210:
-					this.x += this.getV2();
-					this.y -= this.velocity;
-					this.move();
-					break;
-					
-				case 225:
-					this.x += this.velocity;
-					this.y -= this.velocity;
-					this.move();
-					break;
-					
-				case 240:
-					this.x += this.velocity;
-					this.y -= this.getV2();
-					this.move();
-					break;
-					
-				case 255:
-					this.x += this.velocity;
-					this.y -= this.getV3();
-					this.move();
-					break;
-					
-				case 270:
-					this.x += this.velocity;
-					this.move();
-					break;
-					
-				case 285:
-					this.x += this.velocity;
-					this.y += this.getV3();
-					this.move();
-					break;
-					
-				case 300:
-					this.x += this.velocity;
-					this.y += this.getV2();
-					this.move();
-					break;
-					
-				case 315:
-					this.x += this.velocity;
-					this.y += this.velocity;
-					this.move();
-					break;
-					
-				case 330:
-					this.x += this.getV2();
-					this.y += this.velocity;
-					this.move();
-					break;
-					
-				case 345:
-					this.x += this.getV3();
-					this.y += this.velocity;
-					this.move();
-					break;
-					
 				case 0:
-					this.y += this.velocity;
+					this.y -= this.velocity;
 					this.move();
 					break;
 			}
 		};
 		
-		this.moveRight = function()
+		this.moveUp = function()
 		{
-			switch(Simple3D.formatAngle(this.ry))
+			switch(Simple3D.formatAngle(this.rz))
 			{
 				case 15:
-					this.x -= this.velocity;
-					this.z += this.getV3();
+					this.x -= this.getV3();
+					this.y += this.velocity;
 					this.move();
 					break;
 					
 				case 30:
-					this.x -= this.velocity;
-					this.z += this.getV2();
+					this.x -= this.getV2();
+					this.y += this.velocity;
 					this.move();
 					break;
 					
 				case 45:
 					this.x -= this.velocity;
-					this.z += this.velocity;
+					this.y += this.velocity;
 					this.move();
 					break;
 					
 				case 60:
-					this.x -= this.getV2();
-					this.z += this.velocity;
+					this.x -= this.velocity;
+					this.y += this.getV2();
 					this.move();
 					break;
 					
 				case 75:
-					this.x -= this.getV3();
-					this.z += this.velocity;
+					this.x -= this.velocity;
+					this.y += this.getV3();
 					this.move();
 					break;
 					
 				case 90:
-					this.z += this.velocity;
+					this.x -= this.velocity;
 					this.move();
 					break;
 					
 				case 105:
-					this.x += this.getV3();
-					this.z += this.velocity;
+					this.x -= this.velocity;
+					this.y -= this.getV3();
 					this.move();
 					break;
 					
 				case 120:
-					this.x += this.getV2();
-					this.z += this.velocity;
+					this.x -= this.velocity;
+					this.y -= this.getV2();
 					this.move();
 					break;
 					
 				case 135:
-					this.x += this.getV3();
-					this.z += this.velocity;
+					this.x -= this.velocity;
+					this.y -= this.velocity;
 					this.move();
 					break;
 					
 				case 150:
-					this.x += this.getV2();
-					this.z += this.velocity;
+					this.x -= this.getV2();
+					this.y -= this.velocity;
 					this.move();
 					break;
 					
 				case 165:
-					this.x += this.velocity;
-					this.z += this.velocity;
+					this.x -= this.getV3();
+					this.y -= this.velocity;
 					this.move();
 					break;
 					
 				case 180:
-					this.x += this.velocity;
+					this.y -= this.velocity;
 					this.move();
 					break;
 					
 				case 195:
-					this.x += this.velocity;
-					this.z -= this.getV3();
+					this.x += this.getV3();
+					this.y -= this.velocity;
 					this.move();
 					break;
 					
 				case 210:
-					this.x += this.velocity;
-					this.z -= this.getV2();
+					this.x += this.getV2();
+					this.y -= this.velocity;
 					this.move();
 					break;
 					
 				case 225:
 					this.x += this.velocity;
-					this.z -= this.velocity;
+					this.y -= this.velocity;
 					this.move();
 					break;
 					
 				case 240:
-					this.x += this.getV2();
-					this.z -= this.velocity;
+					this.x += this.velocity;
+					this.y -= this.getV2();
 					this.move();
 					break;
 					
 				case 255:
-					this.x += this.getV3();
-					this.z -= this.velocity;
+					this.x += this.velocity;
+					this.y -= this.getV3();
 					this.move();
 					break;
 					
 				case 270:
-					this.z -= this.velocity;
+					this.x += this.velocity;
 					this.move();
 					break;
 					
 				case 285:
-					this.x -= this.getV3();
-					this.z -= this.velocity;
+					this.x += this.velocity;
+					this.y += this.getV3();
 					this.move();
 					break;
 					
 				case 300:
-					this.x -= this.getV2();
-					this.z -= this.velocity;
+					this.x += this.velocity;
+					this.y += this.getV2();
 					this.move();
 					break;
 					
 				case 315:
-					this.x -= this.velocity;
-					this.z -= this.velocity;
+					this.x += this.velocity;
+					this.y += this.velocity;
 					this.move();
 					break;
 					
 				case 330:
-					this.x -= this.velocity;
-					this.z -= this.getV2();
+					this.x += this.getV2();
+					this.y += this.velocity;
 					this.move();
 					break;
 					
 				case 345:
-					this.x -= this.velocity;
-					this.z -= this.getV3();
+					this.x += this.getV3();
+					this.y += this.velocity;
 					this.move();
 					break;
 					
 				case 0:
-					this.x -= this.velocity;
+					this.y += this.velocity;
 					this.move();
 					break;
 			}
@@ -646,6 +549,152 @@ var Simple3D =
 			switch(Simple3D.formatAngle(this.ry))
 			{
 				case 15:
+					this.x -= this.velocity;
+					this.z += this.getV3();
+					this.move();
+					break;
+					
+				case 30:
+					this.x -= this.velocity;
+					this.z += this.getV2();
+					this.move();
+					break;
+					
+				case 45:
+					this.x -= this.velocity;
+					this.z += this.velocity;
+					this.move();
+					break;
+					
+				case 60:
+					this.x -= this.getV2();
+					this.z += this.velocity;
+					this.move();
+					break;
+					
+				case 75:
+					this.x -= this.getV3();
+					this.z += this.velocity;
+					this.move();
+					break;
+					
+				case 90:
+					this.z += this.velocity;
+					this.move();
+					break;
+					
+				case 105:
+					this.x += this.getV3();
+					this.z += this.velocity;
+					this.move();
+					break;
+					
+				case 120:
+					this.x += this.getV2();
+					this.z += this.velocity;
+					this.move();
+					break;
+					
+				case 135:
+					this.x += this.getV3();
+					this.z += this.velocity;
+					this.move();
+					break;
+					
+				case 150:
+					this.x += this.getV2();
+					this.z += this.velocity;
+					this.move();
+					break;
+					
+				case 165:
+					this.x += this.velocity;
+					this.z += this.velocity;
+					this.move();
+					break;
+					
+				case 180:
+					this.x += this.velocity;
+					this.move();
+					break;
+					
+				case 195:
+					this.x += this.velocity;
+					this.z -= this.getV3();
+					this.move();
+					break;
+					
+				case 210:
+					this.x += this.velocity;
+					this.z -= this.getV2();
+					this.move();
+					break;
+					
+				case 225:
+					this.x += this.velocity;
+					this.z -= this.velocity;
+					this.move();
+					break;
+					
+				case 240:
+					this.x += this.getV2();
+					this.z -= this.velocity;
+					this.move();
+					break;
+					
+				case 255:
+					this.x += this.getV3();
+					this.z -= this.velocity;
+					this.move();
+					break;
+					
+				case 270:
+					this.z -= this.velocity;
+					this.move();
+					break;
+					
+				case 285:
+					this.x -= this.getV3();
+					this.z -= this.velocity;
+					this.move();
+					break;
+					
+				case 300:
+					this.x -= this.getV2();
+					this.z -= this.velocity;
+					this.move();
+					break;
+					
+				case 315:
+					this.x -= this.velocity;
+					this.z -= this.velocity;
+					this.move();
+					break;
+					
+				case 330:
+					this.x -= this.velocity;
+					this.z -= this.getV2();
+					this.move();
+					break;
+					
+				case 345:
+					this.x -= this.velocity;
+					this.z -= this.getV3();
+					this.move();
+					break;
+					
+				case 0:
+					this.x -= this.velocity;
+					this.move();
+					break;
+			}
+		};
+		
+		this.moveRight = function()
+		{
+			switch(Simple3D.formatAngle(this.ry))
+			{
+				case 15:
 					this.x += this.velocity;
 					this.z -= this.getV3();
 					this.move();
@@ -787,7 +836,7 @@ var Simple3D =
 			}
 		};
 		
-		this.moveBack = function()
+		this.moveFoward = function()
 		{
 			switch(Simple3D.formatAngle(this.ry))
 			{
@@ -933,7 +982,7 @@ var Simple3D =
 			}
 		};
 		
-		this.moveFoward = function()
+		this.moveBack = function()
 		{
 			switch(Simple3D.formatAngle(this.ry))
 			{
@@ -1099,12 +1148,12 @@ var Simple3D =
 		
 		this.rotateTop = function()
 		{
-			this.setRotateX(this.rx + this.r);
+			this.setRotateX(this.rx - this.r);
 		};
 		
 		this.rotateDown = function()
 		{
-			this.setRotateX(this.rx - this.r);
+			this.setRotateX(this.rx + this.r);
 		};
 		
 		this.rotateLeft = function()
