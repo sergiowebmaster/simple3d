@@ -94,37 +94,6 @@ html.fullscreen .Simple3D {
 .Simple3D .right {
 	right:0px;
 }
-.Simple3D .topface,
-.Simple3D .bottomface,
-.Simple3D .leftface,
-.Simple3D .rightface,
-.Simple3D .frontface,
-.Simple3D .backface {
-	width:100%;
-	height:100%;
-}
-.Simple3D .topface {
-	top:0px;
-	transform:translateY(-50%) rotateX(90deg);
-}
-.Simple3D .bottomface {
-	bottom:0px;
-	transform:translateY(50%) rotateX(-90deg);
-}
-.Simple3D .leftface {
-	left:0px;
-	transform:translateX(-50%) rotateY(-90deg);
-}
-.Simple3D .rightface {
-	right:0px;
-	transform:translateX(50%) rotateY(90deg);
-}
-.Simple3D .frontface {
-	transform:rotateX(90deg) translateY(50%) rotateX(-90deg);
-}
-.Simple3D .backface {
-	transform:rotateY(180deg) rotateX(90deg) translateY(50%) rotateX(-90deg);
-}
 .Simple3D .viewpoint {
 	left:50%;
 	bottom:0px !important;
@@ -139,7 +108,7 @@ html.fullscreen .Simple3D {
 .Simple3D .light {
 	background:#FFF;
 }
-.Simple3D.night .shadow {
+.Simple3D .shadow {
 	background:#000;
 	opacity:0.9;
 }
@@ -164,10 +133,10 @@ html.fullscreen .Simple3D {
 .Simple3D .light.bottom-light {
 	background:linear-gradient(to bottom, rgba(0,0,0,0), rgba(255,255,255,0.4)) !important;
 }
-.Simple3D.night .shadow.top-shadow {
+.Simple3D .shadow.top-shadow {
 	opacity:0.6;
 }
-.Simple3D.night .shadow.side-shadow {
+.Simple3D .shadow.side-shadow {
 	background:linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.9) 90%);
 	opacity:1;
 }
@@ -254,330 +223,359 @@ html.fullscreen .Simple3D {
 .Simple3D .torus.transparent > * > * {
 	opacity:0.5;
 }
-.Simple3D .cube {
-	width:300px;
-	height:300px;
-}
-.Simple3D .cube.linear > * {
-	background-size:400% 300%;
-}
-.Simple3D .cube > .face {
+.Simple3D .cube > .face,
+.Simple3D .house > .wall {
 	width:100%;
 	height:100%;
+	transform-origin:50% 50%;
 }
-.Simple3D .cube > .leftface,
-.Simple3D .cube > .rightface,
-.Simple3D .cube > .frontface,
-.Simple3D .cube > .backface,
-.Simple3D .cube > .topface,
-.Simple3D .cube > .bottomface {
-	background-image:inherit;
-	background-color:#029;
+.Simple3D .pyramid > .face,
+.Simple3D .cone > .slice {
+	height:112%;
 }
-.Simple3D .cube > .leftface,
+.Simple3D .pyramid > .face,
+.Simple3D .cone > .slice ,
+.Simple3D .triangle {
+  	background-color:#FE0;
+	clip-path:polygon(50% 0, 0 100%, 100% 100%);
+}
+.Simple3D .leftface,
 .Simple3D .house > .leftwall {
 	background-position:0% 100%;
 	transform:translateX(-50%) rotateY(-90deg);
 	left:0px;
 }
-.Simple3D .cube > .rightface,
+.Simple3D .frontface,
+.Simple3D .house > .frontwall {
+	background-position:100% 100%;
+	transform:rotateY(-90deg) translateX(50%) rotateY(90deg);
+}
+.Simple3D .rightface,
 .Simple3D .house > .rightwall {
 	background-position:200% 100%;
 	transform:translateX(50%) rotateY(90deg);
 	right:0px;
 }
-.Simple3D .cube > .frontface,
-.Simple3D .house > .frontwall {
-	background-position:100% 100%;
-	transform:rotateY(-90deg) translateX(50%) rotateY(90deg);
-}
-.Simple3D .cube > .backface,
+.Simple3D .backface,
 .Simple3D .house > .backwall {
 	background-position:300% 100%;
-	transform:rotateY(-90deg) translateX(-50%) rotateY(90deg);
+	transform:rotateY(90deg) translateX(50%) rotateY(90deg);
 }
-.Simple3D .cube > .topface,
+.Simple3D .topface,
 .Simple3D .house > .ceiling {
 	background-position:100% 0%;
 	transform:translateY(-50%) rotateX(90deg);
 	top:0px;
 }
-.Simple3D .house > .ceiling {
-	top:25%;
-}
-.Simple3D .cube > .bottomface,
+.Simple3D .bottomface,
 .Simple3D .house > .floor {
 	background-position:100% 200%;
 	transform:translateY(-50%) rotateX(-90deg);
 	top:100%;
 }
-.Simple3D .cube > .topface,
-.Simple3D .cube > .bottomface,
-.Simple3D .house > .ceiling,
-.Simple3D .house > .floor {
-	height:0px;
-	padding-top:100%;
-}
-.Simple3D .cylinder {
-	width:200px;
-	height:400px;
-}
-.Simple3D .cylinder > *,
-.Simple3D .sphere > * > *,
-.Simple3D .torus > * > * {
-	width:15%;
-	height:100%;
-	left:41%;
+.Simple3D .sphere > .arc,
+.Simple3D .torus > .ring {
+	background-size:inherit;
 	background-image:inherit;
 }
-.Simple3D .cylinder > * {
-	background-color:#900;
+.Simple3D .cylinder > .slice,
+.Simple3D .cone > .slice,
+.Simple3D .sphere > .arc > .slice,
+.Simple3D .torus > .ring > .slice {
+	width:13.2%;
+	left:43.4%;
+}
+.Simple3D .cube > .face,
+.Simple3D .cylinder > .slice,
+.Simple3D .cone > .slice,
+.Simple3D .sphere > .arc > .slice,
+.Simple3D .torus > .ring > .slice,
+.Simple3D .pyramid > .face {
+	background-image:inherit;
+}
+.Simple3D .cylinder > .slice,
+.Simple3D .sphere > .arc > .slice,
+.Simple3D .torus > .ring > .slice {
+	height:100%;
 }
 .Simple3D .cylinder > .slice1,
 .Simple3D .cone > .slice1 {
 	background-position:0% 0%;
 }
 .Simple3D .cylinder > .slice1,
-.Simple3D .sphere > * > .slice1,
-.Simple3D .torus > * > .slice1 {
-	transform:rotateY(0deg) translateX(-365%) rotateY(-90deg);
+.Simple3D .sphere > .arc > .slice1,
+.Simple3D .torus > .ring > .slice1 {
+	transform:rotateY(0deg) translateX(-375%) rotateY(-90deg);
 }
 .Simple3D .cylinder > .slice2,
 .Simple3D .cone > .slice2 {
 	background-position:-100% 0%;
 }
 .Simple3D .cylinder > .slice2,
-.Simple3D .sphere > * > .slice2,
-.Simple3D .torus > * > .slice2 {
-	transform:rotateY(15deg) translateX(-365%) rotateY(-90deg);
+.Simple3D .sphere > .arc > .slice2,
+.Simple3D .torus > .ring > .slice2 {
+	transform:rotateY(15deg) translateX(-375%) rotateY(-90deg);
 }
 .Simple3D .cylinder > .slice3,
 .Simple3D .cone > .slice3 {
 	background-position:-200% 0%;
 }
 .Simple3D .cylinder > .slice3,
-.Simple3D .sphere > * > .slice3,
-.Simple3D .torus > * > .slice3 {
-	transform:rotateY(30deg) translateX(-365%) rotateY(-90deg);
+.Simple3D .sphere > .arc > .slice3,
+.Simple3D .torus > .ring > .slice3 {
+	transform:rotateY(30deg) translateX(-375%) rotateY(-90deg);
 }
 .Simple3D .cylinder > .slice4,
 .Simple3D .cone > .slice4 {
 	background-position:-300% 0%;
 }
 .Simple3D .cylinder > .slice4,
-.Simple3D .sphere > * > .slice4,
-.Simple3D .torus > * > .slice4 {
-	transform:rotateY(45deg) translateX(-365%) rotateY(-90deg);
+.Simple3D .sphere > .arc > .slice4,
+.Simple3D .torus > .ring > .slice4 {
+	transform:rotateY(45deg) translateX(-375%) rotateY(-90deg);
 }
 .Simple3D .cylinder > .slice5,
 .Simple3D .cone > .slice5 {
 	background-position:-400% 0%;
 }
 .Simple3D .cylinder > .slice5,
-.Simple3D .sphere > * > .slice5,
-.Simple3D .torus > * > .slice5 {
-	transform:rotateY(60deg) translateX(-365%) rotateY(-90deg);
+.Simple3D .sphere > .arc > .slice5,
+.Simple3D .torus > .ring > .slice5 {
+	transform:rotateY(60deg) translateX(-375%) rotateY(-90deg);
 }
 .Simple3D .cylinder > .slice6,
 .Simple3D .cone > .slice6 {
 	background-position:-500% 0%;
 }
 .Simple3D .cylinder > .slice6,
-.Simple3D .sphere > * > .slice6,
-.Simple3D .torus > * > .slice6 {
-	transform:rotateY(75deg) translateX(-365%) rotateY(-90deg);
+.Simple3D .sphere > .arc > .slice6,
+.Simple3D .torus > .ring > .slice6 {
+	transform:rotateY(75deg) translateX(-375%) rotateY(-90deg);
 }
 .Simple3D .cylinder > .slice7,
 .Simple3D .cone > .slice7 {
 	background-position:-600% 0%;
 }
 .Simple3D .cylinder > .slice7,
-.Simple3D .sphere > * > .slice7,
-.Simple3D .torus > * > .slice7 {
-	transform:rotateY(90deg) translateX(-365%) rotateY(-90deg);
+.Simple3D .sphere > .arc > .slice7,
+.Simple3D .torus > .ring > .slice7 {
+	transform:rotateY(90deg) translateX(-375%) rotateY(-90deg);
 }
 .Simple3D .cylinder > .slice8,
 .Simple3D .cone > .slice8 {
 	background-position:-700% 0%;
 }
 .Simple3D .cylinder > .slice8,
-.Simple3D .sphere > * > .slice8,
-.Simple3D .torus > * > .slice8 {
-	transform:rotateY(105deg) translateX(-365%) rotateY(-90deg);
+.Simple3D .sphere > .arc > .slice8,
+.Simple3D .torus > .ring > .slice8 {
+	transform:rotateY(105deg) translateX(-375%) rotateY(-90deg);
 }
 .Simple3D .cylinder > .slice9,
 .Simple3D .cone > .slice9 {
 	background-position:-800% 0%;
 }
 .Simple3D .cylinder > .slice9,
-.Simple3D .sphere > * > .slice9,
-.Simple3D .torus > * > .slice9 {
-	transform:rotateY(120deg) translateX(-365%) rotateY(-90deg);
+.Simple3D .sphere > .arc > .slice9,
+.Simple3D .torus > .ring > .slice9 {
+	transform:rotateY(120deg) translateX(-375%) rotateY(-90deg);
 }
 .Simple3D .cylinder > .slice10,
 .Simple3D .cone > .slice10 {
 	background-position:-900% 0%;
 }
 .Simple3D .cylinder > .slice10,
-.Simple3D .sphere > * > .slice10,
-.Simple3D .torus > * > .slice10 {
-	transform:rotateY(135deg) translateX(-365%) rotateY(-90deg);
+.Simple3D .sphere > .arc > .slice10,
+.Simple3D .torus > .ring > .slice10 {
+	transform:rotateY(135deg) translateX(-375%) rotateY(-90deg);
 }
 .Simple3D .cylinder > .slice11,
 .Simple3D .cone > .slice11 {
 	background-position:-1000% 0%;
 }
 .Simple3D .cylinder > .slice11,
-.Simple3D .sphere > * > .slice11,
-.Simple3D .torus > * > .slice11 {
-	transform:rotateY(150deg) translateX(-365%) rotateY(-90deg);
+.Simple3D .sphere > .arc > .slice11,
+.Simple3D .torus > .ring > .slice11 {
+	transform:rotateY(150deg) translateX(-375%) rotateY(-90deg);
 }
 .Simple3D .cylinder > .slice12,
 .Simple3D .cone > .slice12 {
 	background-position:-1100% 0%;
 }
 .Simple3D .cylinder > .slice12,
-.Simple3D .sphere > * > .slice12,
-.Simple3D .torus > * > .slice12 {
-	transform:rotateY(165deg) translateX(-365%) rotateY(-90deg);
+.Simple3D .sphere > .arc > .slice12,
+.Simple3D .torus > .ring > .slice12 {
+	transform:rotateY(165deg) translateX(-375%) rotateY(-90deg);
 }
 .Simple3D .cylinder > .slice13,
 .Simple3D .cone > .slice13 {
 	background-position:-1200% 0%;
 }
 .Simple3D .cylinder > .slice13,
-.Simple3D .sphere > * > .slice13,
-.Simple3D .torus > * > .slice13 {
-	transform:rotateY(180deg) translateX(-365%) rotateY(-90deg);
+.Simple3D .sphere > .arc > .slice13,
+.Simple3D .torus > .ring > .slice13 {
+	transform:rotateY(180deg) translateX(-375%) rotateY(-90deg);
 }
 .Simple3D .cylinder > .slice14,
 .Simple3D .cone > .slice14 {
 	background-position:-1300% 0%;
 }
 .Simple3D .cylinder > .slice14,
-.Simple3D .sphere > * > .slice14,
-.Simple3D .torus > * > .slice14 {
-	transform:rotateY(195deg) translateX(-365%) rotateY(-90deg);
+.Simple3D .sphere > .arc > .slice14,
+.Simple3D .torus > .ring > .slice14 {
+	transform:rotateY(195deg) translateX(-375%) rotateY(-90deg);
 }
 .Simple3D .cylinder > .slice15,
 .Simple3D .cone > .slice15 {
 	background-position:-1400% 0%;
 }
 .Simple3D .cylinder > .slice15,
-.Simple3D .sphere > * > .slice15,
-.Simple3D .torus > * > .slice15 {
-	transform:rotateY(210deg) translateX(-365%) rotateY(-90deg);
+.Simple3D .sphere > .arc > .slice15,
+.Simple3D .torus > .ring > .slice15 {
+	transform:rotateY(210deg) translateX(-375%) rotateY(-90deg);
 }
 .Simple3D .cylinder > .slice16,
 .Simple3D .cone > .slice16 {
 	background-position:-1500% 0%;
 }
 .Simple3D .cylinder > .slice16,
-.Simple3D .sphere > * > .slice16,
-.Simple3D .torus > * > .slice16 {
-	transform:rotateY(225deg) translateX(-365%) rotateY(-90deg);
+.Simple3D .sphere > .arc > .slice16,
+.Simple3D .torus > .ring > .slice16 {
+	transform:rotateY(225deg) translateX(-375%) rotateY(-90deg);
 }
 .Simple3D .cylinder > .slice17,
 .Simple3D .cone > .slice17 {
 	background-position:-1600% 0%;
 }
 .Simple3D .cylinder > .slice17,
-.Simple3D .sphere > * > .slice17,
-.Simple3D .torus > * > .slice17 {
-	transform:rotateY(240deg) translateX(-365%) rotateY(-90deg);
+.Simple3D .sphere > .arc > .slice17,
+.Simple3D .torus > .ring > .slice17 {
+	transform:rotateY(240deg) translateX(-375%) rotateY(-90deg);
 }
 .Simple3D .cylinder > .slice18,
 .Simple3D .cone > .slice18 {
 	background-position:-1700% 0%;
 }
 .Simple3D .cylinder > .slice18,
-.Simple3D .sphere > * > .slice18,
-.Simple3D .torus > * > .slice18 {
-	transform:rotateY(255deg) translateX(-365%) rotateY(-90deg);
+.Simple3D .sphere > .arc > .slice18,
+.Simple3D .torus > .ring > .slice18 {
+	transform:rotateY(255deg) translateX(-375%) rotateY(-90deg);
 }
 .Simple3D .cylinder > .slice19,
 .Simple3D .cone > .slice19 {
 	background-position:-1800% 0%;
 }
 .Simple3D .cylinder > .slice19,
-.Simple3D .sphere > * > .slice19,
-.Simple3D .torus > * > .slice19 {
-	transform:rotateY(270deg) translateX(-365%) rotateY(-90deg);
+.Simple3D .sphere > .arc > .slice19,
+.Simple3D .torus > .ring > .slice19 {
+	transform:rotateY(270deg) translateX(-375%) rotateY(-90deg);
 }
 .Simple3D .cylinder > .slice20,
 .Simple3D .cone > .slice20 {
 	background-position:-1900% 0%;
 }
 .Simple3D .cylinder > .slice20,
-.Simple3D .sphere > * > .slice20,
-.Simple3D .torus > * > .slice20 {
-	transform:rotateY(285deg) translateX(-365%) rotateY(-90deg);
+.Simple3D .sphere > .arc > .slice20,
+.Simple3D .torus > .ring > .slice20 {
+	transform:rotateY(285deg) translateX(-375%) rotateY(-90deg);
 }
 .Simple3D .cylinder > .slice21,
 .Simple3D .cone > .slice21 {
 	background-position:-2000% 0%;
 }
 .Simple3D .cylinder > .slice21,
-.Simple3D .sphere > * > .slice21,
-.Simple3D .torus > * > .slice21 {
-	transform:rotateY(300deg) translateX(-365%) rotateY(-90deg);
+.Simple3D .sphere > .arc > .slice21,
+.Simple3D .torus > .ring > .slice21 {
+	transform:rotateY(300deg) translateX(-375%) rotateY(-90deg);
 }
 .Simple3D .cylinder > .slice22,
 .Simple3D .cone > .slice22 {
 	background-position:-2100% 0%;
 }
 .Simple3D .cylinder > .slice22,
-.Simple3D .sphere > * > .slice22,
-.Simple3D .torus > * > .slice22 {
-	transform:rotateY(315deg) translateX(-365%) rotateY(-90deg);
+.Simple3D .sphere > .arc > .slice22,
+.Simple3D .torus > .ring > .slice22 {
+	transform:rotateY(315deg) translateX(-375%) rotateY(-90deg);
 }
 .Simple3D .cylinder > .slice23,
 .Simple3D .cone > .slice23 {
 	background-position:-2200% 0%;
 }
 .Simple3D .cylinder > .slice23,
-.Simple3D .sphere > * > .slice23,
-.Simple3D .torus > * > .slice23 {
-	transform:rotateY(330deg) translateX(-365%) rotateY(-90deg);
+.Simple3D .sphere > .arc > .slice23,
+.Simple3D .torus > .ring > .slice23 {
+	transform:rotateY(330deg) translateX(-375%) rotateY(-90deg);
 }
 .Simple3D .cylinder > .slice24,
 .Simple3D .cone > .slice24 {
 	background-position:-2300% 0%;
 }
 .Simple3D .cylinder > .slice24,
-.Simple3D .sphere > * > .slice24,
-.Simple3D .torus > * > .slice24 {
-	transform:rotateY(345deg) translateX(-365%) rotateY(-90deg);
+.Simple3D .sphere > .arc > .slice24,
+.Simple3D .torus > .ring > .slice24 {
+	transform:rotateY(345deg) translateX(-375%) rotateY(-90deg);
 }
+.Simple3D .topface,
+.Simple3D .bottomface,
+.Simple3D .cone > .slice25,
+.Simple3D .cylinder > .slice25,
+.Simple3D .cylinder > .slice26,
+.Simple3D .house > .ceiling,
+.Simple3D .house > .floor {
+	width:100%;
+	height:0px !important;
+	padding-top:100% !important;
+	transform-origin:50% 50% !important;
+	left:0px;
+}
+.Simple3D .pyramid > .bottomface,
+.Simple3D .cone > .slice25,
 .Simple3D .cylinder > .slice25 {
 	transform:translateY(50%) rotateX(-90deg);
-	bottom:0px;
+    bottom:0px;
 }
-.Simple3D .cylinder > .slice26 {
-	transform:translateY(50%) rotateX(90deg);
-	bottom:100%;
+.Simple3D .pyramid > .bottomface,
+.Simple3D .cone > .slice25 {
+    clip-path:none;
 }
 .Simple3D .cylinder > .slice25,
 .Simple3D .cylinder > .slice26,
 .Simple3D .cone > .slice25 {
-	width:100%;
-	height:auto;
-	left:0px;
-	padding-top:100%;
 	border-radius:50%;
-	background-position:0% 0%;
+	overflow:hidden;
+}
+.Simple3D .cube {
+	width:300px;
+	height:300px;
+}
+.Simple3D .cube.linear > .face {
+	background-size:400% 300%;
+}
+.Simple3D .cube > .face {
+	background-color:#029;
+}
+.Simple3D .cylinder {
+	width:200px;
+	height:400px;
+}
+.Simple3D .cylinder > .slice {
+	background-color:#900;
+	background-size:auto 100%;
+}
+.Simple3D .cylinder > .slice26 {
+	transform:translateY(50%) rotateX(-90deg);
+	bottom:100%;
 }
 .Simple3D .sphere {
 	width:300px;
 	height:300px;
 	border-radius:50%;
 }
-.Simple3D .sphere > * {
+.Simple3D .sphere > .arc {
 	width:100%;
 	height:14%;
 	top:43%;
 }
-.Simple3D .sphere > * > * {
+.Simple3D .sphere > .arc > .slice {
 	background-color:#CCC;
 }
 .Simple3D .sphere > .arc1 {
@@ -1520,135 +1518,113 @@ html.fullscreen .Simple3D {
 	width:300px;
 	height:300px;
 }
-.Simple3D .pyramid > * {
+.Simple3D .pyramid > .face {
+	top:0px;
 	width:100%;
-}
-.Simple3D .pyramid > *,
-.Simple3D .cone > * {
-	left:0px;
-	height:auto;
-	padding-top:112%;
-  	background:inherit;
-  	background-size:cover;
   	transform-origin:50% 0%;
 }
-.Simple3D .pyramid > *,
-.Simple3D .cone > * ,
-.Simple3D .triangle {
-  	background-color:#FE0;
-	clip-path:polygon(50% 0, 0 100%, 100% 100%);
-}
-.Simple3D .pyramid > .face1 {
+.Simple3D .pyramid > .frontface {
 	background-position:0% 0%;
-	transform:rotateX(26deg);
+	transform:rotateX(26.5deg);
 }
-.Simple3D .pyramid > .face2 {
+.Simple3D .pyramid > .rightface {
 	background-position:-100% 0%;
-	transform:rotateY(90deg) rotateX(26deg);
+	transform:rotateY(90deg) rotateX(26.5deg);
 }
-.Simple3D .pyramid > .face3 {
+.Simple3D .pyramid > .backface {
 	background-position:-200% 0%;
-	transform:rotateY(180deg) rotateX(26deg);
+	transform:rotateY(180deg) rotateX(26.5deg);
 }
-.Simple3D .pyramid > .face4 {
+.Simple3D .pyramid > .leftface {
 	background-position:-300% 0%;
-	transform:rotateY(270deg) rotateX(26deg);
-}
-.Simple3D .pyramid > .face5,
-.Simple3D .cone > .slice25 {
-	background-position:0% 100%;
-	padding-top:100%;
-	clip-path:none;
-	transform-origin:50% 50%;
-	transform:translateY(50%) rotateX(90deg);
+	transform:rotateY(270deg) rotateX(26.5deg);
 }
 .Simple3D .cone {
 	width:200px;
 	height:200px;
 }
-.Simple3D .cone > * {
-	width:13.2%;
-	left:42.9%;
+.Simple3D .cone > .slice {
 	background-color:#090;
+  	transform-origin:50% 100%;
 }
 .Simple3D .cone > .slice1 {
-	transform:rotateY(-90deg) rotateX(26.5deg);
+	transform:rotateY(0deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
 }
 .Simple3D .cone > .slice2 {
-	transform:rotateY(-75deg) rotateX(26.5deg);
+	transform:rotateY(15deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
 }
 .Simple3D .cone > .slice3 {
-	transform:rotateY(-60deg) rotateX(26.5deg);
+	transform:rotateY(30deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
 }
 .Simple3D .cone > .slice4 {
-	transform:rotateY(-45deg) rotateX(26.5deg);
+	transform:rotateY(45deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
 }
 .Simple3D .cone > .slice5 {
-	transform:rotateY(-30deg) rotateX(26.5deg);
+	transform:rotateY(60deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
 }
 .Simple3D .cone > .slice6 {
-	transform:rotateY(-15deg) rotateX(26.5deg);
+	transform:rotateY(75deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
 }
 .Simple3D .cone > .slice7 {
-	transform:rotateY(0deg) rotateX(26.5deg);
+	transform:rotateY(90deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
 }
 .Simple3D .cone > .slice8 {
-	transform:rotateY(15deg) rotateX(26.5deg);
+	transform:rotateY(105deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
 }
 .Simple3D .cone > .slice9 {
-	transform:rotateY(30deg) rotateX(26.5deg);
+	transform:rotateY(120deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
 }
 .Simple3D .cone > .slice10 {
-	transform:rotateY(45deg) rotateX(26.5deg);
+	transform:rotateY(135deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
 }
 .Simple3D .cone > .slice11 {
-	transform:rotateY(60deg) rotateX(26.5deg);
+	transform:rotateY(150deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
 }
 .Simple3D .cone > .slice12 {
-	transform:rotateY(75deg) rotateX(26.5deg);
+	transform:rotateY(165deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
 }
 .Simple3D .cone > .slice13 {
-	transform:rotateY(90deg) rotateX(26.5deg);
+	transform:rotateY(180deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
 }
 .Simple3D .cone > .slice14 {
-	transform:rotateY(105deg) rotateX(26.5deg);
+	transform:rotateY(195deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
 }
 .Simple3D .cone > .slice15 {
-	transform:rotateY(120deg) rotateX(26.5deg);
+	transform:rotateY(210deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
 }
 .Simple3D .cone > .slice16 {
-	transform:rotateY(135deg) rotateX(26.5deg);
+	transform:rotateY(225deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
 }
 .Simple3D .cone > .slice17 {
-	transform:rotateY(150deg) rotateX(26.5deg);
+	transform:rotateY(240deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
 }
 .Simple3D .cone > .slice18 {
-	transform:rotateY(165deg) rotateX(26.5deg);
+	transform:rotateY(255deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
 }
 .Simple3D .cone > .slice19 {
-	transform:rotateY(180deg) rotateX(26.5deg);
+	transform:rotateY(270deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
 }
 .Simple3D .cone > .slice20 {
-	transform:rotateY(195deg) rotateX(26.5deg);
+	transform:rotateY(285deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
 }
 .Simple3D .cone > .slice21 {
-	transform:rotateY(210deg) rotateX(26.5deg);
+	transform:rotateY(300deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
 }
 .Simple3D .cone > .slice22 {
-	transform:rotateY(225deg) rotateX(26.5deg);
+	transform:rotateY(315deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
 }
 .Simple3D .cone > .slice23 {
-	transform:rotateY(240deg) rotateX(26.5deg);
+	transform:rotateY(330deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
 }
 .Simple3D .cone > .slice24 {
-	transform:rotateY(255deg) rotateX(26.5deg);
+	transform:rotateY(345deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
 }
 .Simple3D .torus {
 	width:200px;
 	height:200px;
 	border-radius:50%;
 }
-.Simple3D .torus > * {
+.Simple3D .torus > .ring {
 	width:30%;
 	height:14%;
 	top:43%;
@@ -1656,7 +1632,7 @@ html.fullscreen .Simple3D {
 	transform-origin:100% 50%;
 	background:inherit;
 }
-.Simple3D .torus > * > * {
+.Simple3D .torus > .ring > .slice {
 	background-color:#C33;
 }
 .Simple3D .torus > .ring1 {
@@ -2599,29 +2575,29 @@ html.fullscreen .Simple3D {
 	width:400px;
 	height:250px;
 }
-.Simple3D .house > .wall {
-	height:100%;
-	top:0px;
-	left:0px;
-}
 .Simple3D .house > .ceiling,
 .Simple3D .house > .floor,
 .Simple3D .house > .wall {
 	width:100%;
 	background-color:#CCC;
 }
+.Simple3D .house > .wall {
+	height:100%;
+}
+.Simple3D .house > .ceiling {
+	top:25%;
+}
 .Simple3D .house > .floor {
 	background-color:#777;
 }
-.Simple3D .house > .backwall {
-	clip-path:polygon(50% 0, 0 25%, 0 100%, 100% 100%, 100% 25%);
-}
-.Simple3D .house > .leftwall,
-.Simple3D .house > .rightwall {
+.Simple3D .house > .smallwall {
 	height:75%;
 	top:25%;
 }
-.Simple3D .house > .frontwall {
+.Simple3D .house > .highwall {
+	clip-path:polygon(50% 0, 0 25%, 0 100%, 100% 100%, 100% 25%);
+}
+.Simple3D .house > .wall-door {
 	clip-path:polygon(50% 0, 0 25%, 0 100%, 20% 100%, 20% 40%, 40% 40%, 40% 100%, 100% 100%, 100% 25%);
 }
 .Simple3D .house .door-area {
