@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
- * Simple3D v1.0.0 (http://www.sergiowebmaster.com.br/)
+ * Simple3D v1.0.1 (http://www.sergiowebmaster.com.br/)
  * Copyright 2019 Sérgio Webmaster
  * Licensed under MIT
  */
@@ -275,28 +275,20 @@ html.fullscreen .Simple3D {
 }
 .Simple3D .sphere > .arc,
 .Simple3D .torus > .ring {
+	height:13.2%;
+	top:43.4%;
 	background-size:inherit;
 	background-image:inherit;
 }
-.Simple3D .cylinder > .slice,
-.Simple3D .cone > .slice,
-.Simple3D .sphere > .arc > .slice,
-.Simple3D .torus > .ring > .slice {
-	width:13.2%;
-	left:43.4%;
-}
-.Simple3D .cube > .face,
-.Simple3D .cylinder > .slice,
-.Simple3D .cone > .slice,
-.Simple3D .sphere > .arc > .slice,
-.Simple3D .torus > .ring > .slice,
-.Simple3D .pyramid > .face {
-	background-image:inherit;
-}
-.Simple3D .cylinder > .slice,
-.Simple3D .sphere > .arc > .slice,
-.Simple3D .torus > .ring > .slice {
+.Simple3D .slice {
+	width:13.5%;
 	height:100%;
+	left:43.25%;
+	transform-origin:50% 100%;
+}
+.Simple3D .slice,
+.Simple3D .face {
+	background-image:inherit;
 }
 .Simple3D .cylinder > .slice1,
 .Simple3D .cone > .slice1 {
@@ -305,7 +297,88 @@ html.fullscreen .Simple3D {
 .Simple3D .cylinder > .slice1,
 .Simple3D .sphere > .arc > .slice1,
 .Simple3D .torus > .ring > .slice1 {
-	transform:rotateY(0deg) translateX(-375%) rotateY(-90deg);
+	transform:rotateY(0deg) translateX(-370%) rotateY(-90deg);
+}
+.Simple3D .cone > .slice1 {
+	transform:rotateY(0deg) translateX(-370%) rotateY(-90deg) rotateX(26.5deg);
+}
+.Simple3D .sphere > .arc1 {
+	transform:rotateX(0deg);
+}
+.Simple3D .torus > .ring1 {
+	transform:rotateZ(0deg) translateX(-66%);
+}
+.Simple3D .sphere > .arc1 > .slice1 {
+	background-position:0% 0%;
+}
+.Simple3D .torus > .ring1 > .slice1 {
+	background-position:0% 0%;
+}
+.Simple3D .sphere > .arc1 > .slice2 {
+	background-position:-100% 0%;
+}
+.Simple3D .torus > .ring1 > .slice2 {
+	background-position:-100% 0%;
+}
+.Simple3D .sphere > .arc1 > .slice3 {
+	background-position:-200% 0%;
+}
+.Simple3D .torus > .ring1 > .slice3 {
+	background-position:-200% 0%;
+}
+.Simple3D .sphere > .arc1 > .slice4 {
+	background-position:-300% 0%;
+}
+.Simple3D .torus > .ring1 > .slice4 {
+	background-position:-300% 0%;
+}
+.Simple3D .sphere > .arc1 > .slice5 {
+	background-position:-400% 0%;
+}
+.Simple3D .torus > .ring1 > .slice5 {
+	background-position:-400% 0%;
+}
+.Simple3D .sphere > .arc1 > .slice6 {
+	background-position:-500% 0%;
+}
+.Simple3D .torus > .ring1 > .slice6 {
+	background-position:-500% 0%;
+}
+.Simple3D .sphere > .arc1 > .slice7 {
+	background-position:-600% 0%;
+}
+.Simple3D .torus > .ring1 > .slice7 {
+	background-position:-600% 0%;
+}
+.Simple3D .sphere > .arc1 > .slice8 {
+	background-position:-700% 0%;
+}
+.Simple3D .torus > .ring1 > .slice8 {
+	background-position:-700% 0%;
+}
+.Simple3D .sphere > .arc1 > .slice9 {
+	background-position:-800% 0%;
+}
+.Simple3D .torus > .ring1 > .slice9 {
+	background-position:-800% 0%;
+}
+.Simple3D .sphere > .arc1 > .slice10 {
+	background-position:-900% 0%;
+}
+.Simple3D .torus > .ring1 > .slice10 {
+	background-position:-900% 0%;
+}
+.Simple3D .sphere > .arc1 > .slice11 {
+	background-position:-1000% 0%;
+}
+.Simple3D .torus > .ring1 > .slice11 {
+	background-position:-1000% 0%;
+}
+.Simple3D .sphere > .arc1 > .slice12 {
+	background-position:-1100% 0%;
+}
+.Simple3D .torus > .ring1 > .slice12 {
+	background-position:-1100% 0%;
 }
 .Simple3D .cylinder > .slice2,
 .Simple3D .cone > .slice2 {
@@ -314,7 +387,88 @@ html.fullscreen .Simple3D {
 .Simple3D .cylinder > .slice2,
 .Simple3D .sphere > .arc > .slice2,
 .Simple3D .torus > .ring > .slice2 {
-	transform:rotateY(15deg) translateX(-375%) rotateY(-90deg);
+	transform:rotateY(15deg) translateX(-370%) rotateY(-90deg);
+}
+.Simple3D .cone > .slice2 {
+	transform:rotateY(15deg) translateX(-370%) rotateY(-90deg) rotateX(26.5deg);
+}
+.Simple3D .sphere > .arc2 {
+	transform:rotateX(15deg);
+}
+.Simple3D .torus > .ring2 {
+	transform:rotateZ(15deg) translateX(-66%);
+}
+.Simple3D .sphere > .arc2 > .slice1 {
+	background-position:0% 100%;
+}
+.Simple3D .torus > .ring2 > .slice1 {
+	background-position:0% 100%;
+}
+.Simple3D .sphere > .arc2 > .slice2 {
+	background-position:-100% 100%;
+}
+.Simple3D .torus > .ring2 > .slice2 {
+	background-position:-100% 100%;
+}
+.Simple3D .sphere > .arc2 > .slice3 {
+	background-position:-200% 100%;
+}
+.Simple3D .torus > .ring2 > .slice3 {
+	background-position:-200% 100%;
+}
+.Simple3D .sphere > .arc2 > .slice4 {
+	background-position:-300% 100%;
+}
+.Simple3D .torus > .ring2 > .slice4 {
+	background-position:-300% 100%;
+}
+.Simple3D .sphere > .arc2 > .slice5 {
+	background-position:-400% 100%;
+}
+.Simple3D .torus > .ring2 > .slice5 {
+	background-position:-400% 100%;
+}
+.Simple3D .sphere > .arc2 > .slice6 {
+	background-position:-500% 100%;
+}
+.Simple3D .torus > .ring2 > .slice6 {
+	background-position:-500% 100%;
+}
+.Simple3D .sphere > .arc2 > .slice7 {
+	background-position:-600% 100%;
+}
+.Simple3D .torus > .ring2 > .slice7 {
+	background-position:-600% 100%;
+}
+.Simple3D .sphere > .arc2 > .slice8 {
+	background-position:-700% 100%;
+}
+.Simple3D .torus > .ring2 > .slice8 {
+	background-position:-700% 100%;
+}
+.Simple3D .sphere > .arc2 > .slice9 {
+	background-position:-800% 100%;
+}
+.Simple3D .torus > .ring2 > .slice9 {
+	background-position:-800% 100%;
+}
+.Simple3D .sphere > .arc2 > .slice10 {
+	background-position:-900% 100%;
+}
+.Simple3D .torus > .ring2 > .slice10 {
+	background-position:-900% 100%;
+}
+.Simple3D .sphere > .arc2 > .slice11 {
+	background-position:-1000% 100%;
+}
+.Simple3D .torus > .ring2 > .slice11 {
+	background-position:-1000% 100%;
+}
+.Simple3D .sphere > .arc2 > .slice12 {
+	background-position:-1100% 100%;
+}
+.Simple3D .torus > .ring2 > .slice12 {
+	background-position:-1100% 100%;
 }
 .Simple3D .cylinder > .slice3,
 .Simple3D .cone > .slice3 {
@@ -323,7 +477,88 @@ html.fullscreen .Simple3D {
 .Simple3D .cylinder > .slice3,
 .Simple3D .sphere > .arc > .slice3,
 .Simple3D .torus > .ring > .slice3 {
-	transform:rotateY(30deg) translateX(-375%) rotateY(-90deg);
+	transform:rotateY(30deg) translateX(-370%) rotateY(-90deg);
+}
+.Simple3D .cone > .slice3 {
+	transform:rotateY(30deg) translateX(-370%) rotateY(-90deg) rotateX(26.5deg);
+}
+.Simple3D .sphere > .arc3 {
+	transform:rotateX(30deg);
+}
+.Simple3D .torus > .ring3 {
+	transform:rotateZ(30deg) translateX(-66%);
+}
+.Simple3D .sphere > .arc3 > .slice1 {
+	background-position:0% 200%;
+}
+.Simple3D .torus > .ring3 > .slice1 {
+	background-position:0% 200%;
+}
+.Simple3D .sphere > .arc3 > .slice2 {
+	background-position:-100% 200%;
+}
+.Simple3D .torus > .ring3 > .slice2 {
+	background-position:-100% 200%;
+}
+.Simple3D .sphere > .arc3 > .slice3 {
+	background-position:-200% 200%;
+}
+.Simple3D .torus > .ring3 > .slice3 {
+	background-position:-200% 200%;
+}
+.Simple3D .sphere > .arc3 > .slice4 {
+	background-position:-300% 200%;
+}
+.Simple3D .torus > .ring3 > .slice4 {
+	background-position:-300% 200%;
+}
+.Simple3D .sphere > .arc3 > .slice5 {
+	background-position:-400% 200%;
+}
+.Simple3D .torus > .ring3 > .slice5 {
+	background-position:-400% 200%;
+}
+.Simple3D .sphere > .arc3 > .slice6 {
+	background-position:-500% 200%;
+}
+.Simple3D .torus > .ring3 > .slice6 {
+	background-position:-500% 200%;
+}
+.Simple3D .sphere > .arc3 > .slice7 {
+	background-position:-600% 200%;
+}
+.Simple3D .torus > .ring3 > .slice7 {
+	background-position:-600% 200%;
+}
+.Simple3D .sphere > .arc3 > .slice8 {
+	background-position:-700% 200%;
+}
+.Simple3D .torus > .ring3 > .slice8 {
+	background-position:-700% 200%;
+}
+.Simple3D .sphere > .arc3 > .slice9 {
+	background-position:-800% 200%;
+}
+.Simple3D .torus > .ring3 > .slice9 {
+	background-position:-800% 200%;
+}
+.Simple3D .sphere > .arc3 > .slice10 {
+	background-position:-900% 200%;
+}
+.Simple3D .torus > .ring3 > .slice10 {
+	background-position:-900% 200%;
+}
+.Simple3D .sphere > .arc3 > .slice11 {
+	background-position:-1000% 200%;
+}
+.Simple3D .torus > .ring3 > .slice11 {
+	background-position:-1000% 200%;
+}
+.Simple3D .sphere > .arc3 > .slice12 {
+	background-position:-1100% 200%;
+}
+.Simple3D .torus > .ring3 > .slice12 {
+	background-position:-1100% 200%;
 }
 .Simple3D .cylinder > .slice4,
 .Simple3D .cone > .slice4 {
@@ -332,7 +567,88 @@ html.fullscreen .Simple3D {
 .Simple3D .cylinder > .slice4,
 .Simple3D .sphere > .arc > .slice4,
 .Simple3D .torus > .ring > .slice4 {
-	transform:rotateY(45deg) translateX(-375%) rotateY(-90deg);
+	transform:rotateY(45deg) translateX(-370%) rotateY(-90deg);
+}
+.Simple3D .cone > .slice4 {
+	transform:rotateY(45deg) translateX(-370%) rotateY(-90deg) rotateX(26.5deg);
+}
+.Simple3D .sphere > .arc4 {
+	transform:rotateX(45deg);
+}
+.Simple3D .torus > .ring4 {
+	transform:rotateZ(45deg) translateX(-66%);
+}
+.Simple3D .sphere > .arc4 > .slice1 {
+	background-position:0% 300%;
+}
+.Simple3D .torus > .ring4 > .slice1 {
+	background-position:0% 300%;
+}
+.Simple3D .sphere > .arc4 > .slice2 {
+	background-position:-100% 300%;
+}
+.Simple3D .torus > .ring4 > .slice2 {
+	background-position:-100% 300%;
+}
+.Simple3D .sphere > .arc4 > .slice3 {
+	background-position:-200% 300%;
+}
+.Simple3D .torus > .ring4 > .slice3 {
+	background-position:-200% 300%;
+}
+.Simple3D .sphere > .arc4 > .slice4 {
+	background-position:-300% 300%;
+}
+.Simple3D .torus > .ring4 > .slice4 {
+	background-position:-300% 300%;
+}
+.Simple3D .sphere > .arc4 > .slice5 {
+	background-position:-400% 300%;
+}
+.Simple3D .torus > .ring4 > .slice5 {
+	background-position:-400% 300%;
+}
+.Simple3D .sphere > .arc4 > .slice6 {
+	background-position:-500% 300%;
+}
+.Simple3D .torus > .ring4 > .slice6 {
+	background-position:-500% 300%;
+}
+.Simple3D .sphere > .arc4 > .slice7 {
+	background-position:-600% 300%;
+}
+.Simple3D .torus > .ring4 > .slice7 {
+	background-position:-600% 300%;
+}
+.Simple3D .sphere > .arc4 > .slice8 {
+	background-position:-700% 300%;
+}
+.Simple3D .torus > .ring4 > .slice8 {
+	background-position:-700% 300%;
+}
+.Simple3D .sphere > .arc4 > .slice9 {
+	background-position:-800% 300%;
+}
+.Simple3D .torus > .ring4 > .slice9 {
+	background-position:-800% 300%;
+}
+.Simple3D .sphere > .arc4 > .slice10 {
+	background-position:-900% 300%;
+}
+.Simple3D .torus > .ring4 > .slice10 {
+	background-position:-900% 300%;
+}
+.Simple3D .sphere > .arc4 > .slice11 {
+	background-position:-1000% 300%;
+}
+.Simple3D .torus > .ring4 > .slice11 {
+	background-position:-1000% 300%;
+}
+.Simple3D .sphere > .arc4 > .slice12 {
+	background-position:-1100% 300%;
+}
+.Simple3D .torus > .ring4 > .slice12 {
+	background-position:-1100% 300%;
 }
 .Simple3D .cylinder > .slice5,
 .Simple3D .cone > .slice5 {
@@ -341,7 +657,88 @@ html.fullscreen .Simple3D {
 .Simple3D .cylinder > .slice5,
 .Simple3D .sphere > .arc > .slice5,
 .Simple3D .torus > .ring > .slice5 {
-	transform:rotateY(60deg) translateX(-375%) rotateY(-90deg);
+	transform:rotateY(60deg) translateX(-370%) rotateY(-90deg);
+}
+.Simple3D .cone > .slice5 {
+	transform:rotateY(60deg) translateX(-370%) rotateY(-90deg) rotateX(26.5deg);
+}
+.Simple3D .sphere > .arc5 {
+	transform:rotateX(60deg);
+}
+.Simple3D .torus > .ring5 {
+	transform:rotateZ(60deg) translateX(-66%);
+}
+.Simple3D .sphere > .arc5 > .slice1 {
+	background-position:0% 400%;
+}
+.Simple3D .torus > .ring5 > .slice1 {
+	background-position:0% 400%;
+}
+.Simple3D .sphere > .arc5 > .slice2 {
+	background-position:-100% 400%;
+}
+.Simple3D .torus > .ring5 > .slice2 {
+	background-position:-100% 400%;
+}
+.Simple3D .sphere > .arc5 > .slice3 {
+	background-position:-200% 400%;
+}
+.Simple3D .torus > .ring5 > .slice3 {
+	background-position:-200% 400%;
+}
+.Simple3D .sphere > .arc5 > .slice4 {
+	background-position:-300% 400%;
+}
+.Simple3D .torus > .ring5 > .slice4 {
+	background-position:-300% 400%;
+}
+.Simple3D .sphere > .arc5 > .slice5 {
+	background-position:-400% 400%;
+}
+.Simple3D .torus > .ring5 > .slice5 {
+	background-position:-400% 400%;
+}
+.Simple3D .sphere > .arc5 > .slice6 {
+	background-position:-500% 400%;
+}
+.Simple3D .torus > .ring5 > .slice6 {
+	background-position:-500% 400%;
+}
+.Simple3D .sphere > .arc5 > .slice7 {
+	background-position:-600% 400%;
+}
+.Simple3D .torus > .ring5 > .slice7 {
+	background-position:-600% 400%;
+}
+.Simple3D .sphere > .arc5 > .slice8 {
+	background-position:-700% 400%;
+}
+.Simple3D .torus > .ring5 > .slice8 {
+	background-position:-700% 400%;
+}
+.Simple3D .sphere > .arc5 > .slice9 {
+	background-position:-800% 400%;
+}
+.Simple3D .torus > .ring5 > .slice9 {
+	background-position:-800% 400%;
+}
+.Simple3D .sphere > .arc5 > .slice10 {
+	background-position:-900% 400%;
+}
+.Simple3D .torus > .ring5 > .slice10 {
+	background-position:-900% 400%;
+}
+.Simple3D .sphere > .arc5 > .slice11 {
+	background-position:-1000% 400%;
+}
+.Simple3D .torus > .ring5 > .slice11 {
+	background-position:-1000% 400%;
+}
+.Simple3D .sphere > .arc5 > .slice12 {
+	background-position:-1100% 400%;
+}
+.Simple3D .torus > .ring5 > .slice12 {
+	background-position:-1100% 400%;
 }
 .Simple3D .cylinder > .slice6,
 .Simple3D .cone > .slice6 {
@@ -350,7 +747,88 @@ html.fullscreen .Simple3D {
 .Simple3D .cylinder > .slice6,
 .Simple3D .sphere > .arc > .slice6,
 .Simple3D .torus > .ring > .slice6 {
-	transform:rotateY(75deg) translateX(-375%) rotateY(-90deg);
+	transform:rotateY(75deg) translateX(-370%) rotateY(-90deg);
+}
+.Simple3D .cone > .slice6 {
+	transform:rotateY(75deg) translateX(-370%) rotateY(-90deg) rotateX(26.5deg);
+}
+.Simple3D .sphere > .arc6 {
+	transform:rotateX(75deg);
+}
+.Simple3D .torus > .ring6 {
+	transform:rotateZ(75deg) translateX(-66%);
+}
+.Simple3D .sphere > .arc6 > .slice1 {
+	background-position:0% 500%;
+}
+.Simple3D .torus > .ring6 > .slice1 {
+	background-position:0% 500%;
+}
+.Simple3D .sphere > .arc6 > .slice2 {
+	background-position:-100% 500%;
+}
+.Simple3D .torus > .ring6 > .slice2 {
+	background-position:-100% 500%;
+}
+.Simple3D .sphere > .arc6 > .slice3 {
+	background-position:-200% 500%;
+}
+.Simple3D .torus > .ring6 > .slice3 {
+	background-position:-200% 500%;
+}
+.Simple3D .sphere > .arc6 > .slice4 {
+	background-position:-300% 500%;
+}
+.Simple3D .torus > .ring6 > .slice4 {
+	background-position:-300% 500%;
+}
+.Simple3D .sphere > .arc6 > .slice5 {
+	background-position:-400% 500%;
+}
+.Simple3D .torus > .ring6 > .slice5 {
+	background-position:-400% 500%;
+}
+.Simple3D .sphere > .arc6 > .slice6 {
+	background-position:-500% 500%;
+}
+.Simple3D .torus > .ring6 > .slice6 {
+	background-position:-500% 500%;
+}
+.Simple3D .sphere > .arc6 > .slice7 {
+	background-position:-600% 500%;
+}
+.Simple3D .torus > .ring6 > .slice7 {
+	background-position:-600% 500%;
+}
+.Simple3D .sphere > .arc6 > .slice8 {
+	background-position:-700% 500%;
+}
+.Simple3D .torus > .ring6 > .slice8 {
+	background-position:-700% 500%;
+}
+.Simple3D .sphere > .arc6 > .slice9 {
+	background-position:-800% 500%;
+}
+.Simple3D .torus > .ring6 > .slice9 {
+	background-position:-800% 500%;
+}
+.Simple3D .sphere > .arc6 > .slice10 {
+	background-position:-900% 500%;
+}
+.Simple3D .torus > .ring6 > .slice10 {
+	background-position:-900% 500%;
+}
+.Simple3D .sphere > .arc6 > .slice11 {
+	background-position:-1000% 500%;
+}
+.Simple3D .torus > .ring6 > .slice11 {
+	background-position:-1000% 500%;
+}
+.Simple3D .sphere > .arc6 > .slice12 {
+	background-position:-1100% 500%;
+}
+.Simple3D .torus > .ring6 > .slice12 {
+	background-position:-1100% 500%;
 }
 .Simple3D .cylinder > .slice7,
 .Simple3D .cone > .slice7 {
@@ -359,7 +837,88 @@ html.fullscreen .Simple3D {
 .Simple3D .cylinder > .slice7,
 .Simple3D .sphere > .arc > .slice7,
 .Simple3D .torus > .ring > .slice7 {
-	transform:rotateY(90deg) translateX(-375%) rotateY(-90deg);
+	transform:rotateY(90deg) translateX(-370%) rotateY(-90deg);
+}
+.Simple3D .cone > .slice7 {
+	transform:rotateY(90deg) translateX(-370%) rotateY(-90deg) rotateX(26.5deg);
+}
+.Simple3D .sphere > .arc7 {
+	transform:rotateX(90deg);
+}
+.Simple3D .torus > .ring7 {
+	transform:rotateZ(90deg) translateX(-66%);
+}
+.Simple3D .sphere > .arc7 > .slice1 {
+	background-position:0% 600%;
+}
+.Simple3D .torus > .ring7 > .slice1 {
+	background-position:0% 600%;
+}
+.Simple3D .sphere > .arc7 > .slice2 {
+	background-position:-100% 600%;
+}
+.Simple3D .torus > .ring7 > .slice2 {
+	background-position:-100% 600%;
+}
+.Simple3D .sphere > .arc7 > .slice3 {
+	background-position:-200% 600%;
+}
+.Simple3D .torus > .ring7 > .slice3 {
+	background-position:-200% 600%;
+}
+.Simple3D .sphere > .arc7 > .slice4 {
+	background-position:-300% 600%;
+}
+.Simple3D .torus > .ring7 > .slice4 {
+	background-position:-300% 600%;
+}
+.Simple3D .sphere > .arc7 > .slice5 {
+	background-position:-400% 600%;
+}
+.Simple3D .torus > .ring7 > .slice5 {
+	background-position:-400% 600%;
+}
+.Simple3D .sphere > .arc7 > .slice6 {
+	background-position:-500% 600%;
+}
+.Simple3D .torus > .ring7 > .slice6 {
+	background-position:-500% 600%;
+}
+.Simple3D .sphere > .arc7 > .slice7 {
+	background-position:-600% 600%;
+}
+.Simple3D .torus > .ring7 > .slice7 {
+	background-position:-600% 600%;
+}
+.Simple3D .sphere > .arc7 > .slice8 {
+	background-position:-700% 600%;
+}
+.Simple3D .torus > .ring7 > .slice8 {
+	background-position:-700% 600%;
+}
+.Simple3D .sphere > .arc7 > .slice9 {
+	background-position:-800% 600%;
+}
+.Simple3D .torus > .ring7 > .slice9 {
+	background-position:-800% 600%;
+}
+.Simple3D .sphere > .arc7 > .slice10 {
+	background-position:-900% 600%;
+}
+.Simple3D .torus > .ring7 > .slice10 {
+	background-position:-900% 600%;
+}
+.Simple3D .sphere > .arc7 > .slice11 {
+	background-position:-1000% 600%;
+}
+.Simple3D .torus > .ring7 > .slice11 {
+	background-position:-1000% 600%;
+}
+.Simple3D .sphere > .arc7 > .slice12 {
+	background-position:-1100% 600%;
+}
+.Simple3D .torus > .ring7 > .slice12 {
+	background-position:-1100% 600%;
 }
 .Simple3D .cylinder > .slice8,
 .Simple3D .cone > .slice8 {
@@ -368,7 +927,88 @@ html.fullscreen .Simple3D {
 .Simple3D .cylinder > .slice8,
 .Simple3D .sphere > .arc > .slice8,
 .Simple3D .torus > .ring > .slice8 {
-	transform:rotateY(105deg) translateX(-375%) rotateY(-90deg);
+	transform:rotateY(105deg) translateX(-370%) rotateY(-90deg);
+}
+.Simple3D .cone > .slice8 {
+	transform:rotateY(105deg) translateX(-370%) rotateY(-90deg) rotateX(26.5deg);
+}
+.Simple3D .sphere > .arc8 {
+	transform:rotateX(105deg);
+}
+.Simple3D .torus > .ring8 {
+	transform:rotateZ(105deg) translateX(-66%);
+}
+.Simple3D .sphere > .arc8 > .slice1 {
+	background-position:0% 700%;
+}
+.Simple3D .torus > .ring8 > .slice1 {
+	background-position:0% 700%;
+}
+.Simple3D .sphere > .arc8 > .slice2 {
+	background-position:-100% 700%;
+}
+.Simple3D .torus > .ring8 > .slice2 {
+	background-position:-100% 700%;
+}
+.Simple3D .sphere > .arc8 > .slice3 {
+	background-position:-200% 700%;
+}
+.Simple3D .torus > .ring8 > .slice3 {
+	background-position:-200% 700%;
+}
+.Simple3D .sphere > .arc8 > .slice4 {
+	background-position:-300% 700%;
+}
+.Simple3D .torus > .ring8 > .slice4 {
+	background-position:-300% 700%;
+}
+.Simple3D .sphere > .arc8 > .slice5 {
+	background-position:-400% 700%;
+}
+.Simple3D .torus > .ring8 > .slice5 {
+	background-position:-400% 700%;
+}
+.Simple3D .sphere > .arc8 > .slice6 {
+	background-position:-500% 700%;
+}
+.Simple3D .torus > .ring8 > .slice6 {
+	background-position:-500% 700%;
+}
+.Simple3D .sphere > .arc8 > .slice7 {
+	background-position:-600% 700%;
+}
+.Simple3D .torus > .ring8 > .slice7 {
+	background-position:-600% 700%;
+}
+.Simple3D .sphere > .arc8 > .slice8 {
+	background-position:-700% 700%;
+}
+.Simple3D .torus > .ring8 > .slice8 {
+	background-position:-700% 700%;
+}
+.Simple3D .sphere > .arc8 > .slice9 {
+	background-position:-800% 700%;
+}
+.Simple3D .torus > .ring8 > .slice9 {
+	background-position:-800% 700%;
+}
+.Simple3D .sphere > .arc8 > .slice10 {
+	background-position:-900% 700%;
+}
+.Simple3D .torus > .ring8 > .slice10 {
+	background-position:-900% 700%;
+}
+.Simple3D .sphere > .arc8 > .slice11 {
+	background-position:-1000% 700%;
+}
+.Simple3D .torus > .ring8 > .slice11 {
+	background-position:-1000% 700%;
+}
+.Simple3D .sphere > .arc8 > .slice12 {
+	background-position:-1100% 700%;
+}
+.Simple3D .torus > .ring8 > .slice12 {
+	background-position:-1100% 700%;
 }
 .Simple3D .cylinder > .slice9,
 .Simple3D .cone > .slice9 {
@@ -377,7 +1017,88 @@ html.fullscreen .Simple3D {
 .Simple3D .cylinder > .slice9,
 .Simple3D .sphere > .arc > .slice9,
 .Simple3D .torus > .ring > .slice9 {
-	transform:rotateY(120deg) translateX(-375%) rotateY(-90deg);
+	transform:rotateY(120deg) translateX(-370%) rotateY(-90deg);
+}
+.Simple3D .cone > .slice9 {
+	transform:rotateY(120deg) translateX(-370%) rotateY(-90deg) rotateX(26.5deg);
+}
+.Simple3D .sphere > .arc9 {
+	transform:rotateX(120deg);
+}
+.Simple3D .torus > .ring9 {
+	transform:rotateZ(120deg) translateX(-66%);
+}
+.Simple3D .sphere > .arc9 > .slice1 {
+	background-position:0% 800%;
+}
+.Simple3D .torus > .ring9 > .slice1 {
+	background-position:0% 800%;
+}
+.Simple3D .sphere > .arc9 > .slice2 {
+	background-position:-100% 800%;
+}
+.Simple3D .torus > .ring9 > .slice2 {
+	background-position:-100% 800%;
+}
+.Simple3D .sphere > .arc9 > .slice3 {
+	background-position:-200% 800%;
+}
+.Simple3D .torus > .ring9 > .slice3 {
+	background-position:-200% 800%;
+}
+.Simple3D .sphere > .arc9 > .slice4 {
+	background-position:-300% 800%;
+}
+.Simple3D .torus > .ring9 > .slice4 {
+	background-position:-300% 800%;
+}
+.Simple3D .sphere > .arc9 > .slice5 {
+	background-position:-400% 800%;
+}
+.Simple3D .torus > .ring9 > .slice5 {
+	background-position:-400% 800%;
+}
+.Simple3D .sphere > .arc9 > .slice6 {
+	background-position:-500% 800%;
+}
+.Simple3D .torus > .ring9 > .slice6 {
+	background-position:-500% 800%;
+}
+.Simple3D .sphere > .arc9 > .slice7 {
+	background-position:-600% 800%;
+}
+.Simple3D .torus > .ring9 > .slice7 {
+	background-position:-600% 800%;
+}
+.Simple3D .sphere > .arc9 > .slice8 {
+	background-position:-700% 800%;
+}
+.Simple3D .torus > .ring9 > .slice8 {
+	background-position:-700% 800%;
+}
+.Simple3D .sphere > .arc9 > .slice9 {
+	background-position:-800% 800%;
+}
+.Simple3D .torus > .ring9 > .slice9 {
+	background-position:-800% 800%;
+}
+.Simple3D .sphere > .arc9 > .slice10 {
+	background-position:-900% 800%;
+}
+.Simple3D .torus > .ring9 > .slice10 {
+	background-position:-900% 800%;
+}
+.Simple3D .sphere > .arc9 > .slice11 {
+	background-position:-1000% 800%;
+}
+.Simple3D .torus > .ring9 > .slice11 {
+	background-position:-1000% 800%;
+}
+.Simple3D .sphere > .arc9 > .slice12 {
+	background-position:-1100% 800%;
+}
+.Simple3D .torus > .ring9 > .slice12 {
+	background-position:-1100% 800%;
 }
 .Simple3D .cylinder > .slice10,
 .Simple3D .cone > .slice10 {
@@ -386,7 +1107,88 @@ html.fullscreen .Simple3D {
 .Simple3D .cylinder > .slice10,
 .Simple3D .sphere > .arc > .slice10,
 .Simple3D .torus > .ring > .slice10 {
-	transform:rotateY(135deg) translateX(-375%) rotateY(-90deg);
+	transform:rotateY(135deg) translateX(-370%) rotateY(-90deg);
+}
+.Simple3D .cone > .slice10 {
+	transform:rotateY(135deg) translateX(-370%) rotateY(-90deg) rotateX(26.5deg);
+}
+.Simple3D .sphere > .arc10 {
+	transform:rotateX(135deg);
+}
+.Simple3D .torus > .ring10 {
+	transform:rotateZ(135deg) translateX(-66%);
+}
+.Simple3D .sphere > .arc10 > .slice1 {
+	background-position:0% 900%;
+}
+.Simple3D .torus > .ring10 > .slice1 {
+	background-position:0% 900%;
+}
+.Simple3D .sphere > .arc10 > .slice2 {
+	background-position:-100% 900%;
+}
+.Simple3D .torus > .ring10 > .slice2 {
+	background-position:-100% 900%;
+}
+.Simple3D .sphere > .arc10 > .slice3 {
+	background-position:-200% 900%;
+}
+.Simple3D .torus > .ring10 > .slice3 {
+	background-position:-200% 900%;
+}
+.Simple3D .sphere > .arc10 > .slice4 {
+	background-position:-300% 900%;
+}
+.Simple3D .torus > .ring10 > .slice4 {
+	background-position:-300% 900%;
+}
+.Simple3D .sphere > .arc10 > .slice5 {
+	background-position:-400% 900%;
+}
+.Simple3D .torus > .ring10 > .slice5 {
+	background-position:-400% 900%;
+}
+.Simple3D .sphere > .arc10 > .slice6 {
+	background-position:-500% 900%;
+}
+.Simple3D .torus > .ring10 > .slice6 {
+	background-position:-500% 900%;
+}
+.Simple3D .sphere > .arc10 > .slice7 {
+	background-position:-600% 900%;
+}
+.Simple3D .torus > .ring10 > .slice7 {
+	background-position:-600% 900%;
+}
+.Simple3D .sphere > .arc10 > .slice8 {
+	background-position:-700% 900%;
+}
+.Simple3D .torus > .ring10 > .slice8 {
+	background-position:-700% 900%;
+}
+.Simple3D .sphere > .arc10 > .slice9 {
+	background-position:-800% 900%;
+}
+.Simple3D .torus > .ring10 > .slice9 {
+	background-position:-800% 900%;
+}
+.Simple3D .sphere > .arc10 > .slice10 {
+	background-position:-900% 900%;
+}
+.Simple3D .torus > .ring10 > .slice10 {
+	background-position:-900% 900%;
+}
+.Simple3D .sphere > .arc10 > .slice11 {
+	background-position:-1000% 900%;
+}
+.Simple3D .torus > .ring10 > .slice11 {
+	background-position:-1000% 900%;
+}
+.Simple3D .sphere > .arc10 > .slice12 {
+	background-position:-1100% 900%;
+}
+.Simple3D .torus > .ring10 > .slice12 {
+	background-position:-1100% 900%;
 }
 .Simple3D .cylinder > .slice11,
 .Simple3D .cone > .slice11 {
@@ -395,7 +1197,88 @@ html.fullscreen .Simple3D {
 .Simple3D .cylinder > .slice11,
 .Simple3D .sphere > .arc > .slice11,
 .Simple3D .torus > .ring > .slice11 {
-	transform:rotateY(150deg) translateX(-375%) rotateY(-90deg);
+	transform:rotateY(150deg) translateX(-370%) rotateY(-90deg);
+}
+.Simple3D .cone > .slice11 {
+	transform:rotateY(150deg) translateX(-370%) rotateY(-90deg) rotateX(26.5deg);
+}
+.Simple3D .sphere > .arc11 {
+	transform:rotateX(150deg);
+}
+.Simple3D .torus > .ring11 {
+	transform:rotateZ(150deg) translateX(-66%);
+}
+.Simple3D .sphere > .arc11 > .slice1 {
+	background-position:0% 1000%;
+}
+.Simple3D .torus > .ring11 > .slice1 {
+	background-position:0% 1000%;
+}
+.Simple3D .sphere > .arc11 > .slice2 {
+	background-position:-100% 1000%;
+}
+.Simple3D .torus > .ring11 > .slice2 {
+	background-position:-100% 1000%;
+}
+.Simple3D .sphere > .arc11 > .slice3 {
+	background-position:-200% 1000%;
+}
+.Simple3D .torus > .ring11 > .slice3 {
+	background-position:-200% 1000%;
+}
+.Simple3D .sphere > .arc11 > .slice4 {
+	background-position:-300% 1000%;
+}
+.Simple3D .torus > .ring11 > .slice4 {
+	background-position:-300% 1000%;
+}
+.Simple3D .sphere > .arc11 > .slice5 {
+	background-position:-400% 1000%;
+}
+.Simple3D .torus > .ring11 > .slice5 {
+	background-position:-400% 1000%;
+}
+.Simple3D .sphere > .arc11 > .slice6 {
+	background-position:-500% 1000%;
+}
+.Simple3D .torus > .ring11 > .slice6 {
+	background-position:-500% 1000%;
+}
+.Simple3D .sphere > .arc11 > .slice7 {
+	background-position:-600% 1000%;
+}
+.Simple3D .torus > .ring11 > .slice7 {
+	background-position:-600% 1000%;
+}
+.Simple3D .sphere > .arc11 > .slice8 {
+	background-position:-700% 1000%;
+}
+.Simple3D .torus > .ring11 > .slice8 {
+	background-position:-700% 1000%;
+}
+.Simple3D .sphere > .arc11 > .slice9 {
+	background-position:-800% 1000%;
+}
+.Simple3D .torus > .ring11 > .slice9 {
+	background-position:-800% 1000%;
+}
+.Simple3D .sphere > .arc11 > .slice10 {
+	background-position:-900% 1000%;
+}
+.Simple3D .torus > .ring11 > .slice10 {
+	background-position:-900% 1000%;
+}
+.Simple3D .sphere > .arc11 > .slice11 {
+	background-position:-1000% 1000%;
+}
+.Simple3D .torus > .ring11 > .slice11 {
+	background-position:-1000% 1000%;
+}
+.Simple3D .sphere > .arc11 > .slice12 {
+	background-position:-1100% 1000%;
+}
+.Simple3D .torus > .ring11 > .slice12 {
+	background-position:-1100% 1000%;
 }
 .Simple3D .cylinder > .slice12,
 .Simple3D .cone > .slice12 {
@@ -404,7 +1287,88 @@ html.fullscreen .Simple3D {
 .Simple3D .cylinder > .slice12,
 .Simple3D .sphere > .arc > .slice12,
 .Simple3D .torus > .ring > .slice12 {
-	transform:rotateY(165deg) translateX(-375%) rotateY(-90deg);
+	transform:rotateY(165deg) translateX(-370%) rotateY(-90deg);
+}
+.Simple3D .cone > .slice12 {
+	transform:rotateY(165deg) translateX(-370%) rotateY(-90deg) rotateX(26.5deg);
+}
+.Simple3D .sphere > .arc12 {
+	transform:rotateX(165deg);
+}
+.Simple3D .torus > .ring12 {
+	transform:rotateZ(165deg) translateX(-66%);
+}
+.Simple3D .sphere > .arc12 > .slice1 {
+	background-position:0% 1100%;
+}
+.Simple3D .torus > .ring12 > .slice1 {
+	background-position:0% 1100%;
+}
+.Simple3D .sphere > .arc12 > .slice2 {
+	background-position:-100% 1100%;
+}
+.Simple3D .torus > .ring12 > .slice2 {
+	background-position:-100% 1100%;
+}
+.Simple3D .sphere > .arc12 > .slice3 {
+	background-position:-200% 1100%;
+}
+.Simple3D .torus > .ring12 > .slice3 {
+	background-position:-200% 1100%;
+}
+.Simple3D .sphere > .arc12 > .slice4 {
+	background-position:-300% 1100%;
+}
+.Simple3D .torus > .ring12 > .slice4 {
+	background-position:-300% 1100%;
+}
+.Simple3D .sphere > .arc12 > .slice5 {
+	background-position:-400% 1100%;
+}
+.Simple3D .torus > .ring12 > .slice5 {
+	background-position:-400% 1100%;
+}
+.Simple3D .sphere > .arc12 > .slice6 {
+	background-position:-500% 1100%;
+}
+.Simple3D .torus > .ring12 > .slice6 {
+	background-position:-500% 1100%;
+}
+.Simple3D .sphere > .arc12 > .slice7 {
+	background-position:-600% 1100%;
+}
+.Simple3D .torus > .ring12 > .slice7 {
+	background-position:-600% 1100%;
+}
+.Simple3D .sphere > .arc12 > .slice8 {
+	background-position:-700% 1100%;
+}
+.Simple3D .torus > .ring12 > .slice8 {
+	background-position:-700% 1100%;
+}
+.Simple3D .sphere > .arc12 > .slice9 {
+	background-position:-800% 1100%;
+}
+.Simple3D .torus > .ring12 > .slice9 {
+	background-position:-800% 1100%;
+}
+.Simple3D .sphere > .arc12 > .slice10 {
+	background-position:-900% 1100%;
+}
+.Simple3D .torus > .ring12 > .slice10 {
+	background-position:-900% 1100%;
+}
+.Simple3D .sphere > .arc12 > .slice11 {
+	background-position:-1000% 1100%;
+}
+.Simple3D .torus > .ring12 > .slice11 {
+	background-position:-1000% 1100%;
+}
+.Simple3D .sphere > .arc12 > .slice12 {
+	background-position:-1100% 1100%;
+}
+.Simple3D .torus > .ring12 > .slice12 {
+	background-position:-1100% 1100%;
 }
 .Simple3D .cylinder > .slice13,
 .Simple3D .cone > .slice13 {
@@ -413,7 +1377,88 @@ html.fullscreen .Simple3D {
 .Simple3D .cylinder > .slice13,
 .Simple3D .sphere > .arc > .slice13,
 .Simple3D .torus > .ring > .slice13 {
-	transform:rotateY(180deg) translateX(-375%) rotateY(-90deg);
+	transform:rotateY(180deg) translateX(-370%) rotateY(-90deg);
+}
+.Simple3D .cone > .slice13 {
+	transform:rotateY(180deg) translateX(-370%) rotateY(-90deg) rotateX(26.5deg);
+}
+.Simple3D .sphere > .arc13 {
+	transform:rotateX(180deg);
+}
+.Simple3D .torus > .ring13 {
+	transform:rotateZ(180deg) translateX(-66%);
+}
+.Simple3D .sphere > .arc13 > .slice1 {
+	background-position:0% 1200%;
+}
+.Simple3D .torus > .ring13 > .slice1 {
+	background-position:0% 1200%;
+}
+.Simple3D .sphere > .arc13 > .slice2 {
+	background-position:-100% 1200%;
+}
+.Simple3D .torus > .ring13 > .slice2 {
+	background-position:-100% 1200%;
+}
+.Simple3D .sphere > .arc13 > .slice3 {
+	background-position:-200% 1200%;
+}
+.Simple3D .torus > .ring13 > .slice3 {
+	background-position:-200% 1200%;
+}
+.Simple3D .sphere > .arc13 > .slice4 {
+	background-position:-300% 1200%;
+}
+.Simple3D .torus > .ring13 > .slice4 {
+	background-position:-300% 1200%;
+}
+.Simple3D .sphere > .arc13 > .slice5 {
+	background-position:-400% 1200%;
+}
+.Simple3D .torus > .ring13 > .slice5 {
+	background-position:-400% 1200%;
+}
+.Simple3D .sphere > .arc13 > .slice6 {
+	background-position:-500% 1200%;
+}
+.Simple3D .torus > .ring13 > .slice6 {
+	background-position:-500% 1200%;
+}
+.Simple3D .sphere > .arc13 > .slice7 {
+	background-position:-600% 1200%;
+}
+.Simple3D .torus > .ring13 > .slice7 {
+	background-position:-600% 1200%;
+}
+.Simple3D .sphere > .arc13 > .slice8 {
+	background-position:-700% 1200%;
+}
+.Simple3D .torus > .ring13 > .slice8 {
+	background-position:-700% 1200%;
+}
+.Simple3D .sphere > .arc13 > .slice9 {
+	background-position:-800% 1200%;
+}
+.Simple3D .torus > .ring13 > .slice9 {
+	background-position:-800% 1200%;
+}
+.Simple3D .sphere > .arc13 > .slice10 {
+	background-position:-900% 1200%;
+}
+.Simple3D .torus > .ring13 > .slice10 {
+	background-position:-900% 1200%;
+}
+.Simple3D .sphere > .arc13 > .slice11 {
+	background-position:-1000% 1200%;
+}
+.Simple3D .torus > .ring13 > .slice11 {
+	background-position:-1000% 1200%;
+}
+.Simple3D .sphere > .arc13 > .slice12 {
+	background-position:-1100% 1200%;
+}
+.Simple3D .torus > .ring13 > .slice12 {
+	background-position:-1100% 1200%;
 }
 .Simple3D .cylinder > .slice14,
 .Simple3D .cone > .slice14 {
@@ -422,7 +1467,88 @@ html.fullscreen .Simple3D {
 .Simple3D .cylinder > .slice14,
 .Simple3D .sphere > .arc > .slice14,
 .Simple3D .torus > .ring > .slice14 {
-	transform:rotateY(195deg) translateX(-375%) rotateY(-90deg);
+	transform:rotateY(195deg) translateX(-370%) rotateY(-90deg);
+}
+.Simple3D .cone > .slice14 {
+	transform:rotateY(195deg) translateX(-370%) rotateY(-90deg) rotateX(26.5deg);
+}
+.Simple3D .sphere > .arc14 {
+	transform:rotateX(195deg);
+}
+.Simple3D .torus > .ring14 {
+	transform:rotateZ(195deg) translateX(-66%);
+}
+.Simple3D .sphere > .arc14 > .slice1 {
+	background-position:0% 1300%;
+}
+.Simple3D .torus > .ring14 > .slice1 {
+	background-position:0% 1300%;
+}
+.Simple3D .sphere > .arc14 > .slice2 {
+	background-position:-100% 1300%;
+}
+.Simple3D .torus > .ring14 > .slice2 {
+	background-position:-100% 1300%;
+}
+.Simple3D .sphere > .arc14 > .slice3 {
+	background-position:-200% 1300%;
+}
+.Simple3D .torus > .ring14 > .slice3 {
+	background-position:-200% 1300%;
+}
+.Simple3D .sphere > .arc14 > .slice4 {
+	background-position:-300% 1300%;
+}
+.Simple3D .torus > .ring14 > .slice4 {
+	background-position:-300% 1300%;
+}
+.Simple3D .sphere > .arc14 > .slice5 {
+	background-position:-400% 1300%;
+}
+.Simple3D .torus > .ring14 > .slice5 {
+	background-position:-400% 1300%;
+}
+.Simple3D .sphere > .arc14 > .slice6 {
+	background-position:-500% 1300%;
+}
+.Simple3D .torus > .ring14 > .slice6 {
+	background-position:-500% 1300%;
+}
+.Simple3D .sphere > .arc14 > .slice7 {
+	background-position:-600% 1300%;
+}
+.Simple3D .torus > .ring14 > .slice7 {
+	background-position:-600% 1300%;
+}
+.Simple3D .sphere > .arc14 > .slice8 {
+	background-position:-700% 1300%;
+}
+.Simple3D .torus > .ring14 > .slice8 {
+	background-position:-700% 1300%;
+}
+.Simple3D .sphere > .arc14 > .slice9 {
+	background-position:-800% 1300%;
+}
+.Simple3D .torus > .ring14 > .slice9 {
+	background-position:-800% 1300%;
+}
+.Simple3D .sphere > .arc14 > .slice10 {
+	background-position:-900% 1300%;
+}
+.Simple3D .torus > .ring14 > .slice10 {
+	background-position:-900% 1300%;
+}
+.Simple3D .sphere > .arc14 > .slice11 {
+	background-position:-1000% 1300%;
+}
+.Simple3D .torus > .ring14 > .slice11 {
+	background-position:-1000% 1300%;
+}
+.Simple3D .sphere > .arc14 > .slice12 {
+	background-position:-1100% 1300%;
+}
+.Simple3D .torus > .ring14 > .slice12 {
+	background-position:-1100% 1300%;
 }
 .Simple3D .cylinder > .slice15,
 .Simple3D .cone > .slice15 {
@@ -431,7 +1557,88 @@ html.fullscreen .Simple3D {
 .Simple3D .cylinder > .slice15,
 .Simple3D .sphere > .arc > .slice15,
 .Simple3D .torus > .ring > .slice15 {
-	transform:rotateY(210deg) translateX(-375%) rotateY(-90deg);
+	transform:rotateY(210deg) translateX(-370%) rotateY(-90deg);
+}
+.Simple3D .cone > .slice15 {
+	transform:rotateY(210deg) translateX(-370%) rotateY(-90deg) rotateX(26.5deg);
+}
+.Simple3D .sphere > .arc15 {
+	transform:rotateX(210deg);
+}
+.Simple3D .torus > .ring15 {
+	transform:rotateZ(210deg) translateX(-66%);
+}
+.Simple3D .sphere > .arc15 > .slice1 {
+	background-position:0% 1400%;
+}
+.Simple3D .torus > .ring15 > .slice1 {
+	background-position:0% 1400%;
+}
+.Simple3D .sphere > .arc15 > .slice2 {
+	background-position:-100% 1400%;
+}
+.Simple3D .torus > .ring15 > .slice2 {
+	background-position:-100% 1400%;
+}
+.Simple3D .sphere > .arc15 > .slice3 {
+	background-position:-200% 1400%;
+}
+.Simple3D .torus > .ring15 > .slice3 {
+	background-position:-200% 1400%;
+}
+.Simple3D .sphere > .arc15 > .slice4 {
+	background-position:-300% 1400%;
+}
+.Simple3D .torus > .ring15 > .slice4 {
+	background-position:-300% 1400%;
+}
+.Simple3D .sphere > .arc15 > .slice5 {
+	background-position:-400% 1400%;
+}
+.Simple3D .torus > .ring15 > .slice5 {
+	background-position:-400% 1400%;
+}
+.Simple3D .sphere > .arc15 > .slice6 {
+	background-position:-500% 1400%;
+}
+.Simple3D .torus > .ring15 > .slice6 {
+	background-position:-500% 1400%;
+}
+.Simple3D .sphere > .arc15 > .slice7 {
+	background-position:-600% 1400%;
+}
+.Simple3D .torus > .ring15 > .slice7 {
+	background-position:-600% 1400%;
+}
+.Simple3D .sphere > .arc15 > .slice8 {
+	background-position:-700% 1400%;
+}
+.Simple3D .torus > .ring15 > .slice8 {
+	background-position:-700% 1400%;
+}
+.Simple3D .sphere > .arc15 > .slice9 {
+	background-position:-800% 1400%;
+}
+.Simple3D .torus > .ring15 > .slice9 {
+	background-position:-800% 1400%;
+}
+.Simple3D .sphere > .arc15 > .slice10 {
+	background-position:-900% 1400%;
+}
+.Simple3D .torus > .ring15 > .slice10 {
+	background-position:-900% 1400%;
+}
+.Simple3D .sphere > .arc15 > .slice11 {
+	background-position:-1000% 1400%;
+}
+.Simple3D .torus > .ring15 > .slice11 {
+	background-position:-1000% 1400%;
+}
+.Simple3D .sphere > .arc15 > .slice12 {
+	background-position:-1100% 1400%;
+}
+.Simple3D .torus > .ring15 > .slice12 {
+	background-position:-1100% 1400%;
 }
 .Simple3D .cylinder > .slice16,
 .Simple3D .cone > .slice16 {
@@ -440,7 +1647,88 @@ html.fullscreen .Simple3D {
 .Simple3D .cylinder > .slice16,
 .Simple3D .sphere > .arc > .slice16,
 .Simple3D .torus > .ring > .slice16 {
-	transform:rotateY(225deg) translateX(-375%) rotateY(-90deg);
+	transform:rotateY(225deg) translateX(-370%) rotateY(-90deg);
+}
+.Simple3D .cone > .slice16 {
+	transform:rotateY(225deg) translateX(-370%) rotateY(-90deg) rotateX(26.5deg);
+}
+.Simple3D .sphere > .arc16 {
+	transform:rotateX(225deg);
+}
+.Simple3D .torus > .ring16 {
+	transform:rotateZ(225deg) translateX(-66%);
+}
+.Simple3D .sphere > .arc16 > .slice1 {
+	background-position:0% 1500%;
+}
+.Simple3D .torus > .ring16 > .slice1 {
+	background-position:0% 1500%;
+}
+.Simple3D .sphere > .arc16 > .slice2 {
+	background-position:-100% 1500%;
+}
+.Simple3D .torus > .ring16 > .slice2 {
+	background-position:-100% 1500%;
+}
+.Simple3D .sphere > .arc16 > .slice3 {
+	background-position:-200% 1500%;
+}
+.Simple3D .torus > .ring16 > .slice3 {
+	background-position:-200% 1500%;
+}
+.Simple3D .sphere > .arc16 > .slice4 {
+	background-position:-300% 1500%;
+}
+.Simple3D .torus > .ring16 > .slice4 {
+	background-position:-300% 1500%;
+}
+.Simple3D .sphere > .arc16 > .slice5 {
+	background-position:-400% 1500%;
+}
+.Simple3D .torus > .ring16 > .slice5 {
+	background-position:-400% 1500%;
+}
+.Simple3D .sphere > .arc16 > .slice6 {
+	background-position:-500% 1500%;
+}
+.Simple3D .torus > .ring16 > .slice6 {
+	background-position:-500% 1500%;
+}
+.Simple3D .sphere > .arc16 > .slice7 {
+	background-position:-600% 1500%;
+}
+.Simple3D .torus > .ring16 > .slice7 {
+	background-position:-600% 1500%;
+}
+.Simple3D .sphere > .arc16 > .slice8 {
+	background-position:-700% 1500%;
+}
+.Simple3D .torus > .ring16 > .slice8 {
+	background-position:-700% 1500%;
+}
+.Simple3D .sphere > .arc16 > .slice9 {
+	background-position:-800% 1500%;
+}
+.Simple3D .torus > .ring16 > .slice9 {
+	background-position:-800% 1500%;
+}
+.Simple3D .sphere > .arc16 > .slice10 {
+	background-position:-900% 1500%;
+}
+.Simple3D .torus > .ring16 > .slice10 {
+	background-position:-900% 1500%;
+}
+.Simple3D .sphere > .arc16 > .slice11 {
+	background-position:-1000% 1500%;
+}
+.Simple3D .torus > .ring16 > .slice11 {
+	background-position:-1000% 1500%;
+}
+.Simple3D .sphere > .arc16 > .slice12 {
+	background-position:-1100% 1500%;
+}
+.Simple3D .torus > .ring16 > .slice12 {
+	background-position:-1100% 1500%;
 }
 .Simple3D .cylinder > .slice17,
 .Simple3D .cone > .slice17 {
@@ -449,7 +1737,88 @@ html.fullscreen .Simple3D {
 .Simple3D .cylinder > .slice17,
 .Simple3D .sphere > .arc > .slice17,
 .Simple3D .torus > .ring > .slice17 {
-	transform:rotateY(240deg) translateX(-375%) rotateY(-90deg);
+	transform:rotateY(240deg) translateX(-370%) rotateY(-90deg);
+}
+.Simple3D .cone > .slice17 {
+	transform:rotateY(240deg) translateX(-370%) rotateY(-90deg) rotateX(26.5deg);
+}
+.Simple3D .sphere > .arc17 {
+	transform:rotateX(240deg);
+}
+.Simple3D .torus > .ring17 {
+	transform:rotateZ(240deg) translateX(-66%);
+}
+.Simple3D .sphere > .arc17 > .slice1 {
+	background-position:0% 1600%;
+}
+.Simple3D .torus > .ring17 > .slice1 {
+	background-position:0% 1600%;
+}
+.Simple3D .sphere > .arc17 > .slice2 {
+	background-position:-100% 1600%;
+}
+.Simple3D .torus > .ring17 > .slice2 {
+	background-position:-100% 1600%;
+}
+.Simple3D .sphere > .arc17 > .slice3 {
+	background-position:-200% 1600%;
+}
+.Simple3D .torus > .ring17 > .slice3 {
+	background-position:-200% 1600%;
+}
+.Simple3D .sphere > .arc17 > .slice4 {
+	background-position:-300% 1600%;
+}
+.Simple3D .torus > .ring17 > .slice4 {
+	background-position:-300% 1600%;
+}
+.Simple3D .sphere > .arc17 > .slice5 {
+	background-position:-400% 1600%;
+}
+.Simple3D .torus > .ring17 > .slice5 {
+	background-position:-400% 1600%;
+}
+.Simple3D .sphere > .arc17 > .slice6 {
+	background-position:-500% 1600%;
+}
+.Simple3D .torus > .ring17 > .slice6 {
+	background-position:-500% 1600%;
+}
+.Simple3D .sphere > .arc17 > .slice7 {
+	background-position:-600% 1600%;
+}
+.Simple3D .torus > .ring17 > .slice7 {
+	background-position:-600% 1600%;
+}
+.Simple3D .sphere > .arc17 > .slice8 {
+	background-position:-700% 1600%;
+}
+.Simple3D .torus > .ring17 > .slice8 {
+	background-position:-700% 1600%;
+}
+.Simple3D .sphere > .arc17 > .slice9 {
+	background-position:-800% 1600%;
+}
+.Simple3D .torus > .ring17 > .slice9 {
+	background-position:-800% 1600%;
+}
+.Simple3D .sphere > .arc17 > .slice10 {
+	background-position:-900% 1600%;
+}
+.Simple3D .torus > .ring17 > .slice10 {
+	background-position:-900% 1600%;
+}
+.Simple3D .sphere > .arc17 > .slice11 {
+	background-position:-1000% 1600%;
+}
+.Simple3D .torus > .ring17 > .slice11 {
+	background-position:-1000% 1600%;
+}
+.Simple3D .sphere > .arc17 > .slice12 {
+	background-position:-1100% 1600%;
+}
+.Simple3D .torus > .ring17 > .slice12 {
+	background-position:-1100% 1600%;
 }
 .Simple3D .cylinder > .slice18,
 .Simple3D .cone > .slice18 {
@@ -458,7 +1827,88 @@ html.fullscreen .Simple3D {
 .Simple3D .cylinder > .slice18,
 .Simple3D .sphere > .arc > .slice18,
 .Simple3D .torus > .ring > .slice18 {
-	transform:rotateY(255deg) translateX(-375%) rotateY(-90deg);
+	transform:rotateY(255deg) translateX(-370%) rotateY(-90deg);
+}
+.Simple3D .cone > .slice18 {
+	transform:rotateY(255deg) translateX(-370%) rotateY(-90deg) rotateX(26.5deg);
+}
+.Simple3D .sphere > .arc18 {
+	transform:rotateX(255deg);
+}
+.Simple3D .torus > .ring18 {
+	transform:rotateZ(255deg) translateX(-66%);
+}
+.Simple3D .sphere > .arc18 > .slice1 {
+	background-position:0% 1700%;
+}
+.Simple3D .torus > .ring18 > .slice1 {
+	background-position:0% 1700%;
+}
+.Simple3D .sphere > .arc18 > .slice2 {
+	background-position:-100% 1700%;
+}
+.Simple3D .torus > .ring18 > .slice2 {
+	background-position:-100% 1700%;
+}
+.Simple3D .sphere > .arc18 > .slice3 {
+	background-position:-200% 1700%;
+}
+.Simple3D .torus > .ring18 > .slice3 {
+	background-position:-200% 1700%;
+}
+.Simple3D .sphere > .arc18 > .slice4 {
+	background-position:-300% 1700%;
+}
+.Simple3D .torus > .ring18 > .slice4 {
+	background-position:-300% 1700%;
+}
+.Simple3D .sphere > .arc18 > .slice5 {
+	background-position:-400% 1700%;
+}
+.Simple3D .torus > .ring18 > .slice5 {
+	background-position:-400% 1700%;
+}
+.Simple3D .sphere > .arc18 > .slice6 {
+	background-position:-500% 1700%;
+}
+.Simple3D .torus > .ring18 > .slice6 {
+	background-position:-500% 1700%;
+}
+.Simple3D .sphere > .arc18 > .slice7 {
+	background-position:-600% 1700%;
+}
+.Simple3D .torus > .ring18 > .slice7 {
+	background-position:-600% 1700%;
+}
+.Simple3D .sphere > .arc18 > .slice8 {
+	background-position:-700% 1700%;
+}
+.Simple3D .torus > .ring18 > .slice8 {
+	background-position:-700% 1700%;
+}
+.Simple3D .sphere > .arc18 > .slice9 {
+	background-position:-800% 1700%;
+}
+.Simple3D .torus > .ring18 > .slice9 {
+	background-position:-800% 1700%;
+}
+.Simple3D .sphere > .arc18 > .slice10 {
+	background-position:-900% 1700%;
+}
+.Simple3D .torus > .ring18 > .slice10 {
+	background-position:-900% 1700%;
+}
+.Simple3D .sphere > .arc18 > .slice11 {
+	background-position:-1000% 1700%;
+}
+.Simple3D .torus > .ring18 > .slice11 {
+	background-position:-1000% 1700%;
+}
+.Simple3D .sphere > .arc18 > .slice12 {
+	background-position:-1100% 1700%;
+}
+.Simple3D .torus > .ring18 > .slice12 {
+	background-position:-1100% 1700%;
 }
 .Simple3D .cylinder > .slice19,
 .Simple3D .cone > .slice19 {
@@ -467,7 +1917,88 @@ html.fullscreen .Simple3D {
 .Simple3D .cylinder > .slice19,
 .Simple3D .sphere > .arc > .slice19,
 .Simple3D .torus > .ring > .slice19 {
-	transform:rotateY(270deg) translateX(-375%) rotateY(-90deg);
+	transform:rotateY(270deg) translateX(-370%) rotateY(-90deg);
+}
+.Simple3D .cone > .slice19 {
+	transform:rotateY(270deg) translateX(-370%) rotateY(-90deg) rotateX(26.5deg);
+}
+.Simple3D .sphere > .arc19 {
+	transform:rotateX(270deg);
+}
+.Simple3D .torus > .ring19 {
+	transform:rotateZ(270deg) translateX(-66%);
+}
+.Simple3D .sphere > .arc19 > .slice1 {
+	background-position:0% 1800%;
+}
+.Simple3D .torus > .ring19 > .slice1 {
+	background-position:0% 1800%;
+}
+.Simple3D .sphere > .arc19 > .slice2 {
+	background-position:-100% 1800%;
+}
+.Simple3D .torus > .ring19 > .slice2 {
+	background-position:-100% 1800%;
+}
+.Simple3D .sphere > .arc19 > .slice3 {
+	background-position:-200% 1800%;
+}
+.Simple3D .torus > .ring19 > .slice3 {
+	background-position:-200% 1800%;
+}
+.Simple3D .sphere > .arc19 > .slice4 {
+	background-position:-300% 1800%;
+}
+.Simple3D .torus > .ring19 > .slice4 {
+	background-position:-300% 1800%;
+}
+.Simple3D .sphere > .arc19 > .slice5 {
+	background-position:-400% 1800%;
+}
+.Simple3D .torus > .ring19 > .slice5 {
+	background-position:-400% 1800%;
+}
+.Simple3D .sphere > .arc19 > .slice6 {
+	background-position:-500% 1800%;
+}
+.Simple3D .torus > .ring19 > .slice6 {
+	background-position:-500% 1800%;
+}
+.Simple3D .sphere > .arc19 > .slice7 {
+	background-position:-600% 1800%;
+}
+.Simple3D .torus > .ring19 > .slice7 {
+	background-position:-600% 1800%;
+}
+.Simple3D .sphere > .arc19 > .slice8 {
+	background-position:-700% 1800%;
+}
+.Simple3D .torus > .ring19 > .slice8 {
+	background-position:-700% 1800%;
+}
+.Simple3D .sphere > .arc19 > .slice9 {
+	background-position:-800% 1800%;
+}
+.Simple3D .torus > .ring19 > .slice9 {
+	background-position:-800% 1800%;
+}
+.Simple3D .sphere > .arc19 > .slice10 {
+	background-position:-900% 1800%;
+}
+.Simple3D .torus > .ring19 > .slice10 {
+	background-position:-900% 1800%;
+}
+.Simple3D .sphere > .arc19 > .slice11 {
+	background-position:-1000% 1800%;
+}
+.Simple3D .torus > .ring19 > .slice11 {
+	background-position:-1000% 1800%;
+}
+.Simple3D .sphere > .arc19 > .slice12 {
+	background-position:-1100% 1800%;
+}
+.Simple3D .torus > .ring19 > .slice12 {
+	background-position:-1100% 1800%;
 }
 .Simple3D .cylinder > .slice20,
 .Simple3D .cone > .slice20 {
@@ -476,7 +2007,88 @@ html.fullscreen .Simple3D {
 .Simple3D .cylinder > .slice20,
 .Simple3D .sphere > .arc > .slice20,
 .Simple3D .torus > .ring > .slice20 {
-	transform:rotateY(285deg) translateX(-375%) rotateY(-90deg);
+	transform:rotateY(285deg) translateX(-370%) rotateY(-90deg);
+}
+.Simple3D .cone > .slice20 {
+	transform:rotateY(285deg) translateX(-370%) rotateY(-90deg) rotateX(26.5deg);
+}
+.Simple3D .sphere > .arc20 {
+	transform:rotateX(285deg);
+}
+.Simple3D .torus > .ring20 {
+	transform:rotateZ(285deg) translateX(-66%);
+}
+.Simple3D .sphere > .arc20 > .slice1 {
+	background-position:0% 1900%;
+}
+.Simple3D .torus > .ring20 > .slice1 {
+	background-position:0% 1900%;
+}
+.Simple3D .sphere > .arc20 > .slice2 {
+	background-position:-100% 1900%;
+}
+.Simple3D .torus > .ring20 > .slice2 {
+	background-position:-100% 1900%;
+}
+.Simple3D .sphere > .arc20 > .slice3 {
+	background-position:-200% 1900%;
+}
+.Simple3D .torus > .ring20 > .slice3 {
+	background-position:-200% 1900%;
+}
+.Simple3D .sphere > .arc20 > .slice4 {
+	background-position:-300% 1900%;
+}
+.Simple3D .torus > .ring20 > .slice4 {
+	background-position:-300% 1900%;
+}
+.Simple3D .sphere > .arc20 > .slice5 {
+	background-position:-400% 1900%;
+}
+.Simple3D .torus > .ring20 > .slice5 {
+	background-position:-400% 1900%;
+}
+.Simple3D .sphere > .arc20 > .slice6 {
+	background-position:-500% 1900%;
+}
+.Simple3D .torus > .ring20 > .slice6 {
+	background-position:-500% 1900%;
+}
+.Simple3D .sphere > .arc20 > .slice7 {
+	background-position:-600% 1900%;
+}
+.Simple3D .torus > .ring20 > .slice7 {
+	background-position:-600% 1900%;
+}
+.Simple3D .sphere > .arc20 > .slice8 {
+	background-position:-700% 1900%;
+}
+.Simple3D .torus > .ring20 > .slice8 {
+	background-position:-700% 1900%;
+}
+.Simple3D .sphere > .arc20 > .slice9 {
+	background-position:-800% 1900%;
+}
+.Simple3D .torus > .ring20 > .slice9 {
+	background-position:-800% 1900%;
+}
+.Simple3D .sphere > .arc20 > .slice10 {
+	background-position:-900% 1900%;
+}
+.Simple3D .torus > .ring20 > .slice10 {
+	background-position:-900% 1900%;
+}
+.Simple3D .sphere > .arc20 > .slice11 {
+	background-position:-1000% 1900%;
+}
+.Simple3D .torus > .ring20 > .slice11 {
+	background-position:-1000% 1900%;
+}
+.Simple3D .sphere > .arc20 > .slice12 {
+	background-position:-1100% 1900%;
+}
+.Simple3D .torus > .ring20 > .slice12 {
+	background-position:-1100% 1900%;
 }
 .Simple3D .cylinder > .slice21,
 .Simple3D .cone > .slice21 {
@@ -485,7 +2097,88 @@ html.fullscreen .Simple3D {
 .Simple3D .cylinder > .slice21,
 .Simple3D .sphere > .arc > .slice21,
 .Simple3D .torus > .ring > .slice21 {
-	transform:rotateY(300deg) translateX(-375%) rotateY(-90deg);
+	transform:rotateY(300deg) translateX(-370%) rotateY(-90deg);
+}
+.Simple3D .cone > .slice21 {
+	transform:rotateY(300deg) translateX(-370%) rotateY(-90deg) rotateX(26.5deg);
+}
+.Simple3D .sphere > .arc21 {
+	transform:rotateX(300deg);
+}
+.Simple3D .torus > .ring21 {
+	transform:rotateZ(300deg) translateX(-66%);
+}
+.Simple3D .sphere > .arc21 > .slice1 {
+	background-position:0% 2000%;
+}
+.Simple3D .torus > .ring21 > .slice1 {
+	background-position:0% 2000%;
+}
+.Simple3D .sphere > .arc21 > .slice2 {
+	background-position:-100% 2000%;
+}
+.Simple3D .torus > .ring21 > .slice2 {
+	background-position:-100% 2000%;
+}
+.Simple3D .sphere > .arc21 > .slice3 {
+	background-position:-200% 2000%;
+}
+.Simple3D .torus > .ring21 > .slice3 {
+	background-position:-200% 2000%;
+}
+.Simple3D .sphere > .arc21 > .slice4 {
+	background-position:-300% 2000%;
+}
+.Simple3D .torus > .ring21 > .slice4 {
+	background-position:-300% 2000%;
+}
+.Simple3D .sphere > .arc21 > .slice5 {
+	background-position:-400% 2000%;
+}
+.Simple3D .torus > .ring21 > .slice5 {
+	background-position:-400% 2000%;
+}
+.Simple3D .sphere > .arc21 > .slice6 {
+	background-position:-500% 2000%;
+}
+.Simple3D .torus > .ring21 > .slice6 {
+	background-position:-500% 2000%;
+}
+.Simple3D .sphere > .arc21 > .slice7 {
+	background-position:-600% 2000%;
+}
+.Simple3D .torus > .ring21 > .slice7 {
+	background-position:-600% 2000%;
+}
+.Simple3D .sphere > .arc21 > .slice8 {
+	background-position:-700% 2000%;
+}
+.Simple3D .torus > .ring21 > .slice8 {
+	background-position:-700% 2000%;
+}
+.Simple3D .sphere > .arc21 > .slice9 {
+	background-position:-800% 2000%;
+}
+.Simple3D .torus > .ring21 > .slice9 {
+	background-position:-800% 2000%;
+}
+.Simple3D .sphere > .arc21 > .slice10 {
+	background-position:-900% 2000%;
+}
+.Simple3D .torus > .ring21 > .slice10 {
+	background-position:-900% 2000%;
+}
+.Simple3D .sphere > .arc21 > .slice11 {
+	background-position:-1000% 2000%;
+}
+.Simple3D .torus > .ring21 > .slice11 {
+	background-position:-1000% 2000%;
+}
+.Simple3D .sphere > .arc21 > .slice12 {
+	background-position:-1100% 2000%;
+}
+.Simple3D .torus > .ring21 > .slice12 {
+	background-position:-1100% 2000%;
 }
 .Simple3D .cylinder > .slice22,
 .Simple3D .cone > .slice22 {
@@ -494,7 +2187,88 @@ html.fullscreen .Simple3D {
 .Simple3D .cylinder > .slice22,
 .Simple3D .sphere > .arc > .slice22,
 .Simple3D .torus > .ring > .slice22 {
-	transform:rotateY(315deg) translateX(-375%) rotateY(-90deg);
+	transform:rotateY(315deg) translateX(-370%) rotateY(-90deg);
+}
+.Simple3D .cone > .slice22 {
+	transform:rotateY(315deg) translateX(-370%) rotateY(-90deg) rotateX(26.5deg);
+}
+.Simple3D .sphere > .arc22 {
+	transform:rotateX(315deg);
+}
+.Simple3D .torus > .ring22 {
+	transform:rotateZ(315deg) translateX(-66%);
+}
+.Simple3D .sphere > .arc22 > .slice1 {
+	background-position:0% 2100%;
+}
+.Simple3D .torus > .ring22 > .slice1 {
+	background-position:0% 2100%;
+}
+.Simple3D .sphere > .arc22 > .slice2 {
+	background-position:-100% 2100%;
+}
+.Simple3D .torus > .ring22 > .slice2 {
+	background-position:-100% 2100%;
+}
+.Simple3D .sphere > .arc22 > .slice3 {
+	background-position:-200% 2100%;
+}
+.Simple3D .torus > .ring22 > .slice3 {
+	background-position:-200% 2100%;
+}
+.Simple3D .sphere > .arc22 > .slice4 {
+	background-position:-300% 2100%;
+}
+.Simple3D .torus > .ring22 > .slice4 {
+	background-position:-300% 2100%;
+}
+.Simple3D .sphere > .arc22 > .slice5 {
+	background-position:-400% 2100%;
+}
+.Simple3D .torus > .ring22 > .slice5 {
+	background-position:-400% 2100%;
+}
+.Simple3D .sphere > .arc22 > .slice6 {
+	background-position:-500% 2100%;
+}
+.Simple3D .torus > .ring22 > .slice6 {
+	background-position:-500% 2100%;
+}
+.Simple3D .sphere > .arc22 > .slice7 {
+	background-position:-600% 2100%;
+}
+.Simple3D .torus > .ring22 > .slice7 {
+	background-position:-600% 2100%;
+}
+.Simple3D .sphere > .arc22 > .slice8 {
+	background-position:-700% 2100%;
+}
+.Simple3D .torus > .ring22 > .slice8 {
+	background-position:-700% 2100%;
+}
+.Simple3D .sphere > .arc22 > .slice9 {
+	background-position:-800% 2100%;
+}
+.Simple3D .torus > .ring22 > .slice9 {
+	background-position:-800% 2100%;
+}
+.Simple3D .sphere > .arc22 > .slice10 {
+	background-position:-900% 2100%;
+}
+.Simple3D .torus > .ring22 > .slice10 {
+	background-position:-900% 2100%;
+}
+.Simple3D .sphere > .arc22 > .slice11 {
+	background-position:-1000% 2100%;
+}
+.Simple3D .torus > .ring22 > .slice11 {
+	background-position:-1000% 2100%;
+}
+.Simple3D .sphere > .arc22 > .slice12 {
+	background-position:-1100% 2100%;
+}
+.Simple3D .torus > .ring22 > .slice12 {
+	background-position:-1100% 2100%;
 }
 .Simple3D .cylinder > .slice23,
 .Simple3D .cone > .slice23 {
@@ -503,7 +2277,88 @@ html.fullscreen .Simple3D {
 .Simple3D .cylinder > .slice23,
 .Simple3D .sphere > .arc > .slice23,
 .Simple3D .torus > .ring > .slice23 {
-	transform:rotateY(330deg) translateX(-375%) rotateY(-90deg);
+	transform:rotateY(330deg) translateX(-370%) rotateY(-90deg);
+}
+.Simple3D .cone > .slice23 {
+	transform:rotateY(330deg) translateX(-370%) rotateY(-90deg) rotateX(26.5deg);
+}
+.Simple3D .sphere > .arc23 {
+	transform:rotateX(330deg);
+}
+.Simple3D .torus > .ring23 {
+	transform:rotateZ(330deg) translateX(-66%);
+}
+.Simple3D .sphere > .arc23 > .slice1 {
+	background-position:0% 2200%;
+}
+.Simple3D .torus > .ring23 > .slice1 {
+	background-position:0% 2200%;
+}
+.Simple3D .sphere > .arc23 > .slice2 {
+	background-position:-100% 2200%;
+}
+.Simple3D .torus > .ring23 > .slice2 {
+	background-position:-100% 2200%;
+}
+.Simple3D .sphere > .arc23 > .slice3 {
+	background-position:-200% 2200%;
+}
+.Simple3D .torus > .ring23 > .slice3 {
+	background-position:-200% 2200%;
+}
+.Simple3D .sphere > .arc23 > .slice4 {
+	background-position:-300% 2200%;
+}
+.Simple3D .torus > .ring23 > .slice4 {
+	background-position:-300% 2200%;
+}
+.Simple3D .sphere > .arc23 > .slice5 {
+	background-position:-400% 2200%;
+}
+.Simple3D .torus > .ring23 > .slice5 {
+	background-position:-400% 2200%;
+}
+.Simple3D .sphere > .arc23 > .slice6 {
+	background-position:-500% 2200%;
+}
+.Simple3D .torus > .ring23 > .slice6 {
+	background-position:-500% 2200%;
+}
+.Simple3D .sphere > .arc23 > .slice7 {
+	background-position:-600% 2200%;
+}
+.Simple3D .torus > .ring23 > .slice7 {
+	background-position:-600% 2200%;
+}
+.Simple3D .sphere > .arc23 > .slice8 {
+	background-position:-700% 2200%;
+}
+.Simple3D .torus > .ring23 > .slice8 {
+	background-position:-700% 2200%;
+}
+.Simple3D .sphere > .arc23 > .slice9 {
+	background-position:-800% 2200%;
+}
+.Simple3D .torus > .ring23 > .slice9 {
+	background-position:-800% 2200%;
+}
+.Simple3D .sphere > .arc23 > .slice10 {
+	background-position:-900% 2200%;
+}
+.Simple3D .torus > .ring23 > .slice10 {
+	background-position:-900% 2200%;
+}
+.Simple3D .sphere > .arc23 > .slice11 {
+	background-position:-1000% 2200%;
+}
+.Simple3D .torus > .ring23 > .slice11 {
+	background-position:-1000% 2200%;
+}
+.Simple3D .sphere > .arc23 > .slice12 {
+	background-position:-1100% 2200%;
+}
+.Simple3D .torus > .ring23 > .slice12 {
+	background-position:-1100% 2200%;
 }
 .Simple3D .cylinder > .slice24,
 .Simple3D .cone > .slice24 {
@@ -512,7 +2367,88 @@ html.fullscreen .Simple3D {
 .Simple3D .cylinder > .slice24,
 .Simple3D .sphere > .arc > .slice24,
 .Simple3D .torus > .ring > .slice24 {
-	transform:rotateY(345deg) translateX(-375%) rotateY(-90deg);
+	transform:rotateY(345deg) translateX(-370%) rotateY(-90deg);
+}
+.Simple3D .cone > .slice24 {
+	transform:rotateY(345deg) translateX(-370%) rotateY(-90deg) rotateX(26.5deg);
+}
+.Simple3D .sphere > .arc24 {
+	transform:rotateX(345deg);
+}
+.Simple3D .torus > .ring24 {
+	transform:rotateZ(345deg) translateX(-66%);
+}
+.Simple3D .sphere > .arc24 > .slice1 {
+	background-position:0% 2300%;
+}
+.Simple3D .torus > .ring24 > .slice1 {
+	background-position:0% 2300%;
+}
+.Simple3D .sphere > .arc24 > .slice2 {
+	background-position:-100% 2300%;
+}
+.Simple3D .torus > .ring24 > .slice2 {
+	background-position:-100% 2300%;
+}
+.Simple3D .sphere > .arc24 > .slice3 {
+	background-position:-200% 2300%;
+}
+.Simple3D .torus > .ring24 > .slice3 {
+	background-position:-200% 2300%;
+}
+.Simple3D .sphere > .arc24 > .slice4 {
+	background-position:-300% 2300%;
+}
+.Simple3D .torus > .ring24 > .slice4 {
+	background-position:-300% 2300%;
+}
+.Simple3D .sphere > .arc24 > .slice5 {
+	background-position:-400% 2300%;
+}
+.Simple3D .torus > .ring24 > .slice5 {
+	background-position:-400% 2300%;
+}
+.Simple3D .sphere > .arc24 > .slice6 {
+	background-position:-500% 2300%;
+}
+.Simple3D .torus > .ring24 > .slice6 {
+	background-position:-500% 2300%;
+}
+.Simple3D .sphere > .arc24 > .slice7 {
+	background-position:-600% 2300%;
+}
+.Simple3D .torus > .ring24 > .slice7 {
+	background-position:-600% 2300%;
+}
+.Simple3D .sphere > .arc24 > .slice8 {
+	background-position:-700% 2300%;
+}
+.Simple3D .torus > .ring24 > .slice8 {
+	background-position:-700% 2300%;
+}
+.Simple3D .sphere > .arc24 > .slice9 {
+	background-position:-800% 2300%;
+}
+.Simple3D .torus > .ring24 > .slice9 {
+	background-position:-800% 2300%;
+}
+.Simple3D .sphere > .arc24 > .slice10 {
+	background-position:-900% 2300%;
+}
+.Simple3D .torus > .ring24 > .slice10 {
+	background-position:-900% 2300%;
+}
+.Simple3D .sphere > .arc24 > .slice11 {
+	background-position:-1000% 2300%;
+}
+.Simple3D .torus > .ring24 > .slice11 {
+	background-position:-1000% 2300%;
+}
+.Simple3D .sphere > .arc24 > .slice12 {
+	background-position:-1100% 2300%;
+}
+.Simple3D .torus > .ring24 > .slice12 {
+	background-position:-1100% 2300%;
 }
 .Simple3D .topface,
 .Simple3D .bottomface,
@@ -572,947 +2508,9 @@ html.fullscreen .Simple3D {
 }
 .Simple3D .sphere > .arc {
 	width:100%;
-	height:14%;
-	top:43%;
 }
 .Simple3D .sphere > .arc > .slice {
 	background-color:#CCC;
-}
-.Simple3D .sphere > .arc1 {
-	transform:rotateX(90deg);
-}
-.Simple3D .sphere > .arc1 > .slice1 {
-	background-position:0% 0%;
-}
-.Simple3D .sphere > .arc1 > .slice2 {
-	background-position:-100% 0%;
-}
-.Simple3D .sphere > .arc1 > .slice3 {
-	background-position:-200% 0%;
-}
-.Simple3D .sphere > .arc1 > .slice4 {
-	background-position:-300% 0%;
-}
-.Simple3D .sphere > .arc1 > .slice5 {
-	background-position:-400% 0%;
-}
-.Simple3D .sphere > .arc1 > .slice6 {
-	background-position:-500% 0%;
-}
-.Simple3D .sphere > .arc1 > .slice7 {
-	background-position:-600% 0%;
-}
-.Simple3D .sphere > .arc1 > .slice8 {
-	background-position:-700% 0%;
-}
-.Simple3D .sphere > .arc1 > .slice9 {
-	background-position:-800% 0%;
-}
-.Simple3D .sphere > .arc1 > .slice10 {
-	background-position:-900% 0%;
-}
-.Simple3D .sphere > .arc1 > .slice11 {
-	background-position:-1000% 0%;
-}
-.Simple3D .sphere > .arc1 > .slice12 {
-	background-position:-1100% 0%;
-}
-.Simple3D .sphere > .arc2 {
-	transform:rotateX(75deg);
-}
-.Simple3D .sphere > .arc2 > .slice1 {
-	background-position:0% -100%;
-}
-.Simple3D .sphere > .arc2 > .slice2 {
-	background-position:-100% -100%;
-}
-.Simple3D .sphere > .arc2 > .slice3 {
-	background-position:-200% -100%;
-}
-.Simple3D .sphere > .arc2 > .slice4 {
-	background-position:-300% -100%;
-}
-.Simple3D .sphere > .arc2 > .slice5 {
-	background-position:-400% -100%;
-}
-.Simple3D .sphere > .arc2 > .slice6 {
-	background-position:-500% -100%;
-}
-.Simple3D .sphere > .arc2 > .slice7 {
-	background-position:-600% -100%;
-}
-.Simple3D .sphere > .arc2 > .slice8 {
-	background-position:-700% -100%;
-}
-.Simple3D .sphere > .arc2 > .slice9 {
-	background-position:-800% -100%;
-}
-.Simple3D .sphere > .arc2 > .slice10 {
-	background-position:-900% -100%;
-}
-.Simple3D .sphere > .arc2 > .slice11 {
-	background-position:-1000% -100%;
-}
-.Simple3D .sphere > .arc2 > .slice12 {
-	background-position:-1100% 100%;
-}
-.Simple3D .sphere > .arc3 {
-	transform:rotateX(60deg);
-}
-.Simple3D .sphere > .arc3 > .slice1 {
-	background-position:0% -200%;
-}
-.Simple3D .sphere > .arc3 > .slice2 {
-	background-position:-100% -200%;
-}
-.Simple3D .sphere > .arc3 > .slice3 {
-	background-position:-200% -200%;
-}
-.Simple3D .sphere > .arc3 > .slice4 {
-	background-position:-300% -200%;
-}
-.Simple3D .sphere > .arc3 > .slice5 {
-	background-position:-400% -200%;
-}
-.Simple3D .sphere > .arc3 > .slice6 {
-	background-position:-500% -200%;
-}
-.Simple3D .sphere > .arc3 > .slice7 {
-	background-position:-600% -200%;
-}
-.Simple3D .sphere > .arc3 > .slice8 {
-	background-position:-700% -200%;
-}
-.Simple3D .sphere > .arc3 > .slice9 {
-	background-position:-800% -200%;
-}
-.Simple3D .sphere > .arc3 > .slice10 {
-	background-position:-900% -200%;
-}
-.Simple3D .sphere > .arc3 > .slice11 {
-	background-position:-1000% -200%;
-}
-.Simple3D .sphere > .arc3 > .slice12 {
-	background-position:-1100% 200%;
-}
-.Simple3D .sphere > .arc4 {
-	transform:rotateX(45deg);
-}
-.Simple3D .sphere > .arc4 > .slice1 {
-	background-position:0% -300%;
-}
-.Simple3D .sphere > .arc4 > .slice2 {
-	background-position:-100% -300%;
-}
-.Simple3D .sphere > .arc4 > .slice3 {
-	background-position:-200% -300%;
-}
-.Simple3D .sphere > .arc4 > .slice4 {
-	background-position:-300% -300%;
-}
-.Simple3D .sphere > .arc4 > .slice5 {
-	background-position:-400% -300%;
-}
-.Simple3D .sphere > .arc4 > .slice6 {
-	background-position:-500% -300%;
-}
-.Simple3D .sphere > .arc4 > .slice7 {
-	background-position:-600% -300%;
-}
-.Simple3D .sphere > .arc4 > .slice8 {
-	background-position:-700% -300%;
-}
-.Simple3D .sphere > .arc4 > .slice9 {
-	background-position:-800% -300%;
-}
-.Simple3D .sphere > .arc4 > .slice10 {
-	background-position:-900% -300%;
-}
-.Simple3D .sphere > .arc4 > .slice11 {
-	background-position:-1000% -300%;
-}
-.Simple3D .sphere > .arc4 > .slice12 {
-	background-position:-1100% 300%;
-}
-.Simple3D .sphere > .arc5 {
-	transform:rotateX(30deg);
-}
-.Simple3D .sphere > .arc5 > .slice1 {
-	background-position:0% -400%;
-}
-.Simple3D .sphere > .arc5 > .slice2 {
-	background-position:-100% -400%;
-}
-.Simple3D .sphere > .arc5 > .slice3 {
-	background-position:-200% -400%;
-}
-.Simple3D .sphere > .arc5 > .slice4 {
-	background-position:-300% -400%;
-}
-.Simple3D .sphere > .arc5 > .slice5 {
-	background-position:-400% -400%;
-}
-.Simple3D .sphere > .arc5 > .slice6 {
-	background-position:-500% -400%;
-}
-.Simple3D .sphere > .arc5 > .slice7 {
-	background-position:-600% -400%;
-}
-.Simple3D .sphere > .arc5 > .slice8 {
-	background-position:-700% -400%;
-}
-.Simple3D .sphere > .arc5 > .slice9 {
-	background-position:-800% -400%;
-}
-.Simple3D .sphere > .arc5 > .slice10 {
-	background-position:-900% -400%;
-}
-.Simple3D .sphere > .arc5 > .slice11 {
-	background-position:-1000% -400%;
-}
-.Simple3D .sphere > .arc5 > .slice12 {
-	background-position:-1100% 400%;
-}
-.Simple3D .sphere > .arc6 {
-	transform:rotateX(15deg);
-}
-.Simple3D .sphere > .arc6 > .slice1 {
-	background-position:0% -500%;
-}
-.Simple3D .sphere > .arc6 > .slice2 {
-	background-position:-100% -500%;
-}
-.Simple3D .sphere > .arc6 > .slice3 {
-	background-position:-200% -500%;
-}
-.Simple3D .sphere > .arc6 > .slice4 {
-	background-position:-300% -500%;
-}
-.Simple3D .sphere > .arc6 > .slice5 {
-	background-position:-400% -500%;
-}
-.Simple3D .sphere > .arc6 > .slice6 {
-	background-position:-500% -500%;
-}
-.Simple3D .sphere > .arc6 > .slice7 {
-	background-position:-600% -500%;
-}
-.Simple3D .sphere > .arc6 > .slice8 {
-	background-position:-700% -500%;
-}
-.Simple3D .sphere > .arc6 > .slice9 {
-	background-position:-800% -500%;
-}
-.Simple3D .sphere > .arc6 > .slice10 {
-	background-position:-900% -500%;
-}
-.Simple3D .sphere > .arc6 > .slice11 {
-	background-position:-1000% -500%;
-}
-.Simple3D .sphere > .arc6 > .slice12 {
-	background-position:-1100% 500%;
-}
-.Simple3D .sphere > .arc7 {
-	transform:rotateX(0deg);
-}
-.Simple3D .sphere > .arc7 > .slice1 {
-	background-position:0% -600%;
-}
-.Simple3D .sphere > .arc7 > .slice2 {
-	background-position:-100% -600%;
-}
-.Simple3D .sphere > .arc7 > .slice3 {
-	background-position:-200% -600%;
-}
-.Simple3D .sphere > .arc7 > .slice4 {
-	background-position:-300% -600%;
-}
-.Simple3D .sphere > .arc7 > .slice5 {
-	background-position:-400% -600%;
-}
-.Simple3D .sphere > .arc7 > .slice6 {
-	background-position:-500% -600%;
-}
-.Simple3D .sphere > .arc7 > .slice7 {
-	background-position:-600% -600%;
-}
-.Simple3D .sphere > .arc7 > .slice8 {
-	background-position:-700% -600%;
-}
-.Simple3D .sphere > .arc7 > .slice9 {
-	background-position:-800% -600%;
-}
-.Simple3D .sphere > .arc7 > .slice10 {
-	background-position:-900% -600%;
-}
-.Simple3D .sphere > .arc7 > .slice11 {
-	background-position:-1000% -600%;
-}
-.Simple3D .sphere > .arc7 > .slice12 {
-	background-position:-1100% 600%;
-}
-.Simple3D .sphere > .arc8 {
-	transform:rotateX(-15deg);
-}
-.Simple3D .sphere > .arc8 > .slice1 {
-	background-position:0% -700%;
-}
-.Simple3D .sphere > .arc8 > .slice2 {
-	background-position:-100% -700%;
-}
-.Simple3D .sphere > .arc8 > .slice3 {
-	background-position:-200% -700%;
-}
-.Simple3D .sphere > .arc8 > .slice4 {
-	background-position:-300% -700%;
-}
-.Simple3D .sphere > .arc8 > .slice5 {
-	background-position:-400% -700%;
-}
-.Simple3D .sphere > .arc8 > .slice6 {
-	background-position:-500% -700%;
-}
-.Simple3D .sphere > .arc8 > .slice7 {
-	background-position:-600% -700%;
-}
-.Simple3D .sphere > .arc8 > .slice8 {
-	background-position:-700% -700%;
-}
-.Simple3D .sphere > .arc8 > .slice9 {
-	background-position:-800% -700%;
-}
-.Simple3D .sphere > .arc8 > .slice10 {
-	background-position:-900% -700%;
-}
-.Simple3D .sphere > .arc8 > .slice11 {
-	background-position:-1000% -700%;
-}
-.Simple3D .sphere > .arc8 > .slice12 {
-	background-position:-1100% 700%;
-}
-.Simple3D .sphere > .arc9 {
-	transform:rotateX(-30deg);
-}
-.Simple3D .sphere > .arc9 > .slice1 {
-	background-position:0% -800%;
-}
-.Simple3D .sphere > .arc9 > .slice2 {
-	background-position:-100% -800%;
-}
-.Simple3D .sphere > .arc9 > .slice3 {
-	background-position:-200% -800%;
-}
-.Simple3D .sphere > .arc9 > .slice4 {
-	background-position:-300% -800%;
-}
-.Simple3D .sphere > .arc9 > .slice5 {
-	background-position:-400% -800%;
-}
-.Simple3D .sphere > .arc9 > .slice6 {
-	background-position:-500% -800%;
-}
-.Simple3D .sphere > .arc9 > .slice7 {
-	background-position:-600% -800%;
-}
-.Simple3D .sphere > .arc9 > .slice8 {
-	background-position:-700% -800%;
-}
-.Simple3D .sphere > .arc9 > .slice9 {
-	background-position:-800% -800%;
-}
-.Simple3D .sphere > .arc9 > .slice10 {
-	background-position:-900% -800%;
-}
-.Simple3D .sphere > .arc9 > .slice11 {
-	background-position:-1000% -800%;
-}
-.Simple3D .sphere > .arc9 > .slice12 {
-	background-position:-1100% 800%;
-}
-.Simple3D .sphere > .arc10 {
-	transform:rotateX(-45deg);
-}
-.Simple3D .sphere > .arc10 > .slice1 {
-	background-position:0% -900%;
-}
-.Simple3D .sphere > .arc10 > .slice2 {
-	background-position:-100% -900%;
-}
-.Simple3D .sphere > .arc10 > .slice3 {
-	background-position:-200% -900%;
-}
-.Simple3D .sphere > .arc10 > .slice4 {
-	background-position:-300% -900%;
-}
-.Simple3D .sphere > .arc10 > .slice5 {
-	background-position:-400% -900%;
-}
-.Simple3D .sphere > .arc10 > .slice6 {
-	background-position:-500% -900%;
-}
-.Simple3D .sphere > .arc10 > .slice7 {
-	background-position:-600% -900%;
-}
-.Simple3D .sphere > .arc10 > .slice8 {
-	background-position:-700% -900%;
-}
-.Simple3D .sphere > .arc10 > .slice9 {
-	background-position:-800% -900%;
-}
-.Simple3D .sphere > .arc10 > .slice10 {
-	background-position:-900% -900%;
-}
-.Simple3D .sphere > .arc10 > .slice11 {
-	background-position:-1000% -900%;
-}
-.Simple3D .sphere > .arc10 > .slice12 {
-	background-position:-1100% 900%;
-}
-.Simple3D .sphere > .arc11 {
-	transform:rotateX(-60deg);
-}
-.Simple3D .sphere > .arc11 > .slice1 {
-	background-position:0% -1000%;
-}
-.Simple3D .sphere > .arc11 > .slice2 {
-	background-position:-100% -1000%;
-}
-.Simple3D .sphere > .arc11 > .slice3 {
-	background-position:-200% -1000%;
-}
-.Simple3D .sphere > .arc11 > .slice4 {
-	background-position:-300% -1000%;
-}
-.Simple3D .sphere > .arc11 > .slice5 {
-	background-position:-400% -1000%;
-}
-.Simple3D .sphere > .arc11 > .slice6 {
-	background-position:-500% -1000%;
-}
-.Simple3D .sphere > .arc11 > .slice7 {
-	background-position:-600% -1000%;
-}
-.Simple3D .sphere > .arc11 > .slice8 {
-	background-position:-700% -1000%;
-}
-.Simple3D .sphere > .arc11 > .slice9 {
-	background-position:-800% -1000%;
-}
-.Simple3D .sphere > .arc11 > .slice10 {
-	background-position:-900% -1000%;
-}
-.Simple3D .sphere > .arc11 > .slice11 {
-	background-position:-1000% -1000%;
-}
-.Simple3D .sphere > .arc11 > .slice12 {
-	background-position:-1100% 1000%;
-}
-.Simple3D .sphere > .arc12 {
-	transform:rotateX(-75deg);
-}
-.Simple3D .sphere > .arc12 > .slice1 {
-	background-position:0% -1100%;
-}
-.Simple3D .sphere > .arc12 > .slice2 {
-	background-position:-100% -1100%;
-}
-.Simple3D .sphere > .arc12 > .slice3 {
-	background-position:-200% -1100%;
-}
-.Simple3D .sphere > .arc12 > .slice4 {
-	background-position:-300% -1100%;
-}
-.Simple3D .sphere > .arc12 > .slice5 {
-	background-position:-400% -1100%;
-}
-.Simple3D .sphere > .arc12 > .slice6 {
-	background-position:-500% -1100%;
-}
-.Simple3D .sphere > .arc12 > .slice7 {
-	background-position:-600% -1100%;
-}
-.Simple3D .sphere > .arc12 > .slice8 {
-	background-position:-700% -1100%;
-}
-.Simple3D .sphere > .arc12 > .slice9 {
-	background-position:-800% -1100%;
-}
-.Simple3D .sphere > .arc12 > .slice10 {
-	background-position:-900% -1100%;
-}
-.Simple3D .sphere > .arc12 > .slice11 {
-	background-position:-1000% -1100%;
-}
-.Simple3D .sphere > .arc12 > .slice12 {
-	background-position:-1100% 1100%;
-}
-.Simple3D .sphere > .arc13 {
-	transform:rotateX(-90deg);
-}
-.Simple3D .sphere > .arc13 > .slice1 {
-	background-position:0% -1200%;
-}
-.Simple3D .sphere > .arc13 > .slice2 {
-	background-position:-100% -1200%;
-}
-.Simple3D .sphere > .arc13 > .slice3 {
-	background-position:-200% -1200%;
-}
-.Simple3D .sphere > .arc13 > .slice4 {
-	background-position:-300% -1200%;
-}
-.Simple3D .sphere > .arc13 > .slice5 {
-	background-position:-400% -1200%;
-}
-.Simple3D .sphere > .arc13 > .slice6 {
-	background-position:-500% -1200%;
-}
-.Simple3D .sphere > .arc13 > .slice7 {
-	background-position:-600% -1200%;
-}
-.Simple3D .sphere > .arc13 > .slice8 {
-	background-position:-700% -1200%;
-}
-.Simple3D .sphere > .arc13 > .slice9 {
-	background-position:-800% -1200%;
-}
-.Simple3D .sphere > .arc13 > .slice10 {
-	background-position:-900% -1200%;
-}
-.Simple3D .sphere > .arc13 > .slice11 {
-	background-position:-1000% -1200%;
-}
-.Simple3D .sphere > .arc13 > .slice12 {
-	background-position:-1100% 1200%;
-}
-.Simple3D .sphere > .arc14 {
-	transform:rotateX(-105deg);
-}
-.Simple3D .sphere > .arc14 > .slice1 {
-	background-position:0% -1300%;
-}
-.Simple3D .sphere > .arc14 > .slice2 {
-	background-position:-100% -1300%;
-}
-.Simple3D .sphere > .arc14 > .slice3 {
-	background-position:-200% -1300%;
-}
-.Simple3D .sphere > .arc14 > .slice4 {
-	background-position:-300% -1300%;
-}
-.Simple3D .sphere > .arc14 > .slice5 {
-	background-position:-400% -1300%;
-}
-.Simple3D .sphere > .arc14 > .slice6 {
-	background-position:-500% -1300%;
-}
-.Simple3D .sphere > .arc14 > .slice7 {
-	background-position:-600% -1300%;
-}
-.Simple3D .sphere > .arc14 > .slice8 {
-	background-position:-700% -1300%;
-}
-.Simple3D .sphere > .arc14 > .slice9 {
-	background-position:-800% -1300%;
-}
-.Simple3D .sphere > .arc14 > .slice10 {
-	background-position:-900% -1300%;
-}
-.Simple3D .sphere > .arc14 > .slice11 {
-	background-position:-1000% -1300%;
-}
-.Simple3D .sphere > .arc14 > .slice12 {
-	background-position:-1100% 1300%;
-}
-.Simple3D .sphere > .arc15 {
-	transform:rotateX(-120deg);
-}
-.Simple3D .sphere > .arc15 > .slice1 {
-	background-position:0% -1400%;
-}
-.Simple3D .sphere > .arc15 > .slice2 {
-	background-position:-100% -1400%;
-}
-.Simple3D .sphere > .arc15 > .slice3 {
-	background-position:-200% -1400%;
-}
-.Simple3D .sphere > .arc15 > .slice4 {
-	background-position:-300% -1400%;
-}
-.Simple3D .sphere > .arc15 > .slice5 {
-	background-position:-400% -1400%;
-}
-.Simple3D .sphere > .arc15 > .slice6 {
-	background-position:-500% -1400%;
-}
-.Simple3D .sphere > .arc15 > .slice7 {
-	background-position:-600% -1400%;
-}
-.Simple3D .sphere > .arc15 > .slice8 {
-	background-position:-700% -1400%;
-}
-.Simple3D .sphere > .arc15 > .slice9 {
-	background-position:-800% -1400%;
-}
-.Simple3D .sphere > .arc15 > .slice10 {
-	background-position:-900% -1400%;
-}
-.Simple3D .sphere > .arc15 > .slice11 {
-	background-position:-1000% -1400%;
-}
-.Simple3D .sphere > .arc15 > .slice12 {
-	background-position:-1100% 1400%;
-}
-.Simple3D .sphere > .arc16 {
-	transform:rotateX(-135deg);
-}
-.Simple3D .sphere > .arc16 > .slice1 {
-	background-position:0% -1500%;
-}
-.Simple3D .sphere > .arc16 > .slice2 {
-	background-position:-100% -1500%;
-}
-.Simple3D .sphere > .arc16 > .slice3 {
-	background-position:-200% -1500%;
-}
-.Simple3D .sphere > .arc16 > .slice4 {
-	background-position:-300% -1500%;
-}
-.Simple3D .sphere > .arc16 > .slice5 {
-	background-position:-400% -1500%;
-}
-.Simple3D .sphere > .arc16 > .slice6 {
-	background-position:-500% -1500%;
-}
-.Simple3D .sphere > .arc16 > .slice7 {
-	background-position:-600% -1500%;
-}
-.Simple3D .sphere > .arc16 > .slice8 {
-	background-position:-700% -1500%;
-}
-.Simple3D .sphere > .arc16 > .slice9 {
-	background-position:-800% -1500%;
-}
-.Simple3D .sphere > .arc16 > .slice10 {
-	background-position:-900% -1500%;
-}
-.Simple3D .sphere > .arc16 > .slice11 {
-	background-position:-1000% -1500%;
-}
-.Simple3D .sphere > .arc16 > .slice12 {
-	background-position:-1100% 1500%;
-}
-.Simple3D .sphere > .arc17 {
-	transform:rotateX(-150deg);
-}
-.Simple3D .sphere > .arc17 > .slice1 {
-	background-position:0% -1600%;
-}
-.Simple3D .sphere > .arc17 > .slice2 {
-	background-position:-100% -1600%;
-}
-.Simple3D .sphere > .arc17 > .slice3 {
-	background-position:-200% -1600%;
-}
-.Simple3D .sphere > .arc17 > .slice4 {
-	background-position:-300% -1600%;
-}
-.Simple3D .sphere > .arc17 > .slice5 {
-	background-position:-400% -1600%;
-}
-.Simple3D .sphere > .arc17 > .slice6 {
-	background-position:-500% -1600%;
-}
-.Simple3D .sphere > .arc17 > .slice7 {
-	background-position:-600% -1600%;
-}
-.Simple3D .sphere > .arc17 > .slice8 {
-	background-position:-700% -1600%;
-}
-.Simple3D .sphere > .arc17 > .slice9 {
-	background-position:-800% -1600%;
-}
-.Simple3D .sphere > .arc17 > .slice10 {
-	background-position:-900% -1600%;
-}
-.Simple3D .sphere > .arc17 > .slice11 {
-	background-position:-1000% -1600%;
-}
-.Simple3D .sphere > .arc17 > .slice12 {
-	background-position:-1100% 1600%;
-}
-.Simple3D .sphere > .arc18 {
-	transform:rotateX(-165deg);
-}
-.Simple3D .sphere > .arc18 > .slice1 {
-	background-position:0% -1700%;
-}
-.Simple3D .sphere > .arc18 > .slice2 {
-	background-position:-100% -1700%;
-}
-.Simple3D .sphere > .arc18 > .slice3 {
-	background-position:-200% -1700%;
-}
-.Simple3D .sphere > .arc18 > .slice4 {
-	background-position:-300% -1700%;
-}
-.Simple3D .sphere > .arc18 > .slice5 {
-	background-position:-400% -1700%;
-}
-.Simple3D .sphere > .arc18 > .slice6 {
-	background-position:-500% -1700%;
-}
-.Simple3D .sphere > .arc18 > .slice7 {
-	background-position:-600% -1700%;
-}
-.Simple3D .sphere > .arc18 > .slice8 {
-	background-position:-700% -1700%;
-}
-.Simple3D .sphere > .arc18 > .slice9 {
-	background-position:-800% -1700%;
-}
-.Simple3D .sphere > .arc18 > .slice10 {
-	background-position:-900% -1700%;
-}
-.Simple3D .sphere > .arc18 > .slice11 {
-	background-position:-1000% -1700%;
-}
-.Simple3D .sphere > .arc18 > .slice12 {
-	background-position:-1100% 1700%;
-}
-.Simple3D .sphere > .arc19 {
-	transform:rotateX(-180deg);
-}
-.Simple3D .sphere > .arc19 > .slice1 {
-	background-position:0% -1800%;
-}
-.Simple3D .sphere > .arc19 > .slice2 {
-	background-position:-100% -1800%;
-}
-.Simple3D .sphere > .arc19 > .slice3 {
-	background-position:-200% -1800%;
-}
-.Simple3D .sphere > .arc19 > .slice4 {
-	background-position:-300% -1800%;
-}
-.Simple3D .sphere > .arc19 > .slice5 {
-	background-position:-400% -1800%;
-}
-.Simple3D .sphere > .arc19 > .slice6 {
-	background-position:-500% -1800%;
-}
-.Simple3D .sphere > .arc19 > .slice7 {
-	background-position:-600% -1800%;
-}
-.Simple3D .sphere > .arc19 > .slice8 {
-	background-position:-700% -1800%;
-}
-.Simple3D .sphere > .arc19 > .slice9 {
-	background-position:-800% -1800%;
-}
-.Simple3D .sphere > .arc19 > .slice10 {
-	background-position:-900% -1800%;
-}
-.Simple3D .sphere > .arc19 > .slice11 {
-	background-position:-1000% -1800%;
-}
-.Simple3D .sphere > .arc19 > .slice12 {
-	background-position:-1100% 1800%;
-}
-.Simple3D .sphere > .arc20 {
-	transform:rotateX(-195deg);
-}
-.Simple3D .sphere > .arc20 > .slice1 {
-	background-position:0% -1900%;
-}
-.Simple3D .sphere > .arc20 > .slice2 {
-	background-position:-100% -1900%;
-}
-.Simple3D .sphere > .arc20 > .slice3 {
-	background-position:-200% -1900%;
-}
-.Simple3D .sphere > .arc20 > .slice4 {
-	background-position:-300% -1900%;
-}
-.Simple3D .sphere > .arc20 > .slice5 {
-	background-position:-400% -1900%;
-}
-.Simple3D .sphere > .arc20 > .slice6 {
-	background-position:-500% -1900%;
-}
-.Simple3D .sphere > .arc20 > .slice7 {
-	background-position:-600% -1900%;
-}
-.Simple3D .sphere > .arc20 > .slice8 {
-	background-position:-700% -1900%;
-}
-.Simple3D .sphere > .arc20 > .slice9 {
-	background-position:-800% -1900%;
-}
-.Simple3D .sphere > .arc20 > .slice10 {
-	background-position:-900% -1900%;
-}
-.Simple3D .sphere > .arc20 > .slice11 {
-	background-position:-1000% -1900%;
-}
-.Simple3D .sphere > .arc20 > .slice12 {
-	background-position:-1100% 1900%;
-}
-.Simple3D .sphere > .arc21 {
-	transform:rotateX(-210deg);
-}
-.Simple3D .sphere > .arc21 > .slice1 {
-	background-position:0% -2000%;
-}
-.Simple3D .sphere > .arc21 > .slice2 {
-	background-position:-100% -2000%;
-}
-.Simple3D .sphere > .arc21 > .slice3 {
-	background-position:-200% -2000%;
-}
-.Simple3D .sphere > .arc21 > .slice4 {
-	background-position:-300% -2000%;
-}
-.Simple3D .sphere > .arc21 > .slice5 {
-	background-position:-400% -2000%;
-}
-.Simple3D .sphere > .arc21 > .slice6 {
-	background-position:-500% -2000%;
-}
-.Simple3D .sphere > .arc21 > .slice7 {
-	background-position:-600% -2000%;
-}
-.Simple3D .sphere > .arc21 > .slice8 {
-	background-position:-700% -2000%;
-}
-.Simple3D .sphere > .arc21 > .slice9 {
-	background-position:-800% -2000%;
-}
-.Simple3D .sphere > .arc21 > .slice10 {
-	background-position:-900% -2000%;
-}
-.Simple3D .sphere > .arc21 > .slice11 {
-	background-position:-1000% -2000%;
-}
-.Simple3D .sphere > .arc21 > .slice12 {
-	background-position:-1100% 2000%;
-}
-.Simple3D .sphere > .arc22 {
-	transform:rotateX(-225deg);
-}
-.Simple3D .sphere > .arc22 > .slice1 {
-	background-position:0% -2100%;
-}
-.Simple3D .sphere > .arc22 > .slice2 {
-	background-position:-100% -2100%;
-}
-.Simple3D .sphere > .arc22 > .slice3 {
-	background-position:-200% -2100%;
-}
-.Simple3D .sphere > .arc22 > .slice4 {
-	background-position:-300% -2100%;
-}
-.Simple3D .sphere > .arc22 > .slice5 {
-	background-position:-400% -2100%;
-}
-.Simple3D .sphere > .arc22 > .slice6 {
-	background-position:-500% -2100%;
-}
-.Simple3D .sphere > .arc22 > .slice7 {
-	background-position:-600% -2100%;
-}
-.Simple3D .sphere > .arc22 > .slice8 {
-	background-position:-700% -2100%;
-}
-.Simple3D .sphere > .arc22 > .slice9 {
-	background-position:-800% -2100%;
-}
-.Simple3D .sphere > .arc22 > .slice10 {
-	background-position:-900% -2100%;
-}
-.Simple3D .sphere > .arc22 > .slice11 {
-	background-position:-1000% -2100%;
-}
-.Simple3D .sphere > .arc22 > .slice12 {
-	background-position:-1100% 2100%;
-}
-.Simple3D .sphere > .arc23 {
-	transform:rotateX(-240deg);
-}
-.Simple3D .sphere > .arc23 > .slice1 {
-	background-position:0% -2200%;
-}
-.Simple3D .sphere > .arc23 > .slice2 {
-	background-position:-100% -2200%;
-}
-.Simple3D .sphere > .arc23 > .slice3 {
-	background-position:-200% -2200%;
-}
-.Simple3D .sphere > .arc23 > .slice4 {
-	background-position:-300% -2200%;
-}
-.Simple3D .sphere > .arc23 > .slice5 {
-	background-position:-400% -2200%;
-}
-.Simple3D .sphere > .arc23 > .slice6 {
-	background-position:-500% -2200%;
-}
-.Simple3D .sphere > .arc23 > .slice7 {
-	background-position:-600% -2200%;
-}
-.Simple3D .sphere > .arc23 > .slice8 {
-	background-position:-700% -2200%;
-}
-.Simple3D .sphere > .arc23 > .slice9 {
-	background-position:-800% -2200%;
-}
-.Simple3D .sphere > .arc23 > .slice10 {
-	background-position:-900% -2200%;
-}
-.Simple3D .sphere > .arc23 > .slice11 {
-	background-position:-1000% -2200%;
-}
-.Simple3D .sphere > .arc23 > .slice12 {
-	background-position:-1100% 2200%;
-}
-.Simple3D .sphere > .arc24 {
-	transform:rotateX(-255deg);
-}
-.Simple3D .sphere > .arc24 > .slice1 {
-	background-position:0% -2300%;
-}
-.Simple3D .sphere > .arc24 > .slice2 {
-	background-position:-100% -2300%;
-}
-.Simple3D .sphere > .arc24 > .slice3 {
-	background-position:-200% -2300%;
-}
-.Simple3D .sphere > .arc24 > .slice4 {
-	background-position:-300% -2300%;
-}
-.Simple3D .sphere > .arc24 > .slice5 {
-	background-position:-400% -2300%;
-}
-.Simple3D .sphere > .arc24 > .slice6 {
-	background-position:-500% -2300%;
-}
-.Simple3D .sphere > .arc24 > .slice7 {
-	background-position:-600% -2300%;
-}
-.Simple3D .sphere > .arc24 > .slice8 {
-	background-position:-700% -2300%;
-}
-.Simple3D .sphere > .arc24 > .slice9 {
-	background-position:-800% -2300%;
-}
-.Simple3D .sphere > .arc24 > .slice10 {
-	background-position:-900% -2300%;
-}
-.Simple3D .sphere > .arc24 > .slice11 {
-	background-position:-1000% -2300%;
-}
-.Simple3D .sphere > .arc24 > .slice12 {
-	background-position:-1100% 2300%;
 }
 .Simple3D .pyramid {
 	width:300px;
@@ -1545,79 +2543,6 @@ html.fullscreen .Simple3D {
 }
 .Simple3D .cone > .slice {
 	background-color:#090;
-  	transform-origin:50% 100%;
-}
-.Simple3D .cone > .slice1 {
-	transform:rotateY(0deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
-}
-.Simple3D .cone > .slice2 {
-	transform:rotateY(15deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
-}
-.Simple3D .cone > .slice3 {
-	transform:rotateY(30deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
-}
-.Simple3D .cone > .slice4 {
-	transform:rotateY(45deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
-}
-.Simple3D .cone > .slice5 {
-	transform:rotateY(60deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
-}
-.Simple3D .cone > .slice6 {
-	transform:rotateY(75deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
-}
-.Simple3D .cone > .slice7 {
-	transform:rotateY(90deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
-}
-.Simple3D .cone > .slice8 {
-	transform:rotateY(105deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
-}
-.Simple3D .cone > .slice9 {
-	transform:rotateY(120deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
-}
-.Simple3D .cone > .slice10 {
-	transform:rotateY(135deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
-}
-.Simple3D .cone > .slice11 {
-	transform:rotateY(150deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
-}
-.Simple3D .cone > .slice12 {
-	transform:rotateY(165deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
-}
-.Simple3D .cone > .slice13 {
-	transform:rotateY(180deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
-}
-.Simple3D .cone > .slice14 {
-	transform:rotateY(195deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
-}
-.Simple3D .cone > .slice15 {
-	transform:rotateY(210deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
-}
-.Simple3D .cone > .slice16 {
-	transform:rotateY(225deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
-}
-.Simple3D .cone > .slice17 {
-	transform:rotateY(240deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
-}
-.Simple3D .cone > .slice18 {
-	transform:rotateY(255deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
-}
-.Simple3D .cone > .slice19 {
-	transform:rotateY(270deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
-}
-.Simple3D .cone > .slice20 {
-	transform:rotateY(285deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
-}
-.Simple3D .cone > .slice21 {
-	transform:rotateY(300deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
-}
-.Simple3D .cone > .slice22 {
-	transform:rotateY(315deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
-}
-.Simple3D .cone > .slice23 {
-	transform:rotateY(330deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
-}
-.Simple3D .cone > .slice24 {
-	transform:rotateY(345deg) translateX(-379%) rotateY(-90deg) rotateX(26.5deg);
 }
 .Simple3D .torus {
 	width:200px;
@@ -1626,950 +2551,11 @@ html.fullscreen .Simple3D {
 }
 .Simple3D .torus > .ring {
 	width:30%;
-	height:14%;
-	top:43%;
 	left:20%;
 	transform-origin:100% 50%;
-	background:inherit;
 }
 .Simple3D .torus > .ring > .slice {
 	background-color:#C33;
-}
-.Simple3D .torus > .ring1 {
-	transform:rotateZ(90deg) translateX(-66%);
-}
-.Simple3D .torus > .ring1 > .slice1 {
-	background-position:0% 0%;
-}
-.Simple3D .torus > .ring1 > .slice2 {
-	background-position:-100% 0%;
-}
-.Simple3D .torus > .ring1 > .slice3 {
-	background-position:-200% 0%;
-}
-.Simple3D .torus > .ring1 > .slice4 {
-	background-position:-300% 0%;
-}
-.Simple3D .torus > .ring1 > .slice5 {
-	background-position:-400% 0%;
-}
-.Simple3D .torus > .ring1 > .slice6 {
-	background-position:-500% 0%;
-}
-.Simple3D .torus > .ring1 > .slice7 {
-	background-position:-600% 0%;
-}
-.Simple3D .torus > .ring1 > .slice8 {
-	background-position:-700% 0%;
-}
-.Simple3D .torus > .ring1 > .slice9 {
-	background-position:-800% 0%;
-}
-.Simple3D .torus > .ring1 > .slice10 {
-	background-position:-900% 0%;
-}
-.Simple3D .torus > .ring1 > .slice11 {
-	background-position:-1000% 0%;
-}
-.Simple3D .torus > .ring1 > .slice12 {
-	background-position:-1100% 0%;
-}
-.Simple3D .torus > .ring2 {
-	transform:rotateZ(75deg) translateX(-66%);
-}
-.Simple3D .torus > .ring2 > .slice1 {
-	background-position:0% -100%;
-}
-.Simple3D .torus > .ring2 > .slice2 {
-	background-position:-100% -100%;
-}
-.Simple3D .torus > .ring2 > .slice3 {
-	background-position:-200% -100%;
-}
-.Simple3D .torus > .ring2 > .slice4 {
-	background-position:-300% -100%;
-}
-.Simple3D .torus > .ring2 > .slice5 {
-	background-position:-400% -100%;
-}
-.Simple3D .torus > .ring2 > .slice6 {
-	background-position:-500% -100%;
-}
-.Simple3D .torus > .ring2 > .slice7 {
-	background-position:-600% -100%;
-}
-.Simple3D .torus > .ring2 > .slice8 {
-	background-position:-700% -100%;
-}
-.Simple3D .torus > .ring2 > .slice9 {
-	background-position:-800% -100%;
-}
-.Simple3D .torus > .ring2 > .slice10 {
-	background-position:-900% -100%;
-}
-.Simple3D .torus > .ring2 > .slice11 {
-	background-position:-1000% -100%;
-}
-.Simple3D .torus > .ring2 > .slice12 {
-	background-position:-1100% 100%;
-}
-.Simple3D .torus > .ring3 {
-	transform:rotateZ(60deg) translateX(-66%);
-}
-.Simple3D .torus > .ring3 > .slice1 {
-	background-position:0% -200%;
-}
-.Simple3D .torus > .ring3 > .slice2 {
-	background-position:-100% -200%;
-}
-.Simple3D .torus > .ring3 > .slice3 {
-	background-position:-200% -200%;
-}
-.Simple3D .torus > .ring3 > .slice4 {
-	background-position:-300% -200%;
-}
-.Simple3D .torus > .ring3 > .slice5 {
-	background-position:-400% -200%;
-}
-.Simple3D .torus > .ring3 > .slice6 {
-	background-position:-500% -200%;
-}
-.Simple3D .torus > .ring3 > .slice7 {
-	background-position:-600% -200%;
-}
-.Simple3D .torus > .ring3 > .slice8 {
-	background-position:-700% -200%;
-}
-.Simple3D .torus > .ring3 > .slice9 {
-	background-position:-800% -200%;
-}
-.Simple3D .torus > .ring3 > .slice10 {
-	background-position:-900% -200%;
-}
-.Simple3D .torus > .ring3 > .slice11 {
-	background-position:-1000% -200%;
-}
-.Simple3D .torus > .ring3 > .slice12 {
-	background-position:-1100% 200%;
-}
-.Simple3D .torus > .ring4 {
-	transform:rotateZ(45deg) translateX(-66%);
-}
-.Simple3D .torus > .ring4 > .slice1 {
-	background-position:0% -300%;
-}
-.Simple3D .torus > .ring4 > .slice2 {
-	background-position:-100% -300%;
-}
-.Simple3D .torus > .ring4 > .slice3 {
-	background-position:-200% -300%;
-}
-.Simple3D .torus > .ring4 > .slice4 {
-	background-position:-300% -300%;
-}
-.Simple3D .torus > .ring4 > .slice5 {
-	background-position:-400% -300%;
-}
-.Simple3D .torus > .ring4 > .slice6 {
-	background-position:-500% -300%;
-}
-.Simple3D .torus > .ring4 > .slice7 {
-	background-position:-600% -300%;
-}
-.Simple3D .torus > .ring4 > .slice8 {
-	background-position:-700% -300%;
-}
-.Simple3D .torus > .ring4 > .slice9 {
-	background-position:-800% -300%;
-}
-.Simple3D .torus > .ring4 > .slice10 {
-	background-position:-900% -300%;
-}
-.Simple3D .torus > .ring4 > .slice11 {
-	background-position:-1000% -300%;
-}
-.Simple3D .torus > .ring4 > .slice12 {
-	background-position:-1100% 300%;
-}
-.Simple3D .torus > .ring5 {
-	transform:rotateZ(30deg) translateX(-66%);
-}
-.Simple3D .torus > .ring5 > .slice1 {
-	background-position:0% -400%;
-}
-.Simple3D .torus > .ring5 > .slice2 {
-	background-position:-100% -400%;
-}
-.Simple3D .torus > .ring5 > .slice3 {
-	background-position:-200% -400%;
-}
-.Simple3D .torus > .ring5 > .slice4 {
-	background-position:-300% -400%;
-}
-.Simple3D .torus > .ring5 > .slice5 {
-	background-position:-400% -400%;
-}
-.Simple3D .torus > .ring5 > .slice6 {
-	background-position:-500% -400%;
-}
-.Simple3D .torus > .ring5 > .slice7 {
-	background-position:-600% -400%;
-}
-.Simple3D .torus > .ring5 > .slice8 {
-	background-position:-700% -400%;
-}
-.Simple3D .torus > .ring5 > .slice9 {
-	background-position:-800% -400%;
-}
-.Simple3D .torus > .ring5 > .slice10 {
-	background-position:-900% -400%;
-}
-.Simple3D .torus > .ring5 > .slice11 {
-	background-position:-1000% -400%;
-}
-.Simple3D .torus > .ring5 > .slice12 {
-	background-position:-1100% 400%;
-}
-.Simple3D .torus > .ring6 {
-	transform:rotateZ(15deg) translateX(-66%);
-}
-.Simple3D .torus > .ring6 > .slice1 {
-	background-position:0% -500%;
-}
-.Simple3D .torus > .ring6 > .slice2 {
-	background-position:-100% -500%;
-}
-.Simple3D .torus > .ring6 > .slice3 {
-	background-position:-200% -500%;
-}
-.Simple3D .torus > .ring6 > .slice4 {
-	background-position:-300% -500%;
-}
-.Simple3D .torus > .ring6 > .slice5 {
-	background-position:-400% -500%;
-}
-.Simple3D .torus > .ring6 > .slice6 {
-	background-position:-500% -500%;
-}
-.Simple3D .torus > .ring6 > .slice7 {
-	background-position:-600% -500%;
-}
-.Simple3D .torus > .ring6 > .slice8 {
-	background-position:-700% -500%;
-}
-.Simple3D .torus > .ring6 > .slice9 {
-	background-position:-800% -500%;
-}
-.Simple3D .torus > .ring6 > .slice10 {
-	background-position:-900% -500%;
-}
-.Simple3D .torus > .ring6 > .slice11 {
-	background-position:-1000% -500%;
-}
-.Simple3D .torus > .ring6 > .slice12 {
-	background-position:-1100% 500%;
-}
-.Simple3D .torus > .ring7 {
-	transform:rotateZ(0deg) translateX(-66%);
-}
-.Simple3D .torus > .ring7 > .slice1 {
-	background-position:0% -600%;
-}
-.Simple3D .torus > .ring7 > .slice2 {
-	background-position:-100% -600%;
-}
-.Simple3D .torus > .ring7 > .slice3 {
-	background-position:-200% -600%;
-}
-.Simple3D .torus > .ring7 > .slice4 {
-	background-position:-300% -600%;
-}
-.Simple3D .torus > .ring7 > .slice5 {
-	background-position:-400% -600%;
-}
-.Simple3D .torus > .ring7 > .slice6 {
-	background-position:-500% -600%;
-}
-.Simple3D .torus > .ring7 > .slice7 {
-	background-position:-600% -600%;
-}
-.Simple3D .torus > .ring7 > .slice8 {
-	background-position:-700% -600%;
-}
-.Simple3D .torus > .ring7 > .slice9 {
-	background-position:-800% -600%;
-}
-.Simple3D .torus > .ring7 > .slice10 {
-	background-position:-900% -600%;
-}
-.Simple3D .torus > .ring7 > .slice11 {
-	background-position:-1000% -600%;
-}
-.Simple3D .torus > .ring7 > .slice12 {
-	background-position:-1100% 600%;
-}
-.Simple3D .torus > .ring8 {
-	transform:rotateZ(-15deg) translateX(-66%);
-}
-.Simple3D .torus > .ring8 > .slice1 {
-	background-position:0% -700%;
-}
-.Simple3D .torus > .ring8 > .slice2 {
-	background-position:-100% -700%;
-}
-.Simple3D .torus > .ring8 > .slice3 {
-	background-position:-200% -700%;
-}
-.Simple3D .torus > .ring8 > .slice4 {
-	background-position:-300% -700%;
-}
-.Simple3D .torus > .ring8 > .slice5 {
-	background-position:-400% -700%;
-}
-.Simple3D .torus > .ring8 > .slice6 {
-	background-position:-500% -700%;
-}
-.Simple3D .torus > .ring8 > .slice7 {
-	background-position:-600% -700%;
-}
-.Simple3D .torus > .ring8 > .slice8 {
-	background-position:-700% -700%;
-}
-.Simple3D .torus > .ring8 > .slice9 {
-	background-position:-800% -700%;
-}
-.Simple3D .torus > .ring8 > .slice10 {
-	background-position:-900% -700%;
-}
-.Simple3D .torus > .ring8 > .slice11 {
-	background-position:-1000% -700%;
-}
-.Simple3D .torus > .ring8 > .slice12 {
-	background-position:-1100% 700%;
-}
-.Simple3D .torus > .ring9 {
-	transform:rotateZ(-30deg) translateX(-66%);
-}
-.Simple3D .torus > .ring9 > .slice1 {
-	background-position:0% -800%;
-}
-.Simple3D .torus > .ring9 > .slice2 {
-	background-position:-100% -800%;
-}
-.Simple3D .torus > .ring9 > .slice3 {
-	background-position:-200% -800%;
-}
-.Simple3D .torus > .ring9 > .slice4 {
-	background-position:-300% -800%;
-}
-.Simple3D .torus > .ring9 > .slice5 {
-	background-position:-400% -800%;
-}
-.Simple3D .torus > .ring9 > .slice6 {
-	background-position:-500% -800%;
-}
-.Simple3D .torus > .ring9 > .slice7 {
-	background-position:-600% -800%;
-}
-.Simple3D .torus > .ring9 > .slice8 {
-	background-position:-700% -800%;
-}
-.Simple3D .torus > .ring9 > .slice9 {
-	background-position:-800% -800%;
-}
-.Simple3D .torus > .ring9 > .slice10 {
-	background-position:-900% -800%;
-}
-.Simple3D .torus > .ring9 > .slice11 {
-	background-position:-1000% -800%;
-}
-.Simple3D .torus > .ring9 > .slice12 {
-	background-position:-1100% 800%;
-}
-.Simple3D .torus > .ring10 {
-	transform:rotateZ(-45deg) translateX(-66%);
-}
-.Simple3D .torus > .ring10 > .slice1 {
-	background-position:0% -900%;
-}
-.Simple3D .torus > .ring10 > .slice2 {
-	background-position:-100% -900%;
-}
-.Simple3D .torus > .ring10 > .slice3 {
-	background-position:-200% -900%;
-}
-.Simple3D .torus > .ring10 > .slice4 {
-	background-position:-300% -900%;
-}
-.Simple3D .torus > .ring10 > .slice5 {
-	background-position:-400% -900%;
-}
-.Simple3D .torus > .ring10 > .slice6 {
-	background-position:-500% -900%;
-}
-.Simple3D .torus > .ring10 > .slice7 {
-	background-position:-600% -900%;
-}
-.Simple3D .torus > .ring10 > .slice8 {
-	background-position:-700% -900%;
-}
-.Simple3D .torus > .ring10 > .slice9 {
-	background-position:-800% -900%;
-}
-.Simple3D .torus > .ring10 > .slice10 {
-	background-position:-900% -900%;
-}
-.Simple3D .torus > .ring10 > .slice11 {
-	background-position:-1000% -900%;
-}
-.Simple3D .torus > .ring10 > .slice12 {
-	background-position:-1100% 900%;
-}
-.Simple3D .torus > .ring11 {
-	transform:rotateZ(-60deg) translateX(-66%);
-}
-.Simple3D .torus > .ring11 > .slice1 {
-	background-position:0% -1000%;
-}
-.Simple3D .torus > .ring11 > .slice2 {
-	background-position:-100% -1000%;
-}
-.Simple3D .torus > .ring11 > .slice3 {
-	background-position:-200% -1000%;
-}
-.Simple3D .torus > .ring11 > .slice4 {
-	background-position:-300% -1000%;
-}
-.Simple3D .torus > .ring11 > .slice5 {
-	background-position:-400% -1000%;
-}
-.Simple3D .torus > .ring11 > .slice6 {
-	background-position:-500% -1000%;
-}
-.Simple3D .torus > .ring11 > .slice7 {
-	background-position:-600% -1000%;
-}
-.Simple3D .torus > .ring11 > .slice8 {
-	background-position:-700% -1000%;
-}
-.Simple3D .torus > .ring11 > .slice9 {
-	background-position:-800% -1000%;
-}
-.Simple3D .torus > .ring11 > .slice10 {
-	background-position:-900% -1000%;
-}
-.Simple3D .torus > .ring11 > .slice11 {
-	background-position:-1000% -1000%;
-}
-.Simple3D .torus > .ring11 > .slice12 {
-	background-position:-1100% 1000%;
-}
-.Simple3D .torus > .ring12 {
-	transform:rotateZ(-75deg) translateX(-66%);
-}
-.Simple3D .torus > .ring12 > .slice1 {
-	background-position:0% -1100%;
-}
-.Simple3D .torus > .ring12 > .slice2 {
-	background-position:-100% -1100%;
-}
-.Simple3D .torus > .ring12 > .slice3 {
-	background-position:-200% -1100%;
-}
-.Simple3D .torus > .ring12 > .slice4 {
-	background-position:-300% -1100%;
-}
-.Simple3D .torus > .ring12 > .slice5 {
-	background-position:-400% -1100%;
-}
-.Simple3D .torus > .ring12 > .slice6 {
-	background-position:-500% -1100%;
-}
-.Simple3D .torus > .ring12 > .slice7 {
-	background-position:-600% -1100%;
-}
-.Simple3D .torus > .ring12 > .slice8 {
-	background-position:-700% -1100%;
-}
-.Simple3D .torus > .ring12 > .slice9 {
-	background-position:-800% -1100%;
-}
-.Simple3D .torus > .ring12 > .slice10 {
-	background-position:-900% -1100%;
-}
-.Simple3D .torus > .ring12 > .slice11 {
-	background-position:-1000% -1100%;
-}
-.Simple3D .torus > .ring12 > .slice12 {
-	background-position:-1100% 1100%;
-}
-.Simple3D .torus > .ring13 {
-	transform:rotateZ(-90deg) translateX(-66%);
-}
-.Simple3D .torus > .ring13 > .slice1 {
-	background-position:0% -1200%;
-}
-.Simple3D .torus > .ring13 > .slice2 {
-	background-position:-100% -1200%;
-}
-.Simple3D .torus > .ring13 > .slice3 {
-	background-position:-200% -1200%;
-}
-.Simple3D .torus > .ring13 > .slice4 {
-	background-position:-300% -1200%;
-}
-.Simple3D .torus > .ring13 > .slice5 {
-	background-position:-400% -1200%;
-}
-.Simple3D .torus > .ring13 > .slice6 {
-	background-position:-500% -1200%;
-}
-.Simple3D .torus > .ring13 > .slice7 {
-	background-position:-600% -1200%;
-}
-.Simple3D .torus > .ring13 > .slice8 {
-	background-position:-700% -1200%;
-}
-.Simple3D .torus > .ring13 > .slice9 {
-	background-position:-800% -1200%;
-}
-.Simple3D .torus > .ring13 > .slice10 {
-	background-position:-900% -1200%;
-}
-.Simple3D .torus > .ring13 > .slice11 {
-	background-position:-1000% -1200%;
-}
-.Simple3D .torus > .ring13 > .slice12 {
-	background-position:-1100% 1200%;
-}
-.Simple3D .torus > .ring14 {
-	transform:rotateZ(-105deg) translateX(-66%);
-}
-.Simple3D .torus > .ring14 > .slice1 {
-	background-position:0% -1300%;
-}
-.Simple3D .torus > .ring14 > .slice2 {
-	background-position:-100% -1300%;
-}
-.Simple3D .torus > .ring14 > .slice3 {
-	background-position:-200% -1300%;
-}
-.Simple3D .torus > .ring14 > .slice4 {
-	background-position:-300% -1300%;
-}
-.Simple3D .torus > .ring14 > .slice5 {
-	background-position:-400% -1300%;
-}
-.Simple3D .torus > .ring14 > .slice6 {
-	background-position:-500% -1300%;
-}
-.Simple3D .torus > .ring14 > .slice7 {
-	background-position:-600% -1300%;
-}
-.Simple3D .torus > .ring14 > .slice8 {
-	background-position:-700% -1300%;
-}
-.Simple3D .torus > .ring14 > .slice9 {
-	background-position:-800% -1300%;
-}
-.Simple3D .torus > .ring14 > .slice10 {
-	background-position:-900% -1300%;
-}
-.Simple3D .torus > .ring14 > .slice11 {
-	background-position:-1000% -1300%;
-}
-.Simple3D .torus > .ring14 > .slice12 {
-	background-position:-1100% 1300%;
-}
-.Simple3D .torus > .ring15 {
-	transform:rotateZ(-120deg) translateX(-66%);
-}
-.Simple3D .torus > .ring15 > .slice1 {
-	background-position:0% -1400%;
-}
-.Simple3D .torus > .ring15 > .slice2 {
-	background-position:-100% -1400%;
-}
-.Simple3D .torus > .ring15 > .slice3 {
-	background-position:-200% -1400%;
-}
-.Simple3D .torus > .ring15 > .slice4 {
-	background-position:-300% -1400%;
-}
-.Simple3D .torus > .ring15 > .slice5 {
-	background-position:-400% -1400%;
-}
-.Simple3D .torus > .ring15 > .slice6 {
-	background-position:-500% -1400%;
-}
-.Simple3D .torus > .ring15 > .slice7 {
-	background-position:-600% -1400%;
-}
-.Simple3D .torus > .ring15 > .slice8 {
-	background-position:-700% -1400%;
-}
-.Simple3D .torus > .ring15 > .slice9 {
-	background-position:-800% -1400%;
-}
-.Simple3D .torus > .ring15 > .slice10 {
-	background-position:-900% -1400%;
-}
-.Simple3D .torus > .ring15 > .slice11 {
-	background-position:-1000% -1400%;
-}
-.Simple3D .torus > .ring15 > .slice12 {
-	background-position:-1100% 1400%;
-}
-.Simple3D .torus > .ring16 {
-	transform:rotateZ(-135deg) translateX(-66%);
-}
-.Simple3D .torus > .ring16 > .slice1 {
-	background-position:0% -1500%;
-}
-.Simple3D .torus > .ring16 > .slice2 {
-	background-position:-100% -1500%;
-}
-.Simple3D .torus > .ring16 > .slice3 {
-	background-position:-200% -1500%;
-}
-.Simple3D .torus > .ring16 > .slice4 {
-	background-position:-300% -1500%;
-}
-.Simple3D .torus > .ring16 > .slice5 {
-	background-position:-400% -1500%;
-}
-.Simple3D .torus > .ring16 > .slice6 {
-	background-position:-500% -1500%;
-}
-.Simple3D .torus > .ring16 > .slice7 {
-	background-position:-600% -1500%;
-}
-.Simple3D .torus > .ring16 > .slice8 {
-	background-position:-700% -1500%;
-}
-.Simple3D .torus > .ring16 > .slice9 {
-	background-position:-800% -1500%;
-}
-.Simple3D .torus > .ring16 > .slice10 {
-	background-position:-900% -1500%;
-}
-.Simple3D .torus > .ring16 > .slice11 {
-	background-position:-1000% -1500%;
-}
-.Simple3D .torus > .ring16 > .slice12 {
-	background-position:-1100% 1500%;
-}
-.Simple3D .torus > .ring17 {
-	transform:rotateZ(-150deg) translateX(-66%);
-}
-.Simple3D .torus > .ring17 > .slice1 {
-	background-position:0% -1600%;
-}
-.Simple3D .torus > .ring17 > .slice2 {
-	background-position:-100% -1600%;
-}
-.Simple3D .torus > .ring17 > .slice3 {
-	background-position:-200% -1600%;
-}
-.Simple3D .torus > .ring17 > .slice4 {
-	background-position:-300% -1600%;
-}
-.Simple3D .torus > .ring17 > .slice5 {
-	background-position:-400% -1600%;
-}
-.Simple3D .torus > .ring17 > .slice6 {
-	background-position:-500% -1600%;
-}
-.Simple3D .torus > .ring17 > .slice7 {
-	background-position:-600% -1600%;
-}
-.Simple3D .torus > .ring17 > .slice8 {
-	background-position:-700% -1600%;
-}
-.Simple3D .torus > .ring17 > .slice9 {
-	background-position:-800% -1600%;
-}
-.Simple3D .torus > .ring17 > .slice10 {
-	background-position:-900% -1600%;
-}
-.Simple3D .torus > .ring17 > .slice11 {
-	background-position:-1000% -1600%;
-}
-.Simple3D .torus > .ring17 > .slice12 {
-	background-position:-1100% 1600%;
-}
-.Simple3D .torus > .ring18 {
-	transform:rotateZ(-165deg) translateX(-66%);
-}
-.Simple3D .torus > .ring18 > .slice1 {
-	background-position:0% -1700%;
-}
-.Simple3D .torus > .ring18 > .slice2 {
-	background-position:-100% -1700%;
-}
-.Simple3D .torus > .ring18 > .slice3 {
-	background-position:-200% -1700%;
-}
-.Simple3D .torus > .ring18 > .slice4 {
-	background-position:-300% -1700%;
-}
-.Simple3D .torus > .ring18 > .slice5 {
-	background-position:-400% -1700%;
-}
-.Simple3D .torus > .ring18 > .slice6 {
-	background-position:-500% -1700%;
-}
-.Simple3D .torus > .ring18 > .slice7 {
-	background-position:-600% -1700%;
-}
-.Simple3D .torus > .ring18 > .slice8 {
-	background-position:-700% -1700%;
-}
-.Simple3D .torus > .ring18 > .slice9 {
-	background-position:-800% -1700%;
-}
-.Simple3D .torus > .ring18 > .slice10 {
-	background-position:-900% -1700%;
-}
-.Simple3D .torus > .ring18 > .slice11 {
-	background-position:-1000% -1700%;
-}
-.Simple3D .torus > .ring18 > .slice12 {
-	background-position:-1100% 1700%;
-}
-.Simple3D .torus > .ring19 {
-	transform:rotateZ(-180deg) translateX(-66%);
-}
-.Simple3D .torus > .ring19 > .slice1 {
-	background-position:0% -1800%;
-}
-.Simple3D .torus > .ring19 > .slice2 {
-	background-position:-100% -1800%;
-}
-.Simple3D .torus > .ring19 > .slice3 {
-	background-position:-200% -1800%;
-}
-.Simple3D .torus > .ring19 > .slice4 {
-	background-position:-300% -1800%;
-}
-.Simple3D .torus > .ring19 > .slice5 {
-	background-position:-400% -1800%;
-}
-.Simple3D .torus > .ring19 > .slice6 {
-	background-position:-500% -1800%;
-}
-.Simple3D .torus > .ring19 > .slice7 {
-	background-position:-600% -1800%;
-}
-.Simple3D .torus > .ring19 > .slice8 {
-	background-position:-700% -1800%;
-}
-.Simple3D .torus > .ring19 > .slice9 {
-	background-position:-800% -1800%;
-}
-.Simple3D .torus > .ring19 > .slice10 {
-	background-position:-900% -1800%;
-}
-.Simple3D .torus > .ring19 > .slice11 {
-	background-position:-1000% -1800%;
-}
-.Simple3D .torus > .ring19 > .slice12 {
-	background-position:-1100% 1800%;
-}
-.Simple3D .torus > .ring20 {
-	transform:rotateZ(-195deg) translateX(-66%);
-}
-.Simple3D .torus > .ring20 > .slice1 {
-	background-position:0% -1900%;
-}
-.Simple3D .torus > .ring20 > .slice2 {
-	background-position:-100% -1900%;
-}
-.Simple3D .torus > .ring20 > .slice3 {
-	background-position:-200% -1900%;
-}
-.Simple3D .torus > .ring20 > .slice4 {
-	background-position:-300% -1900%;
-}
-.Simple3D .torus > .ring20 > .slice5 {
-	background-position:-400% -1900%;
-}
-.Simple3D .torus > .ring20 > .slice6 {
-	background-position:-500% -1900%;
-}
-.Simple3D .torus > .ring20 > .slice7 {
-	background-position:-600% -1900%;
-}
-.Simple3D .torus > .ring20 > .slice8 {
-	background-position:-700% -1900%;
-}
-.Simple3D .torus > .ring20 > .slice9 {
-	background-position:-800% -1900%;
-}
-.Simple3D .torus > .ring20 > .slice10 {
-	background-position:-900% -1900%;
-}
-.Simple3D .torus > .ring20 > .slice11 {
-	background-position:-1000% -1900%;
-}
-.Simple3D .torus > .ring20 > .slice12 {
-	background-position:-1100% 1900%;
-}
-.Simple3D .torus > .ring21 {
-	transform:rotateZ(-210deg) translateX(-66%);
-}
-.Simple3D .torus > .ring21 > .slice1 {
-	background-position:0% -2000%;
-}
-.Simple3D .torus > .ring21 > .slice2 {
-	background-position:-100% -2000%;
-}
-.Simple3D .torus > .ring21 > .slice3 {
-	background-position:-200% -2000%;
-}
-.Simple3D .torus > .ring21 > .slice4 {
-	background-position:-300% -2000%;
-}
-.Simple3D .torus > .ring21 > .slice5 {
-	background-position:-400% -2000%;
-}
-.Simple3D .torus > .ring21 > .slice6 {
-	background-position:-500% -2000%;
-}
-.Simple3D .torus > .ring21 > .slice7 {
-	background-position:-600% -2000%;
-}
-.Simple3D .torus > .ring21 > .slice8 {
-	background-position:-700% -2000%;
-}
-.Simple3D .torus > .ring21 > .slice9 {
-	background-position:-800% -2000%;
-}
-.Simple3D .torus > .ring21 > .slice10 {
-	background-position:-900% -2000%;
-}
-.Simple3D .torus > .ring21 > .slice11 {
-	background-position:-1000% -2000%;
-}
-.Simple3D .torus > .ring21 > .slice12 {
-	background-position:-1100% 2000%;
-}
-.Simple3D .torus > .ring22 {
-	transform:rotateZ(-225deg) translateX(-66%);
-}
-.Simple3D .torus > .ring22 > .slice1 {
-	background-position:0% -2100%;
-}
-.Simple3D .torus > .ring22 > .slice2 {
-	background-position:-100% -2100%;
-}
-.Simple3D .torus > .ring22 > .slice3 {
-	background-position:-200% -2100%;
-}
-.Simple3D .torus > .ring22 > .slice4 {
-	background-position:-300% -2100%;
-}
-.Simple3D .torus > .ring22 > .slice5 {
-	background-position:-400% -2100%;
-}
-.Simple3D .torus > .ring22 > .slice6 {
-	background-position:-500% -2100%;
-}
-.Simple3D .torus > .ring22 > .slice7 {
-	background-position:-600% -2100%;
-}
-.Simple3D .torus > .ring22 > .slice8 {
-	background-position:-700% -2100%;
-}
-.Simple3D .torus > .ring22 > .slice9 {
-	background-position:-800% -2100%;
-}
-.Simple3D .torus > .ring22 > .slice10 {
-	background-position:-900% -2100%;
-}
-.Simple3D .torus > .ring22 > .slice11 {
-	background-position:-1000% -2100%;
-}
-.Simple3D .torus > .ring22 > .slice12 {
-	background-position:-1100% 2100%;
-}
-.Simple3D .torus > .ring23 {
-	transform:rotateZ(-240deg) translateX(-66%);
-}
-.Simple3D .torus > .ring23 > .slice1 {
-	background-position:0% -2200%;
-}
-.Simple3D .torus > .ring23 > .slice2 {
-	background-position:-100% -2200%;
-}
-.Simple3D .torus > .ring23 > .slice3 {
-	background-position:-200% -2200%;
-}
-.Simple3D .torus > .ring23 > .slice4 {
-	background-position:-300% -2200%;
-}
-.Simple3D .torus > .ring23 > .slice5 {
-	background-position:-400% -2200%;
-}
-.Simple3D .torus > .ring23 > .slice6 {
-	background-position:-500% -2200%;
-}
-.Simple3D .torus > .ring23 > .slice7 {
-	background-position:-600% -2200%;
-}
-.Simple3D .torus > .ring23 > .slice8 {
-	background-position:-700% -2200%;
-}
-.Simple3D .torus > .ring23 > .slice9 {
-	background-position:-800% -2200%;
-}
-.Simple3D .torus > .ring23 > .slice10 {
-	background-position:-900% -2200%;
-}
-.Simple3D .torus > .ring23 > .slice11 {
-	background-position:-1000% -2200%;
-}
-.Simple3D .torus > .ring23 > .slice12 {
-	background-position:-1100% 2200%;
-}
-.Simple3D .torus > .ring24 {
-	transform:rotateZ(-255deg) translateX(-66%);
-}
-.Simple3D .torus > .ring24 > .slice1 {
-	background-position:0% -2300%;
-}
-.Simple3D .torus > .ring24 > .slice2 {
-	background-position:-100% -2300%;
-}
-.Simple3D .torus > .ring24 > .slice3 {
-	background-position:-200% -2300%;
-}
-.Simple3D .torus > .ring24 > .slice4 {
-	background-position:-300% -2300%;
-}
-.Simple3D .torus > .ring24 > .slice5 {
-	background-position:-400% -2300%;
-}
-.Simple3D .torus > .ring24 > .slice6 {
-	background-position:-500% -2300%;
-}
-.Simple3D .torus > .ring24 > .slice7 {
-	background-position:-600% -2300%;
-}
-.Simple3D .torus > .ring24 > .slice8 {
-	background-position:-700% -2300%;
-}
-.Simple3D .torus > .ring24 > .slice9 {
-	background-position:-800% -2300%;
-}
-.Simple3D .torus > .ring24 > .slice10 {
-	background-position:-900% -2300%;
-}
-.Simple3D .torus > .ring24 > .slice11 {
-	background-position:-1000% -2300%;
-}
-.Simple3D .torus > .ring24 > .slice12 {
-	background-position:-1100% 2300%;
 }
 .Simple3D .house {
 	width:400px;

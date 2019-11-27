@@ -1,5 +1,5 @@
 /*!
- * Simple3D v1.0.0 (http://www.sergiowebmaster.com.br/)
+ * Simple3D v1.0.1 (http://www.sergiowebmaster.com.br/)
  * Copyright 2019 Sérgio Webmaster
  * Licensed under MIT
  */
